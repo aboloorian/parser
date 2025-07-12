@@ -1,0 +1,342 @@
+[
+  {
+    "content": "Matière: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Code: N.C",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Cursus: ESGI",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Semestre: Semestre 1",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable du cours: Thibault MALHERBE",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Mail du responsable du cours: tmalherbe1@myges.fr",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable pédagogique: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Professeur associé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail de l'étudiant: 20,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ects: 4",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Coef: 4",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Volume: 24,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Contrôle de connaissances: {\"Cas Pratique\":false,\"Contrôle Continu\":false,\"Dossier\":false,\"Dossier Individuel\":false,\"Examen\":false,\"Projet\":false,\"QCM\":false}",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Intitulé: Cloud avancé pour le ML et le Big Data",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type d'examen: Examen",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée: 0,30 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Documents autorisés: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Critères d'évaluation: Respect des consignes, contenus des documents demandés, utilisabilité des codes fournis, pertinence\ndes features utilisés, performance du model, bonne présentation du projet et des données",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Pré-requis: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectifs pédagogiques: Apprendre à utiliser des outils de cloud en bonne intelligence, à savoir de manière efficace et en gérant convenablement les différents couts.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Objectifs pédagogiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: Séances Thèmes Travail à domicile Références Evaluation 1 Présentation du contenu du projet, de la démarche, des séances et des bases de données proposées 2 Qu'est que le cloud? Présentations des cloud, de Azure et des éléments de azures indispensables au projet. Dossier d’architecture technique: Qu’est ce que c’est ? Que mettre dedans ? Quelle forme donner ? 3 Découverte de databricks : Compute Workspace et repos Datas Expériments Workflows Models 4 Mlops, les étapes clées Recueillir les données Explorer les données Préparer les données Entrainer un modèle Evaluer un modèle Stocker le modèle Valider Déployer Monitorer 5 Automl et tuning Automl en général Les grandes offres Automl sur databricks Hyperparameter tuning Aller plus loin avec MLFlow 6 Serving API & kubernetes Une api c’est quoi ? Pourquoi une api en ml ? Solutions d’api Kubernetes ( rappel ) 7 Retour sur les rendus Dernières consignes pour la présentation finale Des questions sur le projet ?",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Titre: RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Compétence: RNCP38587BC03 - Concevoir et piloter une infrastructure d’",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Méthodologie utilisée: Faire un projet de machine learning de l'ingestion de la donnée brute, jusqu'à la mise en place d'une api permettant d'utiliser le modèle\ncréé. Le tout en prenant en compte la notion d'architecture cloud et la notion de couts.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Méthodologie utilisée",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Crossknowledge: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Crossknowledge",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ouvrages de référence: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Ouvrages de référence",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Cyberlibris: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Cyberlibris",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Autres références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Autres références",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Outils informatiques: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Outils informatiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Programme détaillé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Programme détaillé",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

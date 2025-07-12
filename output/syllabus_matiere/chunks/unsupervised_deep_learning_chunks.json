@@ -1,0 +1,322 @@
+[
+  {
+    "content": "Matière: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Code: N.C",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Cursus: ESGI",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Semestre: Semestre 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable du cours: Nicolas VIDAL",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Mail du responsable du cours: nvidal@myges.fr",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable pédagogique: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Professeur associé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail de l'étudiant: 15,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ects: 4",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Coef: 4",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Volume: 30,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Contrôle de connaissances: {\"Cas Pratique\":false,\"Contrôle Continu\":false,\"Dossier\":false,\"Dossier Individuel\":false,\"Examen\":false,\"Projet\":false,\"QCM\":false}",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Intitulé: 2025 - 5A - IABD - Unsupervised Deep Learning",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type d'examen: Projet",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée: 3,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Documents autorisés: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Critères d'évaluation: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Pré-requis: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectifs pédagogiques: Etudier les algorithmes classiques de réduction de dimension, comprendre leur limites pour ensuite s'ouvrir au Deep Learning Non supervisé",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Objectifs pédagogiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: Séances Thèmes Travail à domicile Références Evaluation 1 0 - Présentation du projet 1 - Rappels sur les k-means 2 Limites des techniques de clustering basé es sur la proximité spatiale dans l'espace de départ 3 Rapprochement entre le clustering et les techniques de réduction de dimension 4 Retours sur la PCA et ses variantes 5 Deep Learning Non supervisé (Autoencoders, stacked Autoencoders) 6 Techniques historiques et pourtant utiles : les cartes autoorganisatrices (Kohonen Maps ...) 7 GAN(s) et Diffusion Models 8 VAE",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Méthodologie utilisée: Apprentissage par la pratique et dirigé par l’exemple",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Méthodologie utilisée",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Crossknowledge: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Crossknowledge",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ouvrages de référence: https://work.caltech.edu/telecourse.html\nhttp://ufldl.stanford.edu/tutorial/unsupervised/\nhttps://www.dropbox.com/s/e38nil1dnl7481q/machine_learning.pdf?dl=0\nhttps://link.springer.com/book/10.1007/978-0-387-84858-7",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Ouvrages de référence",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Cyberlibris: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Cyberlibris",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Autres références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Autres références",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Outils informatiques: Anaconda/Python et/ou https://colab.research.google.com/",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Outils informatiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Programme détaillé: 0 - Présentation du projet\n1 - Rappels sur les k-means\n2 - Limites des techniques de clustering basées sur la proximité spatiale dans l'espace de départ\n3 - Rapprochement entre le clustering et les techniques de réduction de dimension\n4 - Retours sur la PCA et ses variantes\n5 - Deep Learning Non supervisé (Autoencoders, stacked Autoencoders)\n6 - Techniques historiques et pourtant utiles : les cartes autoorganisatrices (Kohonen Maps ...)\n7 - GAN(s) et Diffusion Models\n8 - VAE",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Programme détaillé",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

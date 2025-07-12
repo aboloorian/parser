@@ -1,0 +1,76 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "4 à 5",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Imposé",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "10,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Imposé",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 1: Etape intermédiaire - Constitution des groupes - Date de rendu: mardi 10/09/2024 23h00",
+      "page": 2
+    },
+    {
+      "value": "Étape 2: Rendu final - Rendu final: Faire tous les exos. Deux notes seront attribuées, une pour l'analyse de Fourier et l'autre pour le reste. Soutenance + CR + Scripts R à poster sur myGES + questions/réponses - Date de rendu: mardi 08/10/2024 20h00",
+      "page": 2
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "30 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "A huis clos",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint - Démonstration",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "content": "Matière: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Code: N.C",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Cursus: ESGI",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Semestre: Semestre 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable du cours: Ulysse VAUTIER",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Mail du responsable du cours: uvautier1@myges.fr",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable pédagogique: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Professeur associé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail de l'étudiant: 15,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ects: 3",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Coef: 3",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Volume: 30,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Contrôle de connaissances: {\"Cas Pratique\":false,\"Contrôle Continu\":false,\"Dossier\":false,\"Dossier Individuel\":false,\"Examen\":false,\"Projet\":false,\"QCM\":false}",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Intitulé: IA & Support Robotique",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type d'examen: Projet",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée: 6,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Documents autorisés: X",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Critères d'évaluation: Les étudiants sont évalués sur leurs connaissances sur la robotique et leur capacité à appliquer ses\nconnaissances dans un système embarqué. Cela implique des connaissances en automatique, système embarqué et algorithmie.\nLes étudiants sont d'abord évalués en fin de journée (sauf le premier et denier jour) sur les cours jusqu'alors effectués.\nEnsuite ils seront évalués sur un projet final consistant en un match de foot robotisé. Les différentes étapes de conception du robot\nseront évalués, ainsi que le comportement final du robot.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Pré-requis: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectifs pédagogiques: Permettre aux étudiants d'être prêt à travailler dans des entreprises de robotique. Assurer que le métier de Data Science soit bien compris et que les étudiants ont le savoir nécessaire pour travailler au mieux en entreprise. Avoir un baguage de culture et connaissance de la robotique pour leur permettre de comprendre et peut-être assembler soi-même un robot de A à Z.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Objectifs pédagogiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: Séances Thèmes Travail à domicile Références Evaluation",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Titre: RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Compétence: RNCP38587BC04 - Piloter un projet d’intelligence artificielle",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Méthodologie utilisée: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Méthodologie utilisée",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Crossknowledge: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Crossknowledge",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ouvrages de référence: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Ouvrages de référence",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Cyberlibris: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Références Cyberlibris",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Autres références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Autres références",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Outils informatiques: Jupyter Lab, VSCode, Python, Chrome",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Outils informatiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Programme détaillé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Programme détaillé",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

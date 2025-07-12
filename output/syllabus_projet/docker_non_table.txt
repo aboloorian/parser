@@ -1,0 +1,17 @@
+--- TEXTE HORS-TABLE (PAGE 1) ---
+Syllabus projet
+Année :2024-2025
+Enseignant(s) Email(s)
+RAAB Djamel draab1@myges.fr
+Containerization with Docker.
+Imprimé le : 05/07/25 11:38
+
+--- TEXTE HORS-TABLE (PAGE 2) ---
+Ouvrages de référence (livres, articles, revues, sites web...)
+Slides du cours + labs
+Outils informatiques à installer
+Docker
+Docker-Compose
+Bonus : Kubernetes
+Imprimé le : 05/07/25 11:38
+

@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "source_pdf": "robotique.pdf",
+    "parsed_at": "2025-07-12T07:29:03.167077Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 2",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Ulysse VAUTIER",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "uvautier1@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "15,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "3",
+      "page": 1
+    },
+    "Coef": {
+      "value": "3",
+      "page": 1
+    },
+    "Volume": {
+      "value": "30,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "IA & Support Robotique",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Projet",
+      "page": 1
+    },
+    "Durée": {
+      "value": "6,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "X",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Les étudiants sont évalués sur leurs connaissances sur la robotique et leur capacité à appliquer ses\nconnaissances dans un système embarqué. Cela implique des connaissances en automatique, système embarqué et algorithmie.\nLes étudiants sont d'abord évalués en fin de journée (sauf le premier et denier jour) sur les cours jusqu'alors effectués.\nEnsuite ils seront évalués sur un projet final consistant en un match de foot robotisé. Les différentes étapes de conception du robot\nseront évalués, ainsi que le comportement final du robot.",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Permettre aux étudiants d'être prêt à travailler dans des entreprises de robotique. Assurer que le métier de Data Science soit bien compris et que les étudiants ont le savoir nécessaire pour travailler au mieux en entreprise. Avoir un baguage de culture et connaissance de la robotique pour leur permettre de comprendre et peut-être assembler soi-même un robot de A à Z.",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 2
+      },
+      "Thèmes": {
+        "value": "Séances Thèmes Travail à domicile Références Evaluation",
+        "page": 2
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 2
+      },
+      "Références": {
+        "value": "",
+        "page": 2
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 2
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP38587BC04 - Piloter un projet d’intelligence artificielle",
+        "page": 2
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 2
+  },
+  "Autres références": {
+    "value": "",
+    "page": 2
+  },
+  "Outils informatiques": {
+    "value": "Jupyter Lab, VSCode, Python, Chrome",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "",
+    "page": 2
+  }
+}

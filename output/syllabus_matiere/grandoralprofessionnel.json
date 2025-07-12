@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "source_pdf": "grandoralprofessionnel.pdf",
+    "parsed_at": "2025-07-12T07:29:03.026314Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 2",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Pauline CRAMAUSSEL",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "pcramaussel1@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "6,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "1",
+      "page": 1
+    },
+    "Coef": {
+      "value": "1",
+      "page": 1
+    },
+    "Volume": {
+      "value": "0,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Grand Oral Professionnel",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Projet",
+      "page": 1
+    },
+    "Durée": {
+      "value": "2,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Page de présentation professionnelle\nRapport professionnel\nSoutenance orale (capacité à présenter son projet professionnel, son parcours professionnel, connaissance de l'environnement\nprofessionnel)",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Synthétiser ses différentes compétences par thématique métier Illustrer chacune de ces compétences par des expériences réelles issues des stages, de l'alternance, des projets au sein de l’école et des expériences associatives et connexes. Présenter sa motivation et des résultats concrets des missions et projets avec des données. Exprimer son projet professionnel avec clarté et précision. Argumenter ses propos et répondre avec justesse aux questions du jury. Produire des supports de présentation de qualité professionnelle.",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 2
+      },
+      "Thèmes": {
+        "value": "Séances Thèmes Travail à domicile Références Evaluation 1 Remise du rapport d’activité (à rendre avant le 26 mai 2025 en suivant les instructions de votre Attachée de Promotion disponibles sur votre espace MYGES). 2 Profil professionnel (Linkedin) à mettre jour pour le 1er septembre 2025. Les points importants: 1. Une photo professionnelle 2. Un cover avec logo de l’école et/ou entreprise actuelle 3. Titre de poste : Expert en “selon le titrepréparé” 4. Texte de présentation 5. Détail des expériences professionnelles 6. Projets réalisés en autodidacte et / ou à l’école 7. Les formations 8. Les compétences 9. Idéalement quelques recommandations+ social selling 3 Support de présentation à remettre sur MYGES avant le 1er septembre 2025 –8h00. Il inclut : un bilan de compétences les objectifs et les perspectives professionnelles 4 Soutenance L’épreuve se déroulera le 3 ou 4 septembre 2025 selon l’ ordre de passage et durera 15 mn : 10 minutes de présentation 5 minutes de réponses aux questions du Jury pouvant porter sur : Tout ou partie de votre présentation orale Les enjeux et la motivation de vos projets La connaissance des métiers appréhendés Attention, la partie écrite (le rapport d’activité) est un prérequis à la partie orale, sans celle-ci, il ne pourra pas y avoir de passage de l’oral.",
+        "page": 2
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 2
+      },
+      "Références": {
+        "value": "",
+        "page": 2
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 2
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP36469 - Expert en ingénierie du développement et en",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP36469BC02 - Manager les projets du système d’",
+        "page": 2
+      }
+    },
+    {
+      "Titre": {
+        "value": "RNCP37744 - Expert en ingénierie informatique",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP37744BC04 - Manager un projet de déploiement du",
+        "page": 2
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "Voir présentation sur MyGES (informations générales, instructions GOP)",
+    "page": 2
+  },
+  "Outils informatiques": {
+    "value": "",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "",
+    "page": 2
+  }
+}

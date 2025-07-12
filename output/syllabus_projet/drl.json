@@ -1,0 +1,76 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "3 à 4",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Imposé",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "30,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Imposé",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 1: Etape intermédiaire - 1er Gameplay choisi Implémenté - Simulation de jeu avec joueur random (calculer le nombre de parties / seconde) - Jeu avec Joueur humain + GUI - Proposition de description de l'état du jeu (vecteur d'encoding) - Proposition de description d'une action du jeu (vecteur d'encoding) Rendu : (tout sur MyGES, pas simplement un lien git) > code source > démonstration rapide > documents de spécifications (encoding vectors) - Date de rendu: lundi 07/10/2024 23h59",
+      "page": 3
+    },
+    {
+      "value": "Étape 3: Rendu final - Soutenance Rendu : (tout sur MyGES, pas simplement un lien git) > code source > démonstration rapide > Readme de reproduction des résulats / lancement démo > Rapport conséquent sur les expérimentations menées / résultats obtenus et observations critiques de ces résultats > documents de résultats (metrics sur les 1 gameplays avec tous les algos) > Slides de présentation utilisés pour la soutenance - Date de rendu: mardi 03/12/2024 10h00",
+      "page": 3
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "20 min",
+      "page": 3
+    },
+    "Audience": {
+      "value": "A huis clos",
+      "page": 3
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint",
+      "page": 3
+    },
+    "Précisions": {
+      "value": "",
+      "page": 3
+    }
+  }
+}

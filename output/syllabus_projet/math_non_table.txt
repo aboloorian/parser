@@ -1,0 +1,25 @@
+--- TEXTE HORS-TABLE (PAGE 1) ---
+Syllabus projet
+Année :2024-2025
+Enseignant(s) Email(s)
+BIANCHINI Marc mbianchi@myges.fr
+Analyse de Fourier, Optimisation et AFC
+Imprimé le : 06/07/25 23:05
+
+--- TEXTE HORS-TABLE (PAGE 2) ---
+Descriptif détaillé
+Lors de la soutenance du 08/10, deux notes seront attribuées:
+1) Analyse de Fourier, soyez attentifs au tout dernier exo lié à la FFT. Il faudra trouver des données
+exploitables, ex: fichiers mp3, des résultats boursiers, une image,...
+Attention à bien comprendre le cours sur l'analyse de Fourier, des questions seront posées lors de la
+soutenance
+2) Optimisation avec et sans contraintes + AFC. Pour le dernier exo d'AFC, bien commenter la
+méthodologie et les graphes obtenus.
+Optimisation avec contraintes, plutôt complexe à gérer.
+Il est attendu un CR pdf complet présentant les résultats, les graphiques et les
+Script pour chaque traitement
+Le sujet complet du séminaire ainsi que les annexes et les données à traiter sont joints ci-dessous
+Ouvrages de référence (livres, articles, revues, sites web...)
+Outils informatiques à installer
+Imprimé le : 06/07/25 23:05
+

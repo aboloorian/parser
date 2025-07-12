@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "source_pdf": "finops.pdf",
+    "parsed_at": "2025-07-12T07:29:02.835254Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "E3 - découverte de la finops",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 1",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Haoua BA",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "hba24@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "6,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "2",
+      "page": 1
+    },
+    "Coef": {
+      "value": "2",
+      "page": 1
+    },
+    "Volume": {
+      "value": "12,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Découverte de la Finops",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "QCM",
+      "page": 1
+    },
+    "Durée": {
+      "value": "1,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Sélectionner les axes nécessaires dans le cadre d'un projet Finops\nCompréhension d'un environnement Finops",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "Des notions en architecture logicielle et en gestion de projet. Une compréhension de base de la gestion budgétaire",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Ce programme a pour objectif de former les étudiants à la gestion des coûts dans le cloud à travers le cadre FinOps.",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "les ressources cloud.\no Apptio Cloudability : Outil d’IA pour la prévision des coûts\net l’optimisation automatisée.\no Anodot : Détection d’anomalies financières en temps réel\nbasée sur l’intelligence\nartificielle.\nPrévision Budgétaire et Automatisation :\no Utilisation des historiques de coûts pour modéliser les\nprévisions budgétaires.\no Automatisation des rapports et intégration dans les outils\nde reporting pour prévoir les\ndépenses futures",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 3
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP36296 - Expert en architectures systèmes-réseaux et",
+        "page": 3
+      },
+      "Compétence": {
+        "value": "RNCP36296BC02 - Manager les projets du système d’",
+        "page": 3
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "Alternance de séquences théoriques (1/3) et pratiques (2/3)",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "",
+    "page": 1
+  },
+  "Outils informatiques": {
+    "value": "",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "",
+    "page": 2
+  }
+}

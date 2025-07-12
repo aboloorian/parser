@@ -1,0 +1,76 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "3 à 5",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Libre",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "12,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Liste définie                                          \n                                                                          \n                      Statistiques de trades sur Binance                  \n                                                                          \n                                                                          \n                   Statistiques de vues de film en temps réel            \n                                                                          \n                                                                          \n                                                                          \n         Sujet Libre validé - Vélib - récupération des données sur les velibs",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "Développer une application effectuant des opérations avancées de traitement sur des topics Kafka avec Kafka Streams",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "Mettre en application les notions vues en cours sur la rétention des données et Kafka Streams pour le traitement de ces données.",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "un IDE (IntelliJ, Eclipse, ...), Maven, Poetry, Docker",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation - Date de rendu: mercredi 25/06/2025 14h30",
+      "page": 2
+    },
+    {
+      "value": "Étape 2: Rendu final - Rendu final - Projet complet API + Streams - Date de rendu: jeudi 26/06/2025 23h00",
+      "page": 2
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "15 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "A huis clos",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint - Démonstration",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

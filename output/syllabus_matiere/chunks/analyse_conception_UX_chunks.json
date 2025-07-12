@@ -1,0 +1,492 @@
+[
+  {
+    "content": "Matière: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Code: N.C",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Cursus: ESGI",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Semestre: Semestre 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable du cours: Férial BELLEHCHILI",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Mail du responsable du cours: fbellehchili@myges.fr",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable pédagogique: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Professeur associé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail de l'étudiant: 0,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ects: 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Coef: 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Volume: 18,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Contrôle de connaissances: {\"Cas Pratique\":false,\"Contrôle Continu\":false,\"Dossier\":false,\"Dossier Individuel\":false,\"Examen\":false,\"Projet\":false,\"QCM\":false}",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Intitulé: Analyse et conception (UX/UI) produit IA",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type d'examen: Dossier",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée: 2,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Documents autorisés: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Critères d'évaluation: Participation active, Livrable “Dossier de conception”, Pitch final",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Pré-requis: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectifs pédagogiques: À la fin du cours, l’étudiant est capable de : Identifier les besoins métiers et les traduire en cas d’usage. Structurer une conception fonctionnelle adaptée aux spécificités d’un produit IA. Élaborer une story map, définir un MVP, estimer des fonctionnalités. Collaborer avec une équipe produit pour transformer le besoin en solution. Produire des livrables clairs et opérationnels pour la phase de développement. Présenter et défendre un produit IA devant un public mixte (tech + métier).",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Objectifs pédagogiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: en profondeur et le traduire en besoin fonctionnel.\nLes étudiants apprennent à construire des personas, à\nanalyser les problèmes réels vécus par les utilisateurs, et à\nformaliser un besoin ainsi qu’une solution adaptée. Ils\ntraduisent ensuite ces éléments en cas d’usage concrets,\nbase de toute conception fonctionnelle.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: 3",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: Séance 3 : Idéation, story mapping & MVP\nObjectif : Structurer les fonctionnalités du produit autour\ndes besoins identifiés.\nÀ partir des cas d’usage, les étudiants construisent une\nstory map et définissent les premières fonctionnalités clés.\nIls abordent la notion de MVP (Minimum Viable Product).",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: Projet",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: 4",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: Séance 4 : Estimation, roadmap & user stories\nObjectif : Prioriser, planifier et documenter le\nfonctionnement du produit.\nCette sé ance permet d’approfondir la vision produit :\nestimation des fonctionnalités, ajout des cartes techniques\nà la story map, rédaction des premières user stories avec\ncritères d’acceptation, et é laboration d’une première\nroadmap. C’est une étape de consolidation.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: Projet",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: 5",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: Séance 5 : Soutenance finale\nObjectif : Présenter et défendre une solution fonctionnelle\nclaire et réaliste.\nChaque équipe présente son produit, en mettant l’accent\nsur la compréhension du besoin utilisateur, la cohérence\nde la solution IA proposée, la qualité de la documentation\nfonctionnelle et la capacité à communiquer clairement le\nprojet.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: Projet",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Titre: RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Compétence: RNCP38587BC04 - Piloter un projet d’intelligence artificielle",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Méthodologie utilisée: Apprentissage par projet (project-based learning) : les étudiants travaillent par groupe sur un cas fil rouge.\nCours + atelier sur le fil rouge à chaque séance : 50% d’apports méthodologiques, 50% de mise en pratique.\nApproche inspirée du Design Thinking, de l’Agilité et des méthodes de product management centrées utilisateur.\nTravail collaboratif, discussions avec feedback régulier",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Méthodologie utilisée",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Crossknowledge: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Références Crossknowledge",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ouvrages de référence: Marty Cagan – Inspired: How to Create Tech Products Customers Love\nTeresa Torres – Continuous Discovery Habits\nYves Pigneur & Alexander Osterwalder – Value Proposition Design",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Ouvrages de référence",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Cyberlibris: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Références Cyberlibris",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Autres références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Autres références",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Outils informatiques: Miro: story mapping,\nTrello: backlog et user stories\nGoogle Slides / Canva : pitch de présentation",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Outils informatiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Programme détaillé: Le cours est découpé en 5 séances de 3 à 4h30 heures, combinant apports théoriques et ateliers pratiques.\nChaque séance traite d’un axe de la conception fonctionnelle d’un produit IA ou Big Data, et permet aux étudiants de progresser sur un\nprojet fil rouge mené en équipe.\nSéance 1 : Introduction & rôle de la conception fonctionnelle\nObjectif : Comprendre ce qu’est la conception fonctionnelle.\nSéance 2 : Cadrage du besoin & cas d’usage\nObjectif : Identifier un problème utilisateur, le comprendre en profondeur et le traduire en besoin fonctionnel.\nSéance 3 : Idéation, story mapping & MVP\nObjectif : Structurer les fonctionnalités du produit autour des besoins identifiés.\nSéance 4 : Estimation, roadmap & user stories\nObjectif : Prioriser, planifier et documenter le fonctionnement du produit.\nSéance 5 : Soutenance finale\nObjectif : Présenter et défendre une solution fonctionnelle claire et réaliste.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Programme détaillé",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

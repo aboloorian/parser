@@ -1,0 +1,88 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "S4 - projet annuel",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "3 à 4",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Libre",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "120,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Sujet libre à valider",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "Réaliser un projet d'intelligence artificielle et big data, complet, depuis la conception jusqu'au livrable. Organiser une équipe projet (3 étudiants) avec un référent fonctionnel pour valider la finalité et l'usage du livrable.",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "Le rapport de projet contient - Descriptif du projet - Veille comparative - Planning de réalisation - Répartition des tâches - Description fonctionnelle - Architecture technique - Limites et perspectives - Témoignage d'usage du référent fonctionnel - Documentation utilisateur",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 0: Définition du sujet - Validation du sujet en séance - Date de rendu: dimanche 06/04/2025 23h00",
+      "page": 2
+    },
+    {
+      "value": "Étape 1: Etape intermédiaire - Proposition fonctionnelle et technique - Date de rendu: dimanche 27/04/2025 23h00",
+      "page": 2
+    },
+    {
+      "value": "Étape 2: Etape intermédiaire - Présentation du prototype - Date de rendu: dimanche 01/06/2025 23h00",
+      "page": 2
+    },
+    {
+      "value": "Étape 3: Etape intermédiaire - Soutenance à blanc - Date de rendu: lundi 23/06/2025 23h00",
+      "page": 2
+    },
+    {
+      "value": "Étape 4: Rendu final - Code + rapport + supports de présentation + documentation si besoin + etc. - Date de rendu: dimanche 13/07/2025 23h00",
+      "page": 2
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "15 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "Publique",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint - Démonstration",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

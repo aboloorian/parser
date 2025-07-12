@@ -1,0 +1,342 @@
+[
+  {
+    "content": "Matière: E3 - découverte de la finops",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Code: N.C",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Cursus: ESGI",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Semestre: Semestre 1",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable du cours: Haoua BA",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Mail du responsable du cours: hba24@myges.fr",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Responsable pédagogique: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Professeur associé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail de l'étudiant: 6,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ects: 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Coef: 2",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Volume: 12,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Contrôle de connaissances: {\"Cas Pratique\":false,\"Contrôle Continu\":false,\"Dossier\":false,\"Dossier Individuel\":false,\"Examen\":false,\"Projet\":false,\"QCM\":false}",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Intitulé: Découverte de la Finops",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Détails du syllabus",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type d'examen: QCM",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée: 1,00 h",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Documents autorisés: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Critères d'évaluation: Sélectionner les axes nécessaires dans le cadre d'un projet Finops\nCompréhension d'un environnement Finops",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Pré-requis: Des notions en architecture logicielle et en gestion de projet. Une compréhension de base de la gestion budgétaire",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Evaluation finale",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectifs pédagogiques: Ce programme a pour objectif de former les étudiants à la gestion des coûts dans le cloud à travers le cadre FinOps.",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Objectifs pédagogiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Séances: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Thèmes: les ressources cloud.\no Apptio Cloudability : Outil d’IA pour la prévision des coûts\net l’optimisation automatisée.\no Anodot : Détection d’anomalies financières en temps réel\nbasée sur l’intelligence\nartificielle.\nPrévision Budgétaire et Automatisation :\no Utilisation des historiques de coûts pour modéliser les\nprévisions budgétaires.\no Automatisation des rapports et intégration dans les outils\nde reporting pour prévoir les\ndépenses futures",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Travail à domicile: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Evaluation: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Contenu détaillé des séances",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Titre: RNCP36296 - Expert en architectures systèmes-réseaux et",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Compétence: RNCP36296BC02 - Manager les projets du système d’",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 3,
+      "titre_section": "Compétences professionnelles à développer ou à acquérir",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Méthodologie utilisée: Alternance de séquences théoriques (1/3) et pratiques (2/3)",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Méthodologie utilisée",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Crossknowledge: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Crossknowledge",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Ouvrages de référence: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Ouvrages de référence",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Références Cyberlibris: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Références Cyberlibris",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Autres références: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 1,
+      "titre_section": "Autres références",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Outils informatiques: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Outils informatiques",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Programme détaillé: ",
+    "metadata": {
+      "titre_document": "Syllabus matière",
+      "numero_page": 2,
+      "titre_section": "Programme détaillé",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

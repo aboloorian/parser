@@ -1,0 +1,1616 @@
+{
+  "meta": {
+    "source": "Cours_spark_complet.pdf",
+    "page_count": 402
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "L'apparition du Big Data"
+    },
+    {
+      "page": 2,
+      "text": "Programme ● Pourquoi le Big Data ? ● Les systèmes distribués ● Map Reduce ● Hadoop 2"
+    },
+    {
+      "page": 3,
+      "text": "La problématique 3"
+    },
+    {
+      "page": 4,
+      "text": "Le déluge de données Nous générons de plus en plus de données: ● Transactions financières ● Événement d'équipement réseaux ● IOT ● Log serveur ● Click Stream (Navigation Web) ● E-mail et formulaire web ● Données issues des réseaux sociaux 4"
+    },
+    {
+      "page": 5,
+      "text": "Le problème 5 Vélocité Variété Volume"
+    },
+    {
+      "page": 6,
+      "text": "Le problème : Volume Finances ● Presque 4 milliards d'actions échangées par jour à la bourse de New York Facebook ● 2013 = 10 To /Jour Twitter ● 400 000 tweets écrits par minute IoT ● Tesla a capturé des informations issues de plus d'1 milliard de km 6 Vélocité Variété Volume"
+    },
+    {
+      "page": 7,
+      "text": "Le problème : Variété Données Structurées ● BDD Données Non Structurées ● Page Web ● Log ● Image ● Vidéo 7 Vélocité Variété Volume"
+    },
+    {
+      "page": 8,
+      "text": "Le problème : Vélocité ● Fréquence de mise à jour ● Temps Réel 8 Vélocité Variété Volume"
+    },
+    {
+      "page": 9,
+      "text": "Les systèmes distribués 9"
+    },
+    {
+      "page": 10,
+      "text": "Croissance verticale & horizontale 10 Croissance verticale ● CPU plus rapide ● Plus de mémoire ● Programmation simple ● Limité par le matériel ● Faible volume Croissance horizontale ● Gros volume ● Plusieurs machines ● Programmation complexe ○ Gestion des crashs ○ Distribution des calculs"
+    },
+    {
+      "page": 11,
+      "text": "Problème & Besoin 11 Besoin ● Facilement scalable ● Tolérant à la panne ● Rentable (hardware peu coûteux) Problème de la donnée ● Traditionnellement centralisé ● Transfert de donnée pour les traitements ● Bande passante réseau limité"
+    },
+    {
+      "page": 12,
+      "text": "Naissance de Hadoop ● GFS (2003) ● MapReduce (2004) ● Hadoop (2006) ○ HDFS ○ Hadoop MapReduce 12"
+    },
+    {
+      "page": 13,
+      "text": "Qu'est-ce que Hadoop ? ● Plateforme de Stockage et de Calcul Distribué ○ Grand volume de donnée de manière résiliente ○ Permet de se concentrer sur les problèmes business et non infra ● Différent cas d'usage possible ○ Extract Transform Load ○ Business Intelligence ○ Stockage ○ Machine Learning ○ ... 13"
+    },
+    {
+      "page": 14,
+      "text": "Hadoop est scalable ● Ajout facile de noeud ● Augmentation de ressource = augmentation de performance ● Gestion des échecs ○ Le système continue de fonctionner ○ La tâche est attribuée à un autre noeud ○ Pas de perte de donnée car réplication 14"
+    },
+    {
+      "page": 15,
+      "text": "Map Reduce 15"
+    },
+    {
+      "page": 16,
+      "text": "Map Reduce ● Modèle de programmation inventé par Google en 2004 ● Utilisé pour paralléliser les calculs sur des systèmes de fichiers distribués ● Map : Projection (Select), Filter (Where) ● Reduce : Aggregation(Group By), Join 16"
+    },
+    {
+      "page": 17,
+      "text": "Combien de cercles et de carrés ? 17 Map Reduce"
+    },
+    {
+      "page": 18,
+      "text": "Partitioning 18 Map Reduce"
+    },
+    {
+      "page": 19,
+      "text": "19 Map Reduce Map Filter"
+    },
+    {
+      "page": 20,
+      "text": "20 Map Reduce Group by 2 5 5 8 5 4"
+    },
+    {
+      "page": 21,
+      "text": "8 5 21 Map Reduce Group by 2 5 5 8 5 4 4"
+    },
+    {
+      "page": 22,
+      "text": "5 2 5 8 5 22 Map Reduce Group by 2 5 5 8 5 4 4"
+    },
+    {
+      "page": 23,
+      "text": "23 Map Reduce Group by 5 2 5 8 5 2 5 5 8 5 4 4 SHUFFLE"
+    },
+    {
+      "page": 24,
+      "text": "24 Map Reduce Group by 5 2 5 2 5 5 8 5 4 8 5 4 17 12"
+    },
+    {
+      "page": 25,
+      "text": "L'écosystème Hadoop 25 HDFS"
+    },
+    {
+      "page": 26,
+      "text": "HDFS = Hadoop Distributed File System ● Comme un système de fichier classique ● Distribué ● Haute disponibilité ● Résilience Utilisation & Limitation ● Gros fichier (bloc de 128 Mo) ● Pas de modification des fichiers (append accepté) ● Optimisé pour la lecture séquentielle de fichier 26"
+    },
+    {
+      "page": 27,
+      "text": "27 HDFS : Exemple Datanode Datanode Datanode Datanode"
+    },
+    {
+      "page": 28,
+      "text": "28 HDFS : Exemple Datanode Datanode Datanode Datanode 1 2 3 4"
+    },
+    {
+      "page": 29,
+      "text": "29 HDFS : Exemple Datanode Datanode Datanode Datanode 1 2 3 4 1"
+    },
+    {
+      "page": 30,
+      "text": "30 HDFS : Exemple Datanode Datanode Datanode Datanode 1 2 3 4 1 1"
+    },
+    {
+      "page": 31,
+      "text": "31 HDFS : Exemple Datanode Datanode Datanode Datanode 1 2 3 4 1 1 1"
+    },
+    {
+      "page": 32,
+      "text": "32 HDFS : Exemple Datanode Datanode Datanode Datanode 1 1 1 2 2 2 1 2 3 4"
+    },
+    {
+      "page": 33,
+      "text": "33 HDFS : Exemple Datanode Datanode Datanode Datanode 1 1 1 2 2 2 4 3 3 4 4 3 1 2 3 4"
+    },
+    {
+      "page": 34,
+      "text": "34 HDFS : Exemple Datanode Datanode Datanode Datanode 1 1 1 2 2 2 4 3 3 4 4 3 1 2 3 4"
+    },
+    {
+      "page": 35,
+      "text": "Formats de fichiers ● Texte (csv, json) ○ Lent ○ Compatible ● Avro ○ Binaire ○ Schéma ○ Streaming 35"
+    },
+    {
+      "page": 36,
+      "text": "L'écosystème Hadoop 36 Hive"
+    },
+    {
+      "page": 37,
+      "text": "Hive ● Vue SQL sur les fichiers du HDFS ● Data Warehouse ● HiveQL ~= SQL ● JDBC ● Génère du code Spark ou mapreduce ● Données structurées (Parquet, Avro, ...) ● Pas besoin de programmer (SQL) 37"
+    },
+    {
+      "page": 38,
+      "text": "L'écosystème Hadoop 38 YARN"
+    },
+    {
+      "page": 39,
+      "text": "YARN = Yet Another Resource Negotiator ● Gère la répartition des ressources de calcul ● Conteneur = CPU + RAM ● Queue pour la répartition équitable 39"
+    },
+    {
+      "page": 40,
+      "text": "compute node compute node compute node compute node CPU RAM CPU RAM CPU RAM CPU RAM ct1 ct1 ct2 ct2 ct4 ct4 ct3 ct3 Application 1 40 YARN"
+    },
+    {
+      "page": 41,
+      "text": "compute node compute node compute node compute node CPU RAM CPU RAM CPU RAM CPU RAM ct1 ct1 ct2 ct2 ct4 ct4 ct6 ct6 ct3 ct3 Application 1 Application 2 ct5 ct5 41 YARN"
+    },
+    {
+      "page": 42,
+      "text": "100% 25% Queue 1 Ressource Temps 42 YARN"
+    },
+    {
+      "page": 43,
+      "text": "100% 25% Queue 1 Queue 2 Ressource Temps 43 YARN"
+    },
+    {
+      "page": 44,
+      "text": "100% 25% Queue 1 Queue 2 Ressource Temps 44 YARN"
+    },
+    {
+      "page": 45,
+      "text": "L'écosystème Hadoop 45 SPARK"
+    },
+    {
+      "page": 46,
+      "text": "Spark ● Distribution des calculs (mapreduce) ● Moteur de calcul générique ○ Spark SQL ○ Spark Streaming ○ Spark ML ● Garde les résultats intermédiaires en mémoire ● Gestion des pannes ● Scala, Python ● Gère la colocalisation, données et calcul 46"
+    },
+    {
+      "page": 47,
+      "text": "Spark + YARN + HDFS 1. HDFS stocke les données 47 compute node + data node CPU RAM HDFS compute node + data node CPU RAM A3 HDFS compute node + data node CPU RAM A1 - A2 HDFS"
+    },
+    {
+      "page": 48,
+      "text": "Spark + YARN + HDFS 1. HDFS stocke les données 2. YARN alloue les ressources à spark (où se trouve la donnée) 48 compute node + data node CPU RAM HDFS compute node + data node CPU RAM ct3 ct3 A3 HDFS compute node + data node CPU RAM ct2 ct2 ct1 ct1 A1 - A2 HDFS"
+    },
+    {
+      "page": 49,
+      "text": "Spark + YARN + HDFS 1. HDFS stocke les données 2. YARN alloue les ressources à spark (où se trouve la donnée) 3. Spark effectue des calculs 49 compute node + data node CPU RAM HDFS compute node + data node CPU RAM ct3 ct3 A3 HDFS compute node + data node CPU RAM ct2 ct2 ct1 ct1 A1 - A2 HDFS"
+    },
+    {
+      "page": 50,
+      "text": "Spark + YARN + HDFS 1. HDFS stocke les données 2. YARN alloue les ressources à spark (où se trouve la donnée) 3. Spark effectue des calculs 4. Spark stocke les résultats sur HDFS 50 compute node + data node CPU RAM HDFS compute node + data node CPU RAM ct3 ct3 A3 B4 - B5 HDFS compute node + data node CPU RAM ct2 ct2 ct1 ct1 A1 - A2 B1 B2 - B3 HDFS"
+    },
+    {
+      "page": 51,
+      "text": "Spark + YARN + HDFS 1. HDFS stocke les données 2. YARN alloue les ressources à spark (où se trouve la donnée) 3. Spark effectue des calculs 4. Spark stocke les résultats sur HDFS 5. Une fois terminé les ressources sont libérées dans YARN 51 compute node + data node CPU RAM HDFS compute node + data node CPU RAM A3 B4 - B5 HDFS compute node + data node CPU RAM A1 - A2 B1 - B2 - B3 HDFS"
+    },
+    {
+      "page": 52,
+      "text": "Take away ● Croissance exponentielle des volumes de données ● Scaling verticale insuffisant ● Nécessité de créer une nouvelle programmation distribuée ○ Stockage ○ Traitement ● Hadoop ● MapReduce ● Spark 52"
+    },
+    {
+      "page": 53,
+      "text": "Les concepts de base de Spark"
+    },
+    {
+      "page": 54,
+      "text": "Programme de la section ● Partitioning ● Pipelining ● Lineage ● Parallélisme ● Task, Stage et Job ● Optimisation 2"
+    },
+    {
+      "page": 55,
+      "text": "Problématiques ● Traiter des grosses quantités de données ● Le plus rapidement possible ● Sans perdre de données ● Gérer l'augmentation de la charge 3"
+    },
+    {
+      "page": 56,
+      "text": "Le partitioning à la lecture 4"
+    },
+    {
+      "page": 57,
+      "text": "Le partitioning 1 gros fichier Plein de partitions 5"
+    },
+    {
+      "page": 58,
+      "text": "Comment Spark crée ses partitions ? ● Dépend du parallélisme ● Dépend de la taille du fichier ○ < 4 mo : 1 partition tous les 4 mo ○ > 128 mo : 1 partition tous les 128 mo ○ Sinon : autant de partition que de parallélisme spark.sql.files.maxPartitionBytes = 128 mo spark.sql.files.openCostInBytes = 4 mo spark.sql.files.minPartitionNum = spark.default.parallelism 6"
+    },
+    {
+      "page": 59,
+      "text": "Pipelining 7"
+    },
+    {
+      "page": 60,
+      "text": "Pipelining spark.read.csv( \"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 8"
+    },
+    {
+      "page": 61,
+      "text": "Pipelining spark.read.csv( \"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Kelly Mr. James male 34 9"
+    },
+    {
+      "page": 62,
+      "text": "Pipelining spark.read.csv(\"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Kelly Mr. James male 34 Mr. 10"
+    },
+    {
+      "page": 63,
+      "text": "Pipelining spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Kelly Mr. James male 34 Mr. 11"
+    },
+    {
+      "page": 64,
+      "text": "Pipelining spark.read.csv( \"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Conno Miss. Kate female 34 Kelly Mr. James male 34 Mr. 12"
+    },
+    {
+      "page": 65,
+      "text": "Pipelining spark.read.csv(\"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Conno Miss. Kate female 34 Miss. Kelly Mr. James male 34 Mr. 13"
+    },
+    {
+      "page": 66,
+      "text": "Pipelining spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Kelly Mr. James male 34 Mr. 14"
+    },
+    {
+      "page": 67,
+      "text": "Pipelining spark.read.csv( \"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Wirz Mr. Albert male 27 Kelly Mr. James male 34 Mr. 15"
+    },
+    {
+      "page": 68,
+      "text": "Pipelining spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 Kelly Mr. James male 34 Mr. Wirz Mr. Albert male 27 Mr. 16"
+    },
+    {
+      "page": 69,
+      "text": "Comment Spark arrive-t-il à \"pipeliner\" ses traitements ? 17"
+    },
+    {
+      "page": 70,
+      "text": "Programmation Eager et Lazy ● Eager : exécuté dès que l'instruction est atteinte ● Lazy : exécuté dès qu'un résultat est référé ● Dans Spark : ○ Le calcul des schémas est eager ○ Le calcul des transformations sur la données est lazy Spark ne fait aucun traitement (transformation) sur la donnée tant qu'on ne lui demande pas un résultat (action). 18"
+    },
+    {
+      "page": 71,
+      "text": "Les opérations Spark Actions ● collect ● take ● show ● count ● write ● foreach ● … Transformations ● map ● select ● filter ● where ● group by ● join ● with column ● … 19"
+    },
+    {
+      "page": 72,
+      "text": "Exemple spark.read.csv( \"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .show() name,gender,age Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 20"
+    },
+    {
+      "page": 73,
+      "text": "Exemple spark.read.csv( \"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() name,gender,age Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 21 name gender age"
+    },
+    {
+      "page": 74,
+      "text": "Exemple spark.read.csv(\"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() name,gender,age Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 22 name gender age name gender age title"
+    },
+    {
+      "page": 75,
+      "text": "Exemple spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .show() name,gender,age Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 23 name gender age name gender age title name gender age title"
+    },
+    {
+      "page": 76,
+      "text": "Exemple spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .show() name,gender,age Kelly Mr. James,male,34 Connolly Miss. Kate,female,30 Wirz Mr. Albert,male,27 name gender age name gender age title name gender age title name gender age title Kelly Mr. James male 34 Mr. Wirz Mr. Albert male 27 Mr. 24"
+    },
+    {
+      "page": 77,
+      "text": "Comment Spark se souvient-t-il des transformations à appliquer ? 25"
+    },
+    {
+      "page": 78,
+      "text": "Data lineage 26"
+    },
+    {
+      "page": 79,
+      "text": "Définition 27"
+    },
+    {
+      "page": 80,
+      "text": "Le lineage dans Spark df = spark.read.csv(\"data.csv\") .withColumn( \"title\", split(col(\"name\"), \" \")[1]) .filter(col(\"title\") == \"Mr.\") df_agg = df.groupBy(col(\"title\")).count() df_join = df.join(spark.read.csv(\"referential\" ), col(\"title\")) df.count() df_agg.count() df_join.count() 28"
+    },
+    {
+      "page": 81,
+      "text": "Le lineage dans Spark 29 df df_agg df_join RDD_0 RDD_1 RDD_2 RDD_3 RDD_4 RDD_5"
+    },
+    {
+      "page": 82,
+      "text": "Comment Spark traite-t-il ses partitions ? 30"
+    },
+    {
+      "page": 83,
+      "text": "Le parallélisme 31 nb_cpu_per_task nb_executor x nb_cpu_per_executor nb_tasks = RDD Executor 3 Executor 2 Executor 1 RDD_1_0 RDD_1_1 RDD_1_2 ● Les exécuteurs traitent les partitions en parallèle ● Autant de partition en parallèle que de tasks"
+    },
+    {
+      "page": 84,
+      "text": "Le parallélisme 32 nb_cpu_per_task nb_executor x nb_cpu_per_executor nb_tasks = RDD Executor 3 Executor 2 Executor 1 RDD_1_0 RDD_1_1 RDD_1_2 ● Les exécuteurs traitent les partitions en parallèle ● Autant de partition en parallèle que de tasks ● 3 exécuteurs ● 2 CPUs par exécuteurs ● 1 CPU par task ● ?"
+    },
+    {
+      "page": 85,
+      "text": "Le parallélisme ● Les exécuteurs traitent les partitions en parallèle ● Autant de partition en parallèle que de tasks ● 3 exécuteurs ● 2 CPUs par exécuteurs ● 1 CPU par task ● 6 tasks RDD Executor 3 Executor 2 Executor 1 RDD_1_0 RDD_1_1 RDD_1_2 33 nb_cpu_per_task nb_executor x nb_cpu_per_executor nb_tasks ="
+    },
+    {
+      "page": 86,
+      "text": "Task, Stage et Job spark.read.csv(\"data.csv\") \\ Data RDD 34"
+    },
+    {
+      "page": 87,
+      "text": "Task, Stage et Job spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ Data RDD RDD 35"
+    },
+    {
+      "page": 88,
+      "text": "Task, Stage et Job spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ Data RDD RDD RDD 36"
+    },
+    {
+      "page": 89,
+      "text": "Task, Stage et Job spark.read.csv(\"data.csv\") \\ .withColumn(\"title\", \\ split(col(\"name\"), \" \")[1]) \\ .filter(col(\"title\") == \"Mr.\") \\ .groupBy(col(\"title\")) Data RDD RDD RDD RDD 37"
+    },
+    {
+      "page": 90,
+      "text": "Task, Stage et Job spark.read.csv( \"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .groupBy( col(\"title\")) .count() Data RDD RDD RDD RDD RDD 38"
+    },
+    {
+      "page": 91,
+      "text": "STAGE 0 STAGE 1 Task, Stage et Job RDD RDD RDD RDD RDD Shuffle 39"
+    },
+    {
+      "page": 92,
+      "text": "STAGE 0 STAGE 1 Task, Stage et Job RDD RDD RDD RDD RDD TASK TASK TASK TASK TASK Shuffle 40"
+    },
+    {
+      "page": 93,
+      "text": "Task, Stage et Job ● Task : plus petit travail qu'on puisse donner à un exécuteur ● Stage : ensemble de Tasks exécutées en parallèle ● Job : ensemble de Stages résultant d'une action 41"
+    },
+    {
+      "page": 94,
+      "text": "Optimisations ● Une task est composée de plusieurs transformations ● Ces transformations sont lazy ● Spark optimise la séquence de transformation avant de l'exécuter ● Ce composant s'appelle Catalyst Plus de détails au chapitre sur le fonctionnement interne de Spark 42"
+    },
+    {
+      "page": 95,
+      "text": "Take away ● Spark découpe la donnée en partitions ● Les partitions sont traitées en parallèle ● Les transformations sont pipelinées ● Une couche d'optimisation s'ajoute sur les tasks ● Tout est rendu possible parce que Spark est Lazy 43"
+    },
+    {
+      "page": 96,
+      "text": "Ma première application Spark"
+    },
+    {
+      "page": 97,
+      "text": "Programme ● Batch, Streaming ● Créer une application Spark ● Comment traiter la donnée ○ RDD ○ Dataset ○ DataFrame ● Le format parquet ● Les systèmes de stockage 2"
+    },
+    {
+      "page": 98,
+      "text": "Qu'est-ce que Spark ? ● Extract, Transform, Load (ETL) distribué ● Basé sur le paradigme Map Reduce ● Plusieurs API ○ Core ○ SQL ○ Streaming ○ ML ○ Graph 3 Spark SQL Spark Streaming MLlib (machine learning) GraphX (graph)"
+    },
+    {
+      "page": 99,
+      "text": "Qu'est-ce que Spark ? ● Extract, Transform, Load (ETL) distribué ● Basé sur le paradigme Map Reduce ● Plusieurs API ○ Core ○ SQL ○ Streaming ○ ML ○ Graph 4 Spark SQL Spark Streaming MLlib (machine learning) GraphX (graph)"
+    },
+    {
+      "page": 100,
+      "text": "Batch vs Streaming Batch ● 1 gros fichier arrive chaque jour ● Je lance un job batch ● Toute la donnée est traitée d'un coup ● Je sauvegarde dans un fichier ● Fin du job Streaming ● Un job stream tourne ● Des événements arrivent en continu ● Chaque événement est traité unitairement par le job ● Je sauvegarde au fur et à mesure mes résultats ● Le job ne s'arrête jamais 5"
+    },
+    {
+      "page": 101,
+      "text": "Créer un job Spark 6"
+    },
+    {
+      "page": 102,
+      "text": "Créer un job Spark from pyspark.sql import SparkSession def main(): spark = SparkSession.builder.getOrCreate() 7"
+    },
+    {
+      "page": 103,
+      "text": "Créer un job Spark from pyspark.sql import SparkSession def main(): spark = SparkSession.builder \\ .appName(\"first job\") \\ .master(\"local[*]\") \\ .getOrCreate() 8"
+    },
+    {
+      "page": 104,
+      "text": "Le SparkSession ● Nommer l'application ● Définir un master ○ Qui gère les ressources de mon application ? ● GetOrCreate ○ On ne peut créer qu'un seul SparkSession ○ Évite les doublons 9"
+    },
+    {
+      "page": 105,
+      "text": "Comment traiter la donnée ? 10"
+    },
+    {
+      "page": 106,
+      "text": "RDD ● RDD = Resilient Distributed Dataset ● Spark Core ● Fonctionne comme une liste… ● …Sauf qu'un map dessus est exécuté en distribué ● Pas de schéma L'API RDD n'est plus utilisée par les développeurs mais reste le composant de base de Spark. 11"
+    },
+    {
+      "page": 107,
+      "text": "Dataset ● RDD + un schéma ● Spark SQL ● N'existe qu'en Scala ● Prend un type parameter ○ Dataset[A] ● Est immutable ● Optimise les traitements 12"
+    },
+    {
+      "page": 108,
+      "text": "DataFrame ● Sous type de Dataset ○ En Scala : Dataset[Row] ○ En Python : seul type de Dataset utilisable ● Ré-implémente tous les mots clés du SQL ● Compatible SQL directement ● Est immutable 13"
+    },
+    {
+      "page": 109,
+      "text": "RDD vs DataFrame vs Dataset 14"
+    },
+    {
+      "page": 110,
+      "text": "Dataset en Scala : DataFrame en Python ou Scala : Dataset vs DataFrame spark.read.csv(\"data.csv\").as[Person] .map(person => person.copy(title = person.name.split(\" \")(1))) .filter(person => person.title == \"Mr.\") .write.csv(\"output\") spark.read.csv(\"data.csv\") .withColumn(\"title\", split(col(\"name\"), \" \")[1]) \\ .where(col(\"title\") == \"Mr.\") \\ .write.csv(\"output\") 15"
+    },
+    {
+      "page": 111,
+      "text": "Lire de la donnée ● Depuis le SparkSession ● spark.read ○ csv ○ json ○ parquet ○ textFile ○ jdbc ○ table ● Beaucoup d'options pour configurer ○ spark.read.option(\"header\", \"true\").option(\"delimiter\", \";\").csv(\"data.csv\") 16"
+    },
+    {
+      "page": 112,
+      "text": "Écrire de la donnée ● Depuis un objet Dataset ● df.write ○ csv ○ json ○ parquet ○ jdbc ○ table ● Possibilité de partitionner par valeur de colonne ○ df.write.partitionBy(\"title\").csv(\"output\") ● Plusieurs modes d'écritures ○ Overwrite ○ Append ○ … 17"
+    },
+    {
+      "page": 113,
+      "text": "Partitionner ses fichiers ● Extrêmement important ● Optimise la lecture d'une source ● À conceptualiser en fonction du besoin ○ Année / mois / jours / heure ○ Région / département / ville ○ … 18"
+    },
+    {
+      "page": 114,
+      "text": "Quel format de données choisir ? 19"
+    },
+    {
+      "page": 115,
+      "text": "Fichier Parquet ● Open source ● Stockage colonne ● Sérialisé ● Contient des métadonnées 20 ● Conçu pour la performance ○ Données compressés ○ Stockage binaire ○ Lecture rapide ○ \"Predicate push-down\" ■ Lire qu'une partie d'un fichier selon une condition ■ Que sur les données partitionnées"
+    },
+    {
+      "page": 116,
+      "text": "Orienté colonne A B C a1 b1 c1 a2 b2 c2 a3 b3 c3 Logical representation of data Linear storage a1 b1 c1 a2 b2 c2 a3 b3 c3 Columnar storage a1 a2 a3 b1 b2 b3 c1 c2 c3 21"
+    },
+    {
+      "page": 117,
+      "text": "Fichier ORC ● Globalement similaire à Parquet ● Très peu utilisé -> Utilisez du Parquet (le format par défaut pour Apache Spark) 22"
+    },
+    {
+      "page": 118,
+      "text": "Où stocker sa donnée ? 23"
+    },
+    {
+      "page": 119,
+      "text": "Les systèmes de stockages ● HDFS ○ Cluster Hadoop ● Object Storage ○ AWS S3 ○ Google Cloud Storage ○ Azure DataLake Storage Gen 2 ○ Scaleway Object Storage ● Autre ○ Base SQL ○ DynamoDB ○ … À voir selon les besoins… 24"
+    },
+    {
+      "page": 120,
+      "text": "Choisir son connecteur Store Connector Rename Performance Amazon S3 s3a O(data) (COPY+DELETE) Scaleway Object Storage s3a O(data) (COPY+DELETE) Azure Storage wasb O(files in directory) Azure Datalake Gen 2 abfs O(1) Google GCS gs O(1) HDFS hdfs O(1) 25"
+    },
+    {
+      "page": 121,
+      "text": "Comment est implémenté l'écriture de fichier 26"
+    },
+    {
+      "page": 122,
+      "text": "Écriture des données : Comportement par défaut 27 ● Algorithme commit output file v1 ● Écriture dans des fichiers temporaires ○ Safe sur un échec de Task ○ Safe sur un échec de Job"
+    },
+    {
+      "page": 123,
+      "text": "Task Commit 28 Executor Task 1 Task 2 Job Stockage Job Attempt Task Attempt"
+    },
+    {
+      "page": 124,
+      "text": "Task Commit 29 Executor Task 1 Task 2 Job Stockage Job Attempt Task Attempt Part 1 Part 2"
+    },
+    {
+      "page": 125,
+      "text": "Task Commit 30 Executor Task 1 Task 2 Job Stockage Job Attempt Task Attempt Part 2 Part 1"
+    },
+    {
+      "page": 126,
+      "text": "Task Commit 31 Executor Task 1 Task 2 Job Stockage Job Attempt Task Attempt Part 2 Part 1"
+    },
+    {
+      "page": 127,
+      "text": "Task Commit 32 Executor Task 2 Job Stockage Job Attempt Task Attempt Part 1 Part 2"
+    },
+    {
+      "page": 128,
+      "text": "Job Commit 33 Executor Job Stockage Job Attempt Task Attempt Part 1 Part 2"
+    },
+    {
+      "page": 129,
+      "text": "Job Commit 34 Executor Job Stockage Job Attempt Task Attempt Part 1 Part 2"
+    },
+    {
+      "page": 130,
+      "text": "Job Commit 35 Executor Job Stockage Job Attempt Task Attempt Part 2 Part 1"
+    },
+    {
+      "page": 131,
+      "text": "Job Commit 36 Executor Job Stockage Job Attempt Task Attempt Part 1 Part 2"
+    },
+    {
+      "page": 132,
+      "text": "Job Commit 37 Executor Stockage Job Attempt Task Attempt Part 1 Part 2"
+    },
+    {
+      "page": 133,
+      "text": "AWS et Scaleway : attention aux performances ● Spark écrit puis déplace 2 fois la donnée ● AWS et Scaleway sont très peu performants sur ces opérations ● Nécessite de bien configurer son connecteur 38"
+    },
+    {
+      "page": 134,
+      "text": "Take away ● Privilégier Spark pour le traitement batch ● 1 seule SparkSession par application Spark ● Dataset ou DataFrame, on oublie les RDD ● Écrire en Parquet ● Les stockages objets fonctionnent bien avec Spark ● Attention à AWS et Scaleway 39"
+    },
+    {
+      "page": 135,
+      "text": "Transformer sa donnée Les bases"
+    },
+    {
+      "page": 136,
+      "text": "Programme ● Opération Map ● Opération Reduce ● Les fonctions sur colonne ● L'objet Column 2"
+    },
+    {
+      "page": 137,
+      "text": "Les opérations Spark - Rappel Actions ● collect ● take ● show ● count ● write ● foreach ● … Transformations ● map ● select ● filter ● where ● group by ● join ● with column ● … 3"
+    },
+    {
+      "page": 138,
+      "text": "Task, Stage et Job - Rappel 4 spark.read.csv( \"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .groupBy( col(\"title\")) .count() Data RDD RDD RDD RDD RDD"
+    },
+    {
+      "page": 139,
+      "text": "Task, Stage et Job - Rappel 5 spark.read.csv( \"data.csv\") \\ .withColumn( \"title\", \\ split(col( \"name\"), \" \")[1]) \\ .filter(col( \"title\") == \"Mr.\") \\ .groupBy( col(\"title\")) .count() Data RDD RDD RDD RDD RDD Shuffle"
+    },
+    {
+      "page": 140,
+      "text": "Map, Reduce Map ● withColumn ● withColumnRenamed ● select ● filter / where ● drop Reduce ● groupBy ● join ● orderBy / sort 6"
+    },
+    {
+      "page": 141,
+      "text": "Les fonctions sur colonne ● Prend une colonne ● Retourne une colonne ● Créer une nouvelle colonne à partir d'une autre 7"
+    },
+    {
+      "page": 142,
+      "text": "Map 8"
+    },
+    {
+      "page": 143,
+      "text": "Map - withColumn ● Ajoute une colonne ● Très utilisé ● Très pratique df.withColumn( \"title\", split(col(\"name\"), \" \")[1]) name gender age Kelly Mr. James male 34 name gender age title Kelly Mr. James male 34 Mr. 9"
+    },
+    {
+      "page": 144,
+      "text": "Map - withColumns ● Depuis Spark 3.3.0 ● Prend en paramètre une Map ○ Map[String, Column] ● Applique plusieurs withColumn à la fois 10"
+    },
+    {
+      "page": 145,
+      "text": "Map - withColumnRenamed ● Renomme une colonne ● Peu utilisé ● Il existe plus pratique ○ Méthode de colonne df.withColumnRenamed( \"title\", \"titre\") name gender age titre Kelly Mr. James male 34 Mr. name gender age title Kelly Mr. James male 34 Mr. 11"
+    },
+    {
+      "page": 146,
+      "text": "Map - select ● Sélectionne des colonnes ● Très utilisé ● Fonctionne comme en SQL df.select(\"name\", \"title\") name title Kelly Mr. James Mr. name gender age title Kelly Mr. James male 34 Mr. 12"
+    },
+    {
+      "page": 147,
+      "text": "Map - select ● Sélectionne des colonnes ● Très utilisé ● Fonctionne comme en SQL ● Peut ajouter des colonnes ● Il faut renommer la colonne df.select(col(\"name\"), col(\"gender\"), col(\"age\"), split(col(\"name\"), \" \")[1]) name gender age Kelly Mr. James male 34 name gender age split(name, , -1)[1] Kelly Mr. James male 34 Mr. 13"
+    },
+    {
+      "page": 148,
+      "text": "Map - filter / where ● Supprime des lignes ● Très utilisé ● Fonctionne comme en SQL df.where(col(\"title\") == \"Mr.\") name gender age title Kelly Mr. James male 34 Mr. Nolly Miss. Kate Female 30 Miss. name gender age title Kelly Mr. James male 34 Mr. 14"
+    },
+    {
+      "page": 149,
+      "text": "Map - drop ● Supprime des colonnes ● Pratique dans certains cas ● Tout garder sauf 1 ou 2 colonnes ● Fréquent après un join name gender age title Kelly Mr. James male 34 Mr. df.drop(\"title\") name gender age Kelly Mr. James male 34 15"
+    },
+    {
+      "page": 150,
+      "text": "Reduce 16"
+    },
+    {
+      "page": 151,
+      "text": "Reduce - groupBy ● Regroupe selon une clé ● Très utilisé ● Fonctionne comme en SQL df.groupBy(col(\"title\") ) .count() name gender age title Kelly Mr. James male 34 Mr. … … … … title count Mr. 1938 Miss. 4329 17"
+    },
+    {
+      "page": 152,
+      "text": "Reduce - join ● Fusionne selon une clé ● Très utilisé ● Fonctionne comme en SQL ○ inner (défaut) ○ left ○ outer ○ right ○ … df.join(spark.read.csv(\"referential\" ), \"title\") 18"
+    },
+    {
+      "page": 153,
+      "text": "Reduce - orderBy / sort ● Trie les données ● Fonctionne comme en SQL df.sort(\"title\") 19"
+    },
+    {
+      "page": 154,
+      "text": "Les fonctions sur colonne 20"
+    },
+    {
+      "page": 155,
+      "text": "Les fonctions sur colonne ● Scala : org.apache.spark.sql.functions._ ● Python : pyspark.sql.functions ● Permet de créer une nouvelle colonne 21"
+    },
+    {
+      "page": 156,
+      "text": "Les différents types de fonctions ● Fonction d'agrégation ● Fonction de collection ● Fonction de date / time ● Fonction mathématiques ● Fonction divers ● Fonction de non agrégation ● Fonction de transformation en partition ● Fonction de tri ● Fonction de chaine de caractère ● Fonction UDF ● Fonction Window 22"
+    },
+    {
+      "page": 157,
+      "text": "Fonction de non agrégation 23"
+    },
+    {
+      "page": 158,
+      "text": "Fonction de non agrégation ● col / column ● lit ● when & otherwise 24"
+    },
+    {
+      "page": 159,
+      "text": "Fonction de non agrégation - col / column ● La plus simple ● La plus utilisée ● Récupère une colonne par son nom df.select(col(\"title\") ) name gender age title Kelly Mr. James male 34 Mr. Nolly Miss. Kate Female 30 Miss. title Mr. Miss. 25"
+    },
+    {
+      "page": 160,
+      "text": "Fonction de non agrégation - lit ● Crée une colonne ● Avec une valeur fixe df.withColumn(\"lit\", lit(10)) name gender age Kelly Mr. James male 34 Nolly Miss. Kate female 30 name gender age lit Kelly Mr. James male 34 10 Nolly Miss. Kate female 30 10 26"
+    },
+    {
+      "page": 161,
+      "text": "Fonction de non agrégation - when & otherwise ● Crée une colonne ● Avec une condition sur le résultat ● Peut être chaîné ○ when().when().when()... ● Si pas de otherwise, return null df.withColumn( \"flag\", when(col(\"gender\") == \"male\", 1).otherwise(0)) name gender age Kelly Mr. James male 34 Nolly Miss. Kate Female 30 name gender age flag Kelly Mr. James male 34 1 Nolly Miss. Kate Female 30 0 27"
+    },
+    {
+      "page": 162,
+      "text": "Fonction de chaine de caractère 28"
+    },
+    {
+      "page": 163,
+      "text": "Fonction de chaine de caractère ● Les plus utilisées ○ length ○ lower / upper ○ split ○ substring ● S'applique uniquement sur des colonnes de type String ● Crée une nouvelle colonne ○ Pas forcément de type String (Split return un Array) 29"
+    },
+    {
+      "page": 164,
+      "text": "Fonction de date / time 30"
+    },
+    {
+      "page": 165,
+      "text": "Fonction de date / time ● Comme les fonctions de String mais sur des Date / Time ● Quelques exemples ○ current_timestamp / current_date ○ to_date / to_timestamp ○ dayofweek / dayofmonth / dayofyear ● Astuce : diviser la date en 3 colonnes ○ Pour partitionner year / month / day 31"
+    },
+    {
+      "page": 166,
+      "text": "Fonction de collection 32"
+    },
+    {
+      "page": 167,
+      "text": "Fonction de collection ● Les collections ○ array ○ array d'array ○ map ○ json ● Exemples : ○ array_contains ○ array_sort ○ explode 33"
+    },
+    {
+      "page": 168,
+      "text": "Fonction de collection - array_contains ● Crée une colonne ● Retourne true, false ou null ● Peut être utilisé dans un when ○ when(array_contains(), 1) ○ null équivaut à false df.withColumn( \"contains_titi\" , array_contains(col(\"list\"), \"titi\")) list [\"tata\", \"titi\", \"toto\" ] null list contains_titi [\"tata\", \"titi\", \"toto\" ] true null null 34"
+    },
+    {
+      "page": 169,
+      "text": "Fonction de collection - array_sort ● Crée une colonne ● Retourne une nouvelle liste triée df.withColumn( \"sorted\", array_sort(col(\"list\"))) list [\"titi\", \"tata\", \"toto\" ] list sorted [\"titi\", \"tata\", \"toto\" ] [\"tata\", \"titi\", \"toto\"] 35"
+    },
+    {
+      "page": 170,
+      "text": "Fonction de collection - explode ● Duplique une ligne ● Autant de fois qu'il y a d'élément dans la liste ● Souvent on drop la colonne list df.withColumn( \"name\", explode(col(\"list\"))) list [\"titi\", \"tata\", \"toto\" ] list name [\"titi\", \"tata\", \"toto\" ] \"tata\" [\"titi\", \"tata\", \"toto\" ] \"titi\" [\"titi\", \"tata\", \"toto\" ] \"toto\" 36"
+    },
+    {
+      "page": 171,
+      "text": "Fonction d'agrégation 37"
+    },
+    {
+      "page": 172,
+      "text": "Fonction d'agrégation ● S'utilise après un groupBy ● Calcule une valeur à partir d'un groupe ○ avg ○ count ○ collect_set ○ sum ○ … 38"
+    },
+    {
+      "page": 173,
+      "text": "Fonction d'agrégation - count ● Applique une seule agrégation ● Sans distinction de colonne df.groupBy( col(\"title\")).count( ) name gender age title Kelly Mr. James male 34 Mr. … … … … title count Mr. 1938 Miss. 4329 39"
+    },
+    {
+      "page": 174,
+      "text": "Fonction d'agrégation - avg, collect_set ● Applique plusieurs agrégations ● À des colonnes précises ● Attention aux noms par défaut df.groupBy( col(\"title\")).agg(avg(col(\"age\")), collect_set(col(\"gender\"))) name gender age title Franck Mr. male 30 Mr. Damien Mr. male 40 Mr. … … … ... title avg(age) collect_set(gender) Mr. 35 [male] Miss. 32,55 [female] 40"
+    },
+    {
+      "page": 175,
+      "text": "L'objet Column 41"
+    },
+    {
+      "page": 176,
+      "text": "L'objet Column ● C'est un morceau de schéma ● Possède sa \"recette\" ● Ne contient aucune donnée ● Peut être appliqué à n'importe quelle dataframe ● Rencontre une erreur s'il fait référence à une colonne inexistante 42"
+    },
+    {
+      "page": 177,
+      "text": "Exemple ● my_col créé sans faire référence à une Dataframe ● Dans df_with_title tout se passe bien ● Dans df_without_title ça échoue my_col = when(col(\"title\") == \"Mr.\", 1).otherwise( lit(0)) df_with_title .withColumn( \"flag\", my_col) df_without_title .withColumn( \"flag\", my_col) org.apache.spark.sql.AnalysisException: cannot resolve '`title`' given input columns: [age, gender, name];; 43"
+    },
+    {
+      "page": 178,
+      "text": "Les méthodes de Column ● Quelques doublons avec les fonctions sur colonnes ○ substr et substring ○ when qui permet d'en enchaîner plusieurs ● De quoi vérifier si les valeurs dans la colonne sont nulles ○ isNull ○ isNotNull ● Des fonctions très pratiques de renommage ○ as ○ alias ○ name 44"
+    },
+    {
+      "page": 179,
+      "text": "Les méthodes de Column - isNull / isNotNull df.withColumn( \"flag\", when(col(\"title\").isNull(), 1).otherwise(0)) 45"
+    },
+    {
+      "page": 180,
+      "text": "Les méthodes de Column - as / alias / name df.groupBy( col(\"title\")).agg(avg(col(\"age\")), collect_set(col(\"gender\"))) name gender age title Kelly Mr. James male 34 Mr. … … … … title avg(age) collect_set(gender) Mr. 38,24 [male] Miss. 32,55 [female] 46"
+    },
+    {
+      "page": 181,
+      "text": "Les méthodes de Column - as / alias / name df.groupBy( col(\"title\")).agg(avg(col(\"age\")).alias(\"age_avg\") , collect_set(col(\"gender\")).alias(\"genders\")) name gender age title Kelly Mr. James male 34 Mr. … … … … title age_avg genders Mr. 38,24 [male] Miss. 32,55 [female] 47"
+    },
+    {
+      "page": 182,
+      "text": "Take away ● Les opérations Map / Reduce sont copiés du SQL ● Plusieurs fonctions peuvent faire la même chose ○ when / filter ○ Performances identiques ● Il existe des fonctions sur les colonnes pour les modifier ● L'objet colonne contient quelques fonctions pratiques ● L'objet colonne ne porte pas la donnée ○ Que le schéma 48"
+    },
+    {
+      "page": 183,
+      "text": "À vous de jouer ! 49"
+    },
+    {
+      "page": 184,
+      "text": "Tester son application Spark"
+    },
+    {
+      "page": 185,
+      "text": "Programme ● Créer de la donnée ● Tests unitaires ● Tests d'intégrations ● Optimiser son SparkSession pour les tests 2"
+    },
+    {
+      "page": 186,
+      "text": "Créer de la donnée - en Scala 3"
+    },
+    {
+      "page": 187,
+      "text": "Créer son jeu de données dans le code 4 ● La donnée à côté du test ○ Plus lisible ○ Plus maintenable ● Plus long à écrire ○ Plus optimisé ○ Plus petit ● Chaque test doit avoir son propre jeu de données"
+    },
+    {
+      "page": 188,
+      "text": "La méthode createDataFrame 5 val spark: SparkSession = ... val rdd: RDD[Row] = ... val schema: StructType = ... val dataFrame: DataFrame = spark.createDataFrame(rdd, schema)"
+    },
+    {
+      "page": 189,
+      "text": "La méthode createDataFrame 6 import org.apache.spark.rdd.RDD import org.apache.spark.sql.{DataFrame, Row} import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType} val rdd: RDD[Row] = spark.sparkContext.parallelize( List( Row(\"Turing\", 21), Row(\"Hopper\", 42) ) )"
+    },
+    {
+      "page": 190,
+      "text": "La méthode createDataFrame 7 val rdd: RDD[Row] = ... val schema: StructType = StructType( Array( StructField(\"name\", StringType), StructField(\"age\", IntegerType) ) ) val dataFrame: DataFrame = spark.createDataFrame(rdd, schema) +------+---+ | name|age| +------+---+ |Turing| 21| |Hopper| 42| +------+---+"
+    },
+    {
+      "page": 191,
+      "text": "La méthode createDataFrame ● Très verbeux ● Beaucoup d'étapes intermédiaires ● Peu utilisé 8"
+    },
+    {
+      "page": 192,
+      "text": "La méthode toDF 9 import spark.implicits._ val dataFrame: DataFrame = List( (\"Turing\", 21), (\"Hopper\", 42) ).toDF(\"name\", \"age\") +------+---+ | name|age| +------+---+ |Turing| 21| |Hopper| 42| +------+---+"
+    },
+    {
+      "page": 193,
+      "text": "La méthode toDF avec case class 10 import spark.implicits._ case class Person(name: String, age: Int) val dataFrame: DataFrame = List( Person(\"Turing\", 21), Person(\"Hopper\", 42) ).toDF() +------+---+ | name|age| +------+---+ |Turing| 21| |Hopper| 42| +------+---+"
+    },
+    {
+      "page": 194,
+      "text": "La méthode toDF ● Beaucoup moins verbeux ● Plus proche du Scala natif ● Recommandé ● spark.implicits._ permet d'ajouter la méthode toDF à l'objet List 11"
+    },
+    {
+      "page": 195,
+      "text": "Créer de la donnée - en Python 12"
+    },
+    {
+      "page": 196,
+      "text": "La méthode createDataFrame 13 from pyspark.sql import Row dataFrame = spark.createDataFrame([ Row(name='Turing', age=21), Row(name='Hopper', age=42) ]) +------+---+ | name|age| +------+---+ |Turing| 21| |Hopper| 42| +------+---+ dataFrame = spark.createDataFrame( [ ('Turing', 21), ('Hopper', 42) ], ['name', 'age'] )"
+    },
+    {
+      "page": 197,
+      "text": "Tests unitaires 14"
+    },
+    {
+      "page": 198,
+      "text": "Tests unitaires - Tester une valeur 15 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.{col, max} def getMaxFromColumn(df: DataFrame, columnName: String): Double = { val maxColumnName = s\"${columnName}_max\" df .agg(max(col(columnName)).as(maxColumnName)) .first() .getAs[Double](maxColumnName) }"
+    },
+    {
+      "page": 199,
+      "text": "Tests unitaires - Tester une valeur 16 \"getMaxFromColumn\" should \"return the max value of a given column in a given DataFrame\" in { import spark.implicits._ // Given val df = List(1d, 3d, 4d, 1d).toDF(\"double-col\") // When val actual = getMaxFromColumn(df, \"double-col\") // Then actual shouldBe 4.0 }"
+    },
+    {
+      "page": 200,
+      "text": "Tests unitaires - Tester une valeur 17 package fr.hymaia.training.sparkfordev.testing import org.apache.spark.sql.SparkSession import fr.hymaia.training.sparkfordev.testing.Testing.getMaxFromColumn import org.scalatest.{FlatSpec, Matchers} class TestingTest extends FlatSpec with Matchers { val spark: SparkSession = SparkSession.builder().master(\"local[*]\").getOrCreate() import spark.implicits._ \"getMaxFromColumn\" should \"return the max value of a given column in a given DataFrame\" in { // Given val df = List(1d, 3d, 4d, 1d).toDF(\"double-col\") // When val actual = getMaxFromColumn(df, \"double-col\") // Then actual shouldBe 4.0 } } Full test class example Scala"
+    },
+    {
+      "page": 201,
+      "text": "Tests unitaires - Tester une valeur 18 import unittest from pyspark.sql import SparkSession from pyspark.sql import Row from testing.testing_file import get_max_from_column class SimpleSQLTest(unittest.TestCase): spark = SparkSession.builder.master(\"local[*]\").getOrCreate() def test_should_return_max_value(self): # Given df = self.spark.createDataFrame([Row(doubleCol=1), Row(doubleCol=2)]) # When actual = get_max_from_column(df, \"doubleCol\") # Then self.assertEquals(actual, 2.0) Full test class example Python"
+    },
+    {
+      "page": 202,
+      "text": "Tests unitaires - Tester une valeur ● Besoin d'un SparkSession pour les tests ● Créer sa donnée en input ● Utilisation d'un comparatif classique ○ Scala : shouldBe ○ Python : assertEquals 19"
+    },
+    {
+      "page": 203,
+      "text": "Tests unitaires - Tester un Dataframe 20 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.col val ADULT_AGE = 18 def keepAdults(dataFrame: DataFrame, ageColumnName: String): DataFrame = { dataFrame .filter(col(ageColumnName) >= ADULT_AGE) }"
+    },
+    {
+      "page": 204,
+      "text": "Tests unitaires - Tester un Dataframe 21 import spark.implicits._ \"keepAdults\" should \"return a DataFrame with only people over 18 in it\" in { // Given val df = List( (\"Turing\", 21), (\"Gates\", 12), (\"Hopper\", 42) ).toDF(\"name\", \"age\") // When val actual = keepAdults(df, \"age\")"
+    },
+    {
+      "page": 205,
+      "text": "Tests unitaires - Tester un Dataframe 22 ... // Then val expected = Array( Row(\"Turing\", 21), Row(\"Hopper\", 42) ) actual.collect() should contain theSameElementsAs expected }"
+    },
+    {
+      "page": 206,
+      "text": "Tests unitaires - Tester un Dataframe via un Dataset 23 case class Person(name: String, age: Int) import spark.implicits._ \"keepAdults\" should \"return a DataFrame with only people over 18 in it\" in { // Given val df = List( Person(\"Turing\", 21), Person(\"Gates\", 12), Person(\"Hopper\", 42) ).toDF()"
+    },
+    {
+      "page": 207,
+      "text": "Tests unitaires - Tester un Dataframe via un Dataset 24 ... // When val actual = keepAdults(df, \"age\") // Then val expected = Array( Person(\"Turing\", 21), Person(\"Hopper\", 42) ) actual.as[Person].collect() should contain theSameElementsAs expected }"
+    },
+    {
+      "page": 208,
+      "text": "Tests unitaires - Tester un Dataframe ● Pour utiliser un comparateur scalatest on collect la Dataframe ● On peut utiliser une case class pour tester le schéma 25"
+    },
+    {
+      "page": 209,
+      "text": "Tests unitaires - Comparer directement des Dataframe ● Il existe des bibliothèques pour tester du code Spark ● Développé par Holden Karau ● https://github.com/holdenk/spark-testing-base ● Plusieurs modules ○ SharedSparkContext : Gère un SparkSession partagé à travers vos tests ○ DataFrameSuiteBase : Fournis les comparateurs pour 2 Dataframes ○ DatasetSuiteBase : Fournis les comparateurs pour 2 Datasets ○ … 26"
+    },
+    {
+      "page": 210,
+      "text": "Tests unitaires - Comparer directement des Dataframe 27 libraryDependencies += \"com.holdenkarau\" %% \"spark-testing-base\" % \"3.2.0_1.1.1\" % Test <dependency> <groupId>com.holdenkarau</groupId> <artifactId>spark-testing-base_2.12</artifactId> <version>3.2.0_1.1.1</version> <scope>test</scope> </dependency> build.sbt pom.xml"
+    },
+    {
+      "page": 211,
+      "text": "Tests unitaires - Comparer directement des Dataframe 28 import com.holdenkarau.spark.testing.DataFrameSuiteBase import fr.hymaia.training.sparkfordev.testing.Testing.keepAdults import org.scalatest.{FlatSpec, Matchers} class TestingTestWithSuiteBase extends FlatSpec with Matchers with DataFrameSuiteBase { import spark.implicits._ \"keepAdults\" should \"return a DataFrame with only people over 18 in it\" in { // Given val df = List( Person(\"Turing\", 21), Person(\"Gates\", 12) ).toDF() // When val actual = keepAdults(df, \"age\") // Then val expected = List( Person(\"Turing\", 21) ).toDF() assertDataFrameEquals(actual, expected) } } spark-testing-base library: ● S'utilise comme le reste de Scalatest, par héritage ● Fournit un SparkSession ● assertDataFrameEquals permet de comparer 2 Dataframes ● Messages d'erreur plus précis : ○ Quand le schéma est différent ○ Quand le nombre de ligne est différent ○ Affiche un diff des lignes différentes"
+    },
+    {
+      "page": 212,
+      "text": "Tests unitaires - spark-testing-base python ● Aucune mise à jour depuis plusieurs années ● À oublier ● On restera sur des collect() 29"
+    },
+    {
+      "page": 213,
+      "text": "Tests unitaires - spark-testing-base vs scalatest natif 30 Libraries spark-testing-base Classic mode ✅ Message d'erreur explicit en cas d'échec (schéma, nombre d'éléments…) ❌ Les Dataframes à comparer doivent être dans le même ordre, un sort peut être nécessaire ❌ Le message d'erreur sur 2 collections différentes est moins précis et ne gère pas les schémas ✅ La fonction theSameElementsAs n'a pas besoin d'avoir des collections dans le même ordre"
+    },
+    {
+      "page": 214,
+      "text": "Tests d'intégrations 31"
+    },
+    {
+      "page": 215,
+      "text": "Tests d'intégrations - Définition 32 On appelle test d'intégration un test qui couvre toutes les transformations apportées à la donnée entre la lecture et l'écriture de celle-ci."
+    },
+    {
+      "page": 216,
+      "text": "Nous avons 2 tables people et city Tests d'intégrations - Scénario 33 name age zip Turing 21 10001 Gates 12 10001 Hoper 42 90001 zip city 10001 New York 90001 Los Angeles people city"
+    },
+    {
+      "page": 217,
+      "text": "Tests d'intégrations - Scénario Notre job Spark ne garde que les adultes, ajoute le nom des villes et écrit le résultat que voici : 34 name age zip city Turing 21 10001 New York Hoper 42 90001 Los Angeles"
+    },
+    {
+      "page": 218,
+      "text": "En résumé : Tests d'intégrations - Scénario 35 people city adult adultAndCity keepAdults() joinAdultAndCity() write()"
+    },
+    {
+      "page": 219,
+      "text": "En résumé : Tests d'intégrations - Scénario 36 people city adult adultAndCity keepAdults() joinAdultAndCity() write()"
+    },
+    {
+      "page": 220,
+      "text": "Tests d'intégrations - Fonction keepAdults 37 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.col val ADULT_AGE = 18 def keepAdults(people: DataFrame, ageColumn: String): DataFrame = { people.filter(col(ageColumn) >= ADULT_AGE) }"
+    },
+    {
+      "page": 221,
+      "text": "Tests d'intégrations - Fonction joinAdultAndCity 38 import org.apache.spark.sql.DataFrame def joinAdultAndCity(adult: DataFrame, city: DataFrame, joinColumn: String): DataFrame = { adult.join(city, Seq(joinColumn), \"left\") }"
+    },
+    {
+      "page": 222,
+      "text": "Tests d'intégrations - Fonction joinAndWritePeopleAndCity 39 import org.apache.spark.sql.{DataFrame, SparkSession} def getAdultAndCity(people: DataFrame, city: DataFrame): DataFrame = { val adult = keepAdults(people, \"age\") val adultAndCity = joinAdultAndCity(adult, city, \"zip\") returns adultAndCity }"
+    },
+    {
+      "page": 223,
+      "text": "Tests d'intégrations - Job Spark 40 import org.apache.spark.sql.{DataFrame, SparkSession} def main(args: Array[String]): Unit = { val people: DataFrame = spark.read.csv(\"people\") val city: DataFrame = spark.read.csv(\"city\") val adultAndCity = getAdultAndCity(people, city) adultAndCity.write.parquet(\"people_and_city\") }"
+    },
+    {
+      "page": 224,
+      "text": "Tests d'intégrations - Créer le modèle 41 case class People(name: String, age: Int, zip: String) case class City(zip: String, city: String) case class PeopleAndCity(name: String, age: Int, zip: String, city: String)"
+    },
+    {
+      "page": 225,
+      "text": "Tests d'intégrations - Création du SparkSession 42 val spark: SparkSession = SparkSession .builder() .master(\"local[*]\") .getOrCreate() import spark.implicits._"
+    },
+    {
+      "page": 226,
+      "text": "Tests d'intégrations - Création de la donnée 43 // Given val people = List( People(\"Turing\", 21, \"10001\"), People(\"Gates\", 12, \"10001\"), People(\"Hopper\", 42, \"90001\") ).toDF() val city = List( City(\"10001\", \"New York\"), City(\"90001\", \"Los Angeles\") ).toDF()"
+    },
+    {
+      "page": 227,
+      "text": "Tests d'intégrations - Exécution de la fonction 44 ... // When val actual = getAdultAndCity(people, city) ..."
+    },
+    {
+      "page": 228,
+      "text": "Tests d'intégrations - Vérification des résultats 45 ... // Then val expected = Array( PeopleAndCity(\"Turing\", 21, \"10001\", \"New York\"), PeopleAndCity(\"Hopper\", 42, \"90001\", \"Los Angeles\") ) actual.as[PeopleAndCity].collect() should contain theSameElementsAs expected"
+    },
+    {
+      "page": 229,
+      "text": "Partager son SparkSession 46"
+    },
+    {
+      "page": 230,
+      "text": "Partager son SparkSession 47 ● Créer un SparkSession prend du temps ● Aucun intérêt à en créer 1 par classe de test ● On en crée 1 qu'on partage à tout le monde ○ Concept de spark-testing-base"
+    },
+    {
+      "page": 231,
+      "text": "Partager son SparkSession 48 object SparkSessionProvider { val spark: SparkSession = SparkSession .builder() .appName(\"Test Spark\") .master(\"local[*]\") .getOrCreate() spark.sparkContext.setLogLevel(\"ERROR\") } ● On crée une SparkSession dans un singleton ● On peut changer le niveau de logs ● Des optimisations sont possibles"
+    },
+    {
+      "page": 232,
+      "text": "Partager son SparkSession 49 import fr.hymaia.training.sparkfordev.SparkSessionProvider.spark class MyTest extends FlatSpec with Matchers { import spark.implicits._ \"My test\" should \"...\" in { // The test content } }"
+    },
+    {
+      "page": 233,
+      "text": "Partager son SparkSession - optimisation 50 object SparkSessionProvider { val spark: SparkSession = SparkSession .builder() .appName(\"Test Spark\") .master(\"local[*]\") .conf(\"spark.sql.shuffle.partitions\", 3) .conf(\"spark.sql.adaptive.enabled\", false) .getOrCreate() spark.sparkContext.setLogLevel(\"ERROR\") } ● Peu de données dans les tests ● Shuffle = 200 partitions par défaut ● Beaucoup de partitions vides ● Changer cette configuration pour 3 ● Désactiver l'optimisation Spark"
+    },
+    {
+      "page": 234,
+      "text": "Take away ● Il faut créer son jeu de données dans chaque test ● En Scala, les Datasets facilitent la comparaison avec schéma ● La bibliothèque spark-testing-base apporte des comparateurs spécifiques à Spark ● Il faut partager son SparkSession ● Des optimisations sont possibles pour réduire la durée des tests 51"
+    },
+    {
+      "page": 235,
+      "text": "Le fonctionnement interne de Spark"
+    },
+    {
+      "page": 236,
+      "text": "Programme ● Le cache ● La gestion de la mémoire ● Les jointures distribuées ● Le shuffle 2"
+    },
+    {
+      "page": 237,
+      "text": "Comment éviter de tout recalculer à chaque action ? 3"
+    },
+    {
+      "page": 238,
+      "text": "Le cache ● df.persist() ○ Mémoire vive ○ Disque dure ○ Mixte ● Réutiliser une DataFrame ● C'est une suggestion 4"
+    },
+    {
+      "page": 239,
+      "text": "Options du persist ● MEMORY_ONLY (par défaut) ● MEMORY_AND_DISK ○ Si ça ne rentre pas entièrement en mémoire vive ● MEMORY_ONLY_SER, MEMORY_AND_DISK_SER ○ La sérialisation réduit la taille mais augmente le temps de traitement ● DISK_ONLY ● MEMORY_ONLY_2, MEMORY_AND_DISK_2, etc ○ Réplication de la donnée sur un autre exécuteur 5"
+    },
+    {
+      "page": 240,
+      "text": "Example name town age . name age data.parquet val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") 6"
+    },
+    {
+      "page": 241,
+      "text": "name town age name age data.parquet name age name age age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") myDF.where(\"age >= 35\") myDF.where(\"age < 35\") 7 Example"
+    },
+    {
+      "page": 242,
+      "text": "name town age turing london 21 hopper new york 42 ... ... ... name age turing 21 hopper 42 ... ... data.parquet name age hopper 42 ... ... name age age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") myDF.where(\"age >= 35\").count() myDF.where(\"age < 35\").count() 472876 8 Example"
+    },
+    {
+      "page": 243,
+      "text": "name town age name age data.parquet name age name age age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") myDF.where(\"age >= 35\").count() myDF.where(\"age < 35\").count() 9 Example"
+    },
+    {
+      "page": 244,
+      "text": "Example name town age turing london 21 hopper new york 42 ... ... ... name age turing 21 hopper 42 ... ... data.parquet name age name age turing 21 ... ... age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") myDF.where(\"age >= 35\").count() myDF.where(\"age < 35\").count() 563543 10"
+    },
+    {
+      "page": 245,
+      "text": "name town age name age data.parquet val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") .persist() 11 Example"
+    },
+    {
+      "page": 246,
+      "text": "name town age name age data.parquet name age name age age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") .persist() myDF.where(\"age >= 35\").count() myDF.where(\"age < 35\").count() 12 Example"
+    },
+    {
+      "page": 247,
+      "text": "name town age turing london 21 hopper new york 42 ... ... ... name age turing 21 hopper 42 ... ... data.parquet name age hopper 42 ... ... name age age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") .persist() myDF.where(\"age >= 35\").count() myDF.where(\"age < 35\").count() 472876 13 Example"
+    },
+    {
+      "page": 248,
+      "text": "name town age name age turing 21 hopper 42 ... ... data.parquet name age name age turing 21 ... ... age < 35 age >= 35 val myDF = spark.read.parquet(\"data\") .select(\"name\",\"age\") .persist() myDF.where(\"age >= 35\").count() myDF.where(\"age < 35\").count() 563543 14 Example"
+    },
+    {
+      "page": 249,
+      "text": "Cache : Spark UI 15"
+    },
+    {
+      "page": 250,
+      "text": "Cache : quand l'utiliser ? ● Plus d'une action ● Traitement complexe (read + filter non) ● Peut résoudre des problèmes de plan catalyst 16"
+    },
+    {
+      "page": 251,
+      "text": "Unpersist ? ● df.unpersist() ● C'est une suggestion ● Si vous le faites pas, Spark supprime le cache le moins récemment utilisé ○ LRU (least recently used) ● Pas très important 17"
+    },
+    {
+      "page": 252,
+      "text": "Comment est gérée la mémoire dans Spark ? 18"
+    },
+    {
+      "page": 253,
+      "text": "Executor memory ● spark.executor.memory = 16 Go ● java heap = spark.executor.memory - spark.executor.memoryOverhead ● spark.executor.memoryOverhead = ○ spark.executor.memory x 0.1 ○ Minimum 384 mo 19 java heap : 14.4 Go memoryOverhead : 1.6 Go spark.executor.memory = 16 Go"
+    },
+    {
+      "page": 254,
+      "text": "Spark Memory spark.memory.fracti on (0.75) User Memory 1 - spark.memory.fracti on (0.25) Reserved Memory (300Mo) Storage Memory Execution Memory spark.memory.storageFracti on (0.5) ● Reserved Memory ○ Réservée par Spark et ne peut pas être changée (300 mo) ○ Utilisée pour les objets Java de Spark ● User Memory ○ size = (java heap - reserved memory) * (1-spark.memory.fraction) ○ spark.memory.fraction = 0.75 ○ Utilisée pour les mapPartitions ○ Attention aux OOMs Spark Memory (>=1.6) 20"
+    },
+    {
+      "page": 255,
+      "text": "Spark Memory spark.memory.fracti on (0.75) User Memory 1 - spark.memory.fracti on (0.25) Reserved Memory (300Mo) Storage Memory Execution Memory spark.memory.storageFracti on (0.5) ● Spark Memory ○ size = (java heap - reserved memory) * spark.memory.fraction ○ spark.memory.fraction = 0.75 ○ Storage Memory ■ Données cachées ■ Variable broadcast ○ Execution Memory ■ Hash table ■ Résultat de calcul intermédiaire ■ Peut déborder sur le disque dure Spark Memory (>=1.6) 21"
+    },
+    {
+      "page": 256,
+      "text": "Spark Memory spark.memory.fracti on (0.75) User Memory 1 - spark.memory.fracti on (0.25) Reserved Memory (300Mo) Storage Memory Execution Memory spark.memory.storageFracti on (0.5) ● Spark ne peut pas supprimer un bloc de l'Execution Memory ● Spark peut supprimer un bloc de la Storage Memory (déborde sur disque dure ou suppression) ● Storage et Execution Memory peuvent déborder l'un sur l'autre s'il reste de l'espace libre ● spark.memory.storageFraction (0.5 par défaut) Spark Memory (>=1.6) 22"
+    },
+    {
+      "page": 257,
+      "text": "Comment faire pour avoir 16Go de mémoire pour mes traitements Spark ? 23"
+    },
+    {
+      "page": 258,
+      "text": "24 Exercice ● Java heap : 16.3 Go ● spark.memory.fraction = 0.75 ● spark.memory.storageFraction = 0.5 ● Reserved memory = ? ● User memory = ? ● Spark memory = ? ○ Storage memory = ? ○ Execution memory = ? ● spark.executor.memory = ?"
+    },
+    {
+      "page": 259,
+      "text": "25 Exercice ● Java heap : 16.3 Go ● spark.memory.fraction = 0.75 ● spark.memory.storageFraction = 0.5 ● Reserved memory = 300 mo ● User memory = ? ● Spark memory = ? ○ Storage memory = ? ○ Execution memory = ? ● spark.executor.memory = ?"
+    },
+    {
+      "page": 260,
+      "text": "26 Exercice ● Java heap : 16.3 Go ● spark.memory.fraction = 0.75 ● spark.memory.storageFraction = 0.5 ● Reserved memory = 300 mo ● User memory = 4 Go ● Spark memory = 12 Go ○ Storage memory = ? ○ Execution memory = ? ● spark.executor.memory = ?"
+    },
+    {
+      "page": 261,
+      "text": "27 Exercice ● Java heap : 16.3 Go ● spark.memory.fraction = 0.75 ● spark.memory.storageFraction = 0.5 ● Reserved memory = 300 mo ● User memory = 4 Go ● Spark memory = 12 Go ○ Storage memory = 6 Go ○ Execution memory = 6 Go ● spark.executor.memory = ?"
+    },
+    {
+      "page": 262,
+      "text": "28 Exercice ● Java heap : 16.3 Go ● spark.memory.fraction = 0.75 ● spark.memory.storageFraction = 0.5 ● Reserved memory = 300 mo ● User memory = 4 Go ● Spark memory = 12 Go ○ Storage memory = 6 Go ○ Execution memory = 6 Go ● spark.executor.memory = 18.11 Go"
+    },
+    {
+      "page": 263,
+      "text": "Comment bien configurer ses exécuteurs ? 29"
+    },
+    {
+      "page": 264,
+      "text": "Comment Spark crée ses partitions ? ● Dépend du parallélisme ● Dépend de la taille du fichier ○ < 4 mo : 1 partition tous les 4 mo ○ > 128 mo : 1 partition tous les 128 mo ○ Sinon : autant de partition que de parallélisme spark.sql.files.maxPartitionBytes = 128 mo spark.sql.files.openCostInBytes = 4 mo spark.sql.files.minPartitionNum = spark.default.parallelism 30"
+    },
+    {
+      "page": 265,
+      "text": "La parallélisation des tâches ● Un exécuteur peut traiter plusieurs partitions en parallèle ○ parallélisme = spark.executor.cores / spark.task.cpus ○ Plus le parallélisme est élevé, plus un exécuteur à besoin de mémoire ● Peu d'exécuteurs signifie ○ Moins de données à transférer en cas de broadcast ○ Besoin de plus de ressources pour conserver de bonnes performances 31"
+    },
+    {
+      "page": 266,
+      "text": "Comment Spark fait une jointure ? 32"
+    },
+    {
+      "page": 267,
+      "text": "Le partitionnement des Dataframes ● Spark gère tout seul le nombre de partition d'un Dataframe ○ Selon les règles vues pour la lecture d'un fichier ○ Selon l'opération de reduce exécutée ● Lors d'un shuffle, Spark crée toujours le même nombre de partitions ○ spark.sql.shuffle.partitions = 200 ○ Depuis Spark 3, cette valeur peut changer au cours d'un shuffle 33"
+    },
+    {
+      "page": 268,
+      "text": "Les différents join ● inner (par défaut) ● left ● right ● left_outer ● right_outer ● full_outer ● leftsemi ● leftanti ● crossjoin (cartesian) df1.join(df2, \"column1\") df1.join(df2, Seq(\"column1\")) df1.join(df2, df1(\"column_a1\") === df2(\"column_b1\")) 34"
+    },
+    {
+      "page": 269,
+      "text": "35 large table Les différents join small table Join result table"
+    },
+    {
+      "page": 270,
+      "text": "36 large table large table large table large table large table Les différents join small table large table (A-G) large table (H-N) large table (O-Z) small table (O-Z) small table (H-N) small table (A-G)"
+    },
+    {
+      "page": 271,
+      "text": "Executor 37 large table (A-G) large table (H-N) result table result table large table (O-Z) small table (A-G) large table (A-G) Les différents join small table (O-Z) small table (H-N) small table (A-G) Executor result table small table (H-N) large table (H-N)"
+    },
+    {
+      "page": 272,
+      "text": "Executor Executor 38 large table (A-G) large table (H-N) result table result table large table (O-Z) small table (O-Z) large table (O-Z) Les différents join small table (O-Z) small table (H-N) small table (A-G)"
+    },
+    {
+      "page": 273,
+      "text": "Broadcast Join ● Un join sans shuffle ● Beaucoup plus performant ● Nécessite qu'une des deux Dataframes soit petite ● La petite DataFrame est envoyée à tous les exécuteurs ○ Elle doit pouvoir entrer en mémoire ● spark.sql.autoBroadcastJoinThreshold = 10Mb ● C'est automatique 39"
+    },
+    {
+      "page": 274,
+      "text": "40 large table large table large table large table large table Broadcast Join small table large table large table large table large table large table small table"
+    },
+    {
+      "page": 275,
+      "text": "Executor 41 large table large table large table result table result table large table large table small table large table Broadcast Join Executor result table small table large table small table"
+    },
+    {
+      "page": 276,
+      "text": "Executor 42 large table large table large table result table result table large table large table small table large table Broadcast Join Executor result table small table large table"
+    },
+    {
+      "page": 277,
+      "text": "Executor Executor 43 large table large table large table result table result table large table large table small table large table Broadcast Join"
+    },
+    {
+      "page": 278,
+      "text": "Les variables broadcast ● val broadcastedVariable = spark.sparkContext.broadcast(myVar) ● broadcastedVariable.value() ● .unpersist() ○ Supprime la variable des exécuteurs ● .destroy() ○ Détruit toute trace de la variable ● Peu utile 44"
+    },
+    {
+      "page": 279,
+      "text": "Qu'est-ce qu'on appelle le shuffle ? ● Envoyer les lignes correspondant à la même clé dans le même exécuteur ● La donnée est écrite sur le File System local ○ spark.shuffle.spill ● Spark a différents algorithmes pour résoudre son shuffle ○ Hash shuffle ○ Consolidate hash shuffle ○ Sort shuffle 45"
+    },
+    {
+      "page": 280,
+      "text": "Take away ● Le cache permet de gagner un temps considérable ● Attention à ne pas l'utiliser n'importe comment ● Un exécuteur n'utilise pas toute sa mémoire pour traiter la donnée ● Toutes les jointures ne provoquent pas de shuffle ● Les optimisations de shuffle sont automatiques ○ Catalyst 46"
+    },
+    {
+      "page": 281,
+      "text": "Les opérations de transformations de données avancées"
+    },
+    {
+      "page": 282,
+      "text": "Programme ● UDF ● Task not serializable error ● Window functions 2"
+    },
+    {
+      "page": 283,
+      "text": "User Defined Function ● Permet d'implémenter sa propre fonction sur une colonne ● Fonctionne avec les DataFrames et les Datasets 3"
+    },
+    {
+      "page": 284,
+      "text": "UDF - Exemple Nous souhaitons récupérer le titre présent dans les noms 4 +-----------------------------+ |name | +-----------------------------+ |Allison, Miss. Helen Loraine | |Andrews, Mr. Thomas Jr | |Astor, Col. John Jacob | |Carter, Mrs. Ernest Courtenay| +-----------------------------+"
+    },
+    {
+      "page": 285,
+      "text": "UDF - 1ère méthode ● Définir une fonction extractTitle ● Appeler la fonction udf() dessus ● extractTitleUdf s'invoque comme n'importe quelle autre fonction Spark 5 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.{col, udf} val peopleDF: DataFrame = ... val extractTitle: String => String = _.split(\" \")(1) val extractTitleUdf = udf(extractTitle) peopleDF .withColumn(\"title\", extractTitleUdf(col(\"name\"))) .show(truncate = false) +-----------------------------+-----+ |name |title| +-----------------------------+-----+ |Allison, Miss. Helen Loraine |Miss.| |Andrews, Mr. Thomas Jr |Mr. | |Astor, Col. John Jacob |Col. | |Carter, Mrs. Ernest Courtenay|Mrs. | +-----------------------------+-----+"
+    },
+    {
+      "page": 286,
+      "text": "UDF - 2ème méthode ● Définir une fonction directement la fonction udf() ● Ajouter les types d'entrée / sortie 6 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.{col, udf} val peopleDF: DataFrame = ... val extractTitleUdf = udf[String, String](_.split(\" \")(1)) peopleDF .withColumn(\"title\", extractTitleUdf(col(\"name\"))) .show(truncate = false) +-----------------------------+-----+ |name |title| +-----------------------------+-----+ |Allison, Miss. Helen Loraine |Miss.| |Andrews, Mr. Thomas Jr |Mr. | |Astor, Col. John Jacob |Col. | |Carter, Mrs. Ernest Courtenay|Mrs. | +-----------------------------+-----+"
+    },
+    {
+      "page": 287,
+      "text": "UDF - 3ème méthode ● Créer une méthode explicite ● La syntaxe change un peu dans udf() ● Cette méthode est plus pratique pour les UDFs complexes 7 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.{col, udf} val peopleDF: DataFrame = ... def extractTitle(name: String): String = name.split(\" \")(1) val extractTitleUdf = udf((s: String) => extractTitle(s)) peopleDF .withColumn(\"title\", extractTitleUdf(col(\"name\"))) .show(truncate = false) +-----------------------------+-----+ |name |title| +-----------------------------+-----+ |Allison, Miss. Helen Loraine |Miss.| |Andrews, Mr. Thomas Jr |Mr. | |Astor, Col. John Jacob |Col. | |Carter, Mrs. Ernest Courtenay|Mrs. | +-----------------------------+-----+"
+    },
+    {
+      "page": 288,
+      "text": "UDF - 4ème méthode ● Définir une lambda dans udf() 8 import org.apache.spark.sql.DataFrame import org.apache.spark.sql.functions.{col, udf} val peopleDF: DataFrame = ... val extractTitleUdf = udf((name: String) => name.split(\" \")(1)) peopleDF .withColumn(\"title\", extractTitleUdf(col(\"name\"))) .show(truncate = false) +-----------------------------+-----+ |name |title| +-----------------------------+-----+ |Allison, Miss. Helen Loraine |Miss.| |Andrews, Mr. Thomas Jr |Mr. | |Astor, Col. John Jacob |Col. | |Carter, Mrs. Ernest Courtenay|Mrs. | +-----------------------------+-----+"
+    },
+    {
+      "page": 289,
+      "text": "UDF - Bonnes pratiques ● Les 1ère et 2ème méthodes sont peu utilisées ● La 3ème méthode est la plus pratique pour les TUs ● La 4ème méthode est la plus courte à écrire ● On recommandera la 3ème méthode 9"
+    },
+    {
+      "page": 290,
+      "text": "UDF - Python En Python, il n'y a pas de type, il faut donc les définir explicitement 10 import pyspark.sql.functions as F from pyspark.sql.types import StringType extract_title_udf = F.udf(lambda name: name.split()[1], StringType()) df.withColumn('title', extract_title_udf(df.Name)).show(4) import pyspark.sql.functions as F from pyspark.sql.types import StringType def extract_title(name): return name.split()[1] extract_title_udf = F.udf(extract_title, StringType()) df.withColumn('title', extract_title_udf(df.Name)).show(4)"
+    },
+    {
+      "page": 291,
+      "text": "UDF - Python ● On peut aussi annoter une fonction Python avec @udf 11 import pyspark.sql.functions as F from pyspark.sql.types import StringType @F.udf('string') def extract_title_udf(name): return name.split()[1] df.withColumn('title', extract_title_udf(df.Name)).show(4)"
+    },
+    {
+      "page": 292,
+      "text": "UDF - Le problème avec Python 12 Executor JVM Spark Worker Python UDF Executor Spark Worker Python Python UDF Python UDF Python UDF Driver pipe pipe pipe Py4J SparkContext Main pipe Socket ● Spark est dans le monde Java ● Les UDF sont en Python ● La donnée doit être envoyé depuis la JVM vers un exécuteur Python ● Grosse perte de temps"
+    },
+    {
+      "page": 293,
+      "text": "UDF Take away ● Les UDFs permettent de créer de nouvelles fonctions sur colonne ● Il faut les éviter tant qu'on peut ○ Spark ne peut pas optimiser les UDFs ● Privilégier les fonctions de Spark ● En Python, les performances sont extrêmement dégradés ● Ne faites pas d'UDF en Python 13"
+    },
+    {
+      "page": 294,
+      "text": "User Defined Aggregate Functions 14"
+    },
+    {
+      "page": 295,
+      "text": "UDAF ● Comme pour les UDF mais pour des agrégations ○ groupBy().agg(udaf()) ● N'existe pas en Python ● Exemple : moyenne géométrique 15"
+    },
+    {
+      "page": 296,
+      "text": "UDAF - Implémentation ● Interface UserDefinedAggregationFunction à implémenter ● 8 méthodes ○ inputSchema : StructType qui représenter le schéma de l'entrée ○ bufferSchema : StructType qui représente le schéma des résultats intermédiaires ○ dataType : Type de la valeur à retourner ○ deterministic : Boolean qui indique si le résultat est déterministe ou pas ○ initialize : Valeur de base des buffers ○ update : Fonction qui permet de mettre à jour un buffer ○ merge : Fonction qui permet d'assembler 2 buffers ○ evaluate : Fonction qui calcule le résultat final 16"
+    },
+    {
+      "page": 297,
+      "text": "UDAF - Exécution 17 Partition 1 input initialize() buffer input update() buffer buffer update() merge() buffer output evaluate() Partition 2 input initialize() buffer input update() buffer buffer update()"
+    },
+    {
+      "page": 298,
+      "text": "18 Task not serializable error"
+    },
+    {
+      "page": 299,
+      "text": "19 Task not serializable error ● Quand on implémente une UDF dans une classe, Spark sérialise toute la classe ● Si la classe a un attribut non sérialisable, cela déclenche une erreur ● L'objet SparkContext n'est pas sérialisable et provoque la majorité de ces erreurs"
+    },
+    {
+      "page": 300,
+      "text": "Task not serializable error - Exemple Reprenons l'exemple de notre UDF 20 import org.apache.spark.sql.expressions.UserDefinedFunction import org.apache.spark.sql.functions._ import org.apache.spark.sql.{DataFrame, SparkSession} case class AddTitle(spark: SparkSession) { private def extractTitle(name: String): String = name.split(\" \")(1) private val extractTitleUdf: UserDefinedFunction = udf[String, String](extractTitle) def addTitleColumn(file: String): DataFrame = { spark.read .option(\"header\", \"true\") .csv(file) .withColumn(\"title\", extractTitleUdf(col(\"name\"))) } }"
+    },
+    {
+      "page": 301,
+      "text": "Task not serializable error - Exemple Ici tout fonctionne 21 val file = \"...\" val addTitle = AddTitle(spark) addTitle.addTitleColumn(file).show(truncate = false) +-----------------------------+-----+ |name |title| +-----------------------------+-----+ |Allison, Miss. Helen Loraine |Miss.| |Andrews, Mr. Thomas Jr |Mr. | |Astor, Col. John Jacob |Col. | |Carter, Mrs. Ernest Courtenay|Mrs. | +-----------------------------+-----+"
+    },
+    {
+      "page": 302,
+      "text": "22 Task not serializable error - Exemple ● Maintenant disons qu'on veut logger des informations sur Spark ○ Le nom de l'application ○ L'ID de l'application ○ Le master ● Ces informations sont disponible dans le SparkContext ● Le SparkContext se récupère du SparkSession"
+    },
+    {
+      "page": 303,
+      "text": "Task not serializable error - Exemple 23 case class AddTitle(spark: SparkSession) { val logger: Logger = LoggerFactory.getLogger(this.getClass) val sc: SparkContext = spark.sparkContext logger.info(s\"App Id: ${sc.applicationId}\") logger.info(s\"App Name: ${sc.appName}\") logger.info(s\"Master: ${sc.master}\") private def extractTitle(name: String): String = name.split(\" \")(1) private val extractTitleUdf: UserDefinedFunction = udf[String, String](extractTitle) def addTitleColumn(file: String): DataFrame = { spark.read .option(\"header\", \"true\") .option(\"delimiter\", \";\") .csv(file) .withColumn(\"title\", extractTitleUdf(col(\"name\"))) } }"
+    },
+    {
+      "page": 304,
+      "text": "Task not serializable error - Exemple On lance le code et… 24 val file = \"...\" val addTitle = AddTitle(spark) addTitle.addTitleColumn(file).show(truncate = false)"
+    },
+    {
+      "page": 305,
+      "text": "25 Task not serializable error - Exemple Exception in thread \"main\" org.apache.spark.SparkException: Task not serializable at org.apache.spark.util.ClosureCleaner$.ensureSerializable(ClosureCleaner.scala:403) at org.apache.spark.util.ClosureCleaner$.org$apache$spark$util$ClosureCleaner$$clean(ClosureCleaner.scala:393) [...] Caused by: java.io.NotSerializableException: org.apache.spark.SparkContext Serialization stack: - object not serializable (class: org.apache.spark.SparkContext, value: org.apache.spark.SparkContext@24c7b944) - field (class: fr.hymaia.training.sparkfordev.udf.AddTitle, name: sc, type: class org.apache.spark.SparkContext) - object (class fr.hymaia.training.sparkfordev.udf.AddTitle, AddTitle(org.apache.spark.sql.SparkSession@7eb006bd)) - field (class: fr.hymaia.training.sparkfordev.udf.AddTitle$$anonfun$1, name: $outer, type: class fr.hymaia.training.sparkfordev.udf.AddTitle) - object (class fr.hymaia.training.sparkfordev.udf.AddTitle$$anonfun$1, <function1>) - element of array (index: 3) - array (class [Ljava.lang.Object;, size 4) - field (class: org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$11, name: references$1, type: class [Ljava.lang.Object;) - object (class org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$11, <function2>) at org.apache.spark.serializer.SerializationDebugger$.improveException(SerializationDebugger.scala:40) at org.apache.spark.serializer.JavaSerializationStream.writeObject(JavaSerializer.scala:46) at org.apache.spark.serializer.JavaSerializerInstance.serialize(JavaSerializer.scala:100) at org.apache.spark.util.ClosureCleaner$.ensureSerializable(ClosureCleaner.scala:400) ... 44 more"
+    },
+    {
+      "page": 306,
+      "text": "26 Task not serializable error - Exemple Exception in thread \"main\" org.apache.spark.SparkException: Task not serializable at org.apache.spark.util.ClosureCleaner$.ensureSerializable(ClosureCleaner.scala:403) at org.apache.spark.util.ClosureCleaner$.org$apache$spark$util$ClosureCleaner$$clean(ClosureCleaner.scala:393) [...] Caused by: java.io.NotSerializableException: org.apache.spark.SparkContext Serialization stack: - object not serializable (class: org.apache.spark.SparkContext, value: org.apache.spark.SparkContext@24c7b944) - field (class: fr.hymaia.training.sparkfordev.udf.AddTitle, name: sc, type: class org.apache.spark.SparkContext) - object (class fr.hymaia.training.sparkfordev.udf.AddTitle, AddTitle(org.apache.spark.sql.SparkSession@7eb006bd)) - field (class: fr.hymaia.training.sparkfordev.udf.AddTitle$$anonfun$1, name: $outer, type: class fr.hymaia.training.sparkfordev.udf.AddTitle) - object (class fr.hymaia.training.sparkfordev.udf.AddTitle$$anonfun$1, <function1>) - element of array (index: 3) - array (class [Ljava.lang.Object;, size 4) - field (class: org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$11, name: references$1, type: class [Ljava.lang.Object;) - object (class org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$11, <function2>) at org.apache.spark.serializer.SerializationDebugger$.improveException(SerializationDebugger.scala:40) at org.apache.spark.serializer.JavaSerializationStream.writeObject(JavaSerializer.scala:46) at org.apache.spark.serializer.JavaSerializerInstance.serialize(JavaSerializer.scala:100) at org.apache.spark.util.ClosureCleaner$.ensureSerializable(ClosureCleaner.scala:400) ... 44 more"
+    },
+    {
+      "page": 307,
+      "text": "Task not serializable error - Exemple 27 case class AddTitle(spark: SparkSession) { val logger: Logger = LoggerFactory.getLogger(this.getClass) val sc: SparkContext = spark.sparkContext logger.info(s\"App Id: ${sc.applicationId}\") logger.info(s\"App Name: ${sc.appName}\") logger.info(s\"Master: ${sc.master}\") private def extractTitle(name: String): String = name.split(\" \")(1) private val extractTitleUdf: UserDefinedFunction = udf[String, String](extractTitle) def addTitleColumn(file: String): DataFrame = { spark.read .option(\"header\", \"true\") .option(\"delimiter\", \";\") .csv(file) .withColumn(\"title\", extractTitleUdf(col(\"name\"))) } }"
+    },
+    {
+      "page": 308,
+      "text": "Task not serializable error - Exemple ● L'objet SparkContext est l'origine de l'erreur ● Il faut trouver un moyen de ne pas avoir besoin de sérialiser l'objet 28"
+    },
+    {
+      "page": 309,
+      "text": "Task not serializable error - Solution 29 ... import org.apache.spark.SparkConf case class AddTitle(spark: SparkSession, conf: SparkConf) { val logger: Logger = LoggerFactory.getLogger(this.getClass) logger.info(s\"App Id: ${conf.getAppId}\") logger.info(s\"App Name: ${conf.get(\"spark.app.name\")}\") logger.info(s\"Master: ${conf.get(\"spark.master\")}\") private def extractTitle(name: String): String = name.split(\" \")(1) private val extractTitleUdf: UserDefinedFunction = udf[String, String](extractTitle) def addTitleColumn(file: String): DataFrame = { spark.read .option(\"header\", \"true\") .option(\"delimiter\", \";\") .csv(file) .withColumn(\"title\", extractTitleUdf(col(\"name\"))) } }"
+    },
+    {
+      "page": 310,
+      "text": "Task not serializable error - Solution On lance le code et… 30 val file = \"...\" val addTitle = AddTitle(spark) addTitle.addTitleColumn(file).show(truncate = false)"
+    },
+    {
+      "page": 311,
+      "text": "Task not serializable error - Solution 31 INFO AddTitle: App Id: local-1548691949899 INFO AddTitle: App Name: Advanced Spark INFO AddTitle: Master: local[*] +-----------------------------+-----+ |name |title| +-----------------------------+-----+ |Allison, Miss. Helen Loraine |Miss.| |Andrews, Mr. Thomas Jr |Mr. | |Astor, Col. John Jacob |Col. | |Carter, Mrs. Ernest Courtenay|Mrs. | +-----------------------------+-----+"
+    },
+    {
+      "page": 312,
+      "text": "Take Away ● Les objets non sérialisables les plus communs ○ SparkContext ○ Les class personnalisés (privilégiez les case class) ○ Les class des bibliothèques externes ● SparkSession et SparkConf sont sérialisables ○ Le SparkContext est annoté @transient ○ En Scala, cela signifie qu'il ne doit pas être sérialisé ○ Ce champ devient inaccessible ● Créez vos UDF dans des case class ou des object 32"
+    },
+    {
+      "page": 313,
+      "text": "Window functions 33"
+    },
+    {
+      "page": 314,
+      "text": "Window functions ● Fonctionne comme en SQL ● Permet d'utiliser des fonctions d'agrégations sans agréger un Dataframe 34"
+    },
+    {
+      "page": 315,
+      "text": "Window functions - Exemple Quel est le prix moyen par classe ? 35 ID Class Price 001 1 9 002 2 24 003 2 24 004 1 39 005 2 6 006 1 21"
+    },
+    {
+      "page": 316,
+      "text": "● Quel est le prix moyen par classe ? ○ On peut facilement résoudre ça avec une agrégation Window functions - Exemple 36 ID Class Price 001 1 9 002 2 24 003 2 24 004 1 39 005 2 6 006 1 21 Class Price 1 23.3 2 18"
+    },
+    {
+      "page": 317,
+      "text": "Window functions - Exemple ● Pour chaque article, quelle est la différence entre son prix et la moyenne de prix dans sa classe ? 37 ID Class Price 001 1 9 002 2 24 003 2 24 004 1 39 005 2 6 006 1 21"
+    },
+    {
+      "page": 318,
+      "text": "Window functions - Exemple ● Pour chaque article, quelle est la différence entre son prix et la moyenne de prix dans sa classe ? 38 ID Class Price 001 1 9 002 2 24 003 2 24 004 1 39 005 2 6 006 1 21 ID Class Price Diff 001 1 9 002 2 24 003 2 24 6 004 1 39 005 2 6 006 1 21 Avg class 2 (24+24+6)/3=18"
+    },
+    {
+      "page": 319,
+      "text": "Window functions ● 3 types de Window functions ○ Fonction de classement : rank, dense_rank, percent_rank, ntile, row_number… ○ Fonction d'analytique : cumeDist, lag, lead… ○ Fonction d'agrégation : Toutes celles qu'on a déjà vu ● Les Windows functions peuvent être utilisées en SQL 39"
+    },
+    {
+      "page": 320,
+      "text": "Window functions - Spécifications ● Pour créer une Window function il faut créer une WindowSpec ● Une WindowSpec définie les lignes qui seront dans notre Window ● Il y a trois spécifications que l'on peut remplir : ○ partitionBy : Clé de partitionnement, comme un groupBy ○ orderBy : Utile pour les fonctions de classement ○ rowsBetween / rangeBetween : Définie la taille de la fenêtre par rapport à une ligne 40"
+    },
+    {
+      "page": 321,
+      "text": "Window functions - Over ● L'objet colonne possède une méthode over() ● Cette méthode prend en paramètre une WindowSpec ● Elle applique une Window à une fonction sur colonne 41 // rank compute given a WindowSpec rank().over(windowSpec)"
+    },
+    {
+      "page": 322,
+      "text": "Window functions - Exemple 1 : partitionBy J'ajoute à chaque ligne la moyenne de prix de sa classe 42 val window = Window.partitionBy(\"class\") val avgPriceCol: Column = avg(\"price\").over(window) val dfWithAvg: DataFrame = df .withColumn(\"avg_class_price\", avgPriceCol) dfWithAvg.show() +---+-----+-----+---------------+ | id|class|price|avg_class_price| +---+-----+-----+---------------+ |001| 1| 9| 23.0| |004| 1| 39| 23.0| |006| 1| 21| 23.0| |002| 2| 24| 18.0| |003| 2| 24| 18.0| |005| 2| 6| 18.0| +---+-----+-----+---------------+"
+    },
+    {
+      "page": 323,
+      "text": "Window functions - Exemple 2 : orderBy Pour chaque classe, je trie les lignes par prix et ajoute leur rang 43 val window = Window .partitionBy(\"class\") .orderBy(col(\"price\").desc) val dfWithRank = df .withColumn(\"price_rank\", rank().over(window)) dfWithRank.show() +---+-----+-----+----------+ | id|class|price|price_rank| +---+-----+-----+----------+ |004| 1| 39| 1| |006| 1| 21| 2| |001| 1| 9| 3| |002| 2| 24| 1| |003| 2| 24| 1| |005| 2| 6| 3| +---+-----+-----+----------+"
+    },
+    {
+      "page": 324,
+      "text": "Window functions - Exemple 3 : dense_rank Pour chaque classe, je trie les lignes par prix et ajoute leur rang 44 val window = Window .partitionBy(\"class\") .orderBy(col(\"price\").desc) val dfWithRank = df .withColumn(\"price_rank\", dense_rank().over(window)) dfWithRank.show() +---+-----+-----+----------+ | id|class|price|price_rank| +---+-----+-----+----------+ |004| 1| 39| 1| |006| 1| 21| 2| |001| 1| 9| 3| |002| 2| 24| 1| |003| 2| 24| 1| |005| 2| 6| 2| +---+-----+-----+----------+"
+    },
+    {
+      "page": 325,
+      "text": "Window functions - Exemple 4 : rangeBetween Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus 45 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| | |001| 1| 9| | |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+"
+    },
+    {
+      "page": 326,
+      "text": "Window functions - Exemple 4 : rangeBetween 46 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| | |001| 1| 9| | |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ -4; 16 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 327,
+      "text": "Window functions - Exemple 4 : rangeBetween 47 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| | |001| 1| 9| | |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ -4; 16 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 328,
+      "text": "Window functions - Exemple 4 : rangeBetween 48 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| | |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ -4; 16 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 329,
+      "text": "Window functions - Exemple 4 : rangeBetween 49 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| | |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ -1; 19 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 330,
+      "text": "Window functions - Exemple 4 : rangeBetween 50 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| | |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ -1; 19 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 331,
+      "text": "Window functions - Exemple 4 : rangeBetween 51 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ -1; 19 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 332,
+      "text": "Window functions - Exemple 4 : rangeBetween 52 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ 11; 31 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 333,
+      "text": "Window functions - Exemple 4 : rangeBetween 53 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| | |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ 11; 31 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 334,
+      "text": "Window functions - Exemple 4 : rangeBetween 54 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| 2| |002| 2| 24| | |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ 11; 31 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 335,
+      "text": "Window functions - Exemple 4 : rangeBetween 55 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| 2| |002| 2| 24| 2| |003| 2| 24| | |004| 1| 39| | +---+-----+-----+-----+ [ 14; 34 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 336,
+      "text": "Window functions - Exemple 4 : rangeBetween 56 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| 2| |002| 2| 24| 2| |003| 2| 24| 2| |004| 1| 39| | +---+-----+-----+-----+ [ 14; 34 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 337,
+      "text": "Window functions - Exemple 4 : rangeBetween 57 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| 2| |002| 2| 24| 2| |003| 2| 24| 2| |004| 1| 39| 0| +---+-----+-----+-----+ [ 29; 49 [ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 338,
+      "text": "Window functions - Exemple 4 : rangeBetween 58 val windowRange = Window .orderBy(\"price\") .rangeBetween(-10, 10) // '- 1' because count() includes the current // row and we don't want to count it val countCol = count(\"*\").over(windowRange) - 1 val dfWithCount: DataFrame = df .withColumn(\"count\", countCol) dfWithCount.show() +---+-----+-----+-----+ | id|class|price|count| +---+-----+-----+-----+ |005| 2| 6| 1| |001| 1| 9| 1| |006| 1| 21| 2| |002| 2| 24| 2| |003| 2| 24| 2| |004| 1| 39| 0| +---+-----+-----+-----+ Pour chaque produit, je veux savoir combien de produits coûtent entre 10€ de moins et de plus"
+    },
+    {
+      "page": 339,
+      "text": "Pour chaque quarter, je veux connaitre les dépense totales de l'année passée Window functions - Exemple 5 : rowsBetween 59 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| | |2018| Q2| 21| | |2018| Q3| 32| | |2018| Q4| 45| | |2019| Q1| 13| | |2019| Q2| 64| | |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+"
+    },
+    {
+      "page": 340,
+      "text": "12 Window functions - Exemple 5 : rowsBetween 60 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| | |2018| Q3| 32| | |2018| Q4| 45| | |2019| Q1| 13| | |2019| Q2| 64| | |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 341,
+      "text": "12+21 Window functions - Exemple 5 : rowsBetween 61 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| | |2018| Q4| 45| | |2019| Q1| 13| | |2019| Q2| 64| | |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 342,
+      "text": "12+21+32 Window functions - Exemple 5 : rowsBetween 62 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| | |2019| Q1| 13| | |2019| Q2| 64| | |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 343,
+      "text": "12+21+32+45 Window functions - Exemple 5 : rowsBetween 63 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| 110| |2019| Q1| 13| | |2019| Q2| 64| | |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 344,
+      "text": "21+32+45+13 Window functions - Exemple 5 : rowsBetween 64 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| 110| |2019| Q1| 13| 111| |2019| Q2| 64| | |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 345,
+      "text": "32+45+13+64 Window functions - Exemple 5 : rowsBetween 65 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| 110| |2019| Q1| 13| 111| |2019| Q2| 64| 154| |2019| Q3| 23| | |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 346,
+      "text": "45+13+64+23 Window functions - Exemple 5 : rowsBetween 66 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| 110| |2019| Q1| 13| 111| |2019| Q2| 64| 154| |2019| Q3| 23| 145| |2019| Q4| 13| | +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 347,
+      "text": "13+64+23+13 Window functions - Exemple 5 : rowsBetween 67 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| 110| |2019| Q1| 13| 111| |2019| Q2| 64| 154| |2019| Q3| 23| 145| |2019| Q4| 13| 113| +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 348,
+      "text": "Window functions - Exemple 5 : rowsBetween 68 val windowRows = Window .orderBy(\"year\", \"quarter\") .rowsBetween(-3, 0) val sumColumn = sum(\"expense\").over(windowRows) val dfWithRows = df .withColumn(\"ly_exp\", sumColumn) dfWithRows.show() +----+-------+-------+------+ |year|quarter|expense|ly_exp| +----+-------+-------+------+ |2018| Q1| 12| 12| |2018| Q2| 21| 33| |2018| Q3| 32| 65| |2018| Q4| 45| 110| |2019| Q1| 13| 111| |2019| Q2| 64| 154| |2019| Q3| 23| 145| |2019| Q4| 13| 113| +----+-------+-------+------+ Pour chaque quarter, je veux connaitre les dépense totales de l'année passée"
+    },
+    {
+      "page": 349,
+      "text": "Window functions - Exemple initial 69 val window = Window .partitionBy(\"class\") val avgCol = avg(col(\"price\")).over(window) val diffCol = col(\"price\") - avgCol val dfWithDiff: DataFrame = df .withColumn(\"dif_price_avg\", diffCol) dfWithDiff.show() +---+-----+-----+-------------+ | id|class|price|dif_price_avg| +---+-----+-----+-------------+ |001| 1| 9| -14.0| |004| 1| 39| 16.0| |006| 1| 21| -2.0| |002| 2| 24| 6.0| |003| 2| 24| 6.0| |005| 2| 6| -12.0| +---+-----+-----+-------------+ Pour chaque article, quelle est la différence entre son prix et la moyenne de prix dans sa classe ?"
+    },
+    {
+      "page": 350,
+      "text": "Take away ● Les UDFs permettent de créer nos propre fonctions sur colonne ○ Si possible mieux vaut s'en passer ○ En Scala c'est assez commun ○ En Python il ne faut pas en faire à cause des performances dégradées ● Les UDAF permettent de créer nos propre fonctions d'agrégations sur colonne ● Les Window functions permettent de calculer des agrégations sans groupBy() 70"
+    },
+    {
+      "page": 351,
+      "text": "Déployer un job Spark"
+    },
+    {
+      "page": 352,
+      "text": "Programme ● Packager son application Spark ● Choisir sa plateforme ● Spark-submit ● Configurer son job Spark 2"
+    },
+    {
+      "page": 353,
+      "text": "Comment packager une application Spark ? 3"
+    },
+    {
+      "page": 354,
+      "text": "Rappel - Une application Spark from pyspark.sql import SparkSession def main(): spark = SparkSession.builder.getOrCreate() 4"
+    },
+    {
+      "page": 355,
+      "text": "Packaging Scala - Les dépendances Spark 5 ● Nécessite 2 dépendances ○ spark-core ○ spark-sql ● Si votre application a besoin d'autres dépendances, il faudra créer un fatjar ● Pour créer un fatjar, il faut utiliser un plugin ○ assembly : Maven et SBT ○ shade : Maven ● Les dépendances Spark doivent être notés provided ○ Les dépendances sont très lourdes (plusieurs centaines de mo) ○ Elles seront installées là où vous lancerez votre application"
+    },
+    {
+      "page": 356,
+      "text": "● Deux outils très populaire pour construire une application Scala ○ Maven ○ SBT ● On crée un jar qui servira à lancer notre application Spark Packaging Scala - Les outils de build 6"
+    },
+    {
+      "page": 357,
+      "text": "● Conçu pour Java ● Très mature ● Très populaire ● Syntaxe XML très verbeuse ● Nécessite l'utilisation d'un plugin spécifique pour Scala Packaging Scala - Maven 7"
+    },
+    {
+      "page": 358,
+      "text": "Packaging Scala - Maven 8 <properties> <spark.version>3.3.0</spark.version> <scala.dep.version>2.12</scala.dep.version> </properties> <dependencies> <dependency> <groupId>org.apache.spark</groupId> <artifactId>spark-core_${scala.dep.version}</artifactId> <version>${spark.version}</version> <scope>provided</scope> </dependency> <dependency> <groupId>org.apache.spark</groupId> <artifactId>spark-sql_${scala.dep.version}</artifactId> <version>${spark.version}</version> <scope>provided</scope> </dependency> </dependencies> pom.xml"
+    },
+    {
+      "page": 359,
+      "text": "● Simple Build Tool (renommé en Scala Build Tool) ● Conçu pour Scala ● Syntaxe Scala ● Peu verbeuse ● Assez complexe ● Mature (2008) ● Moins populaire Packaging Scala - SBT 9"
+    },
+    {
+      "page": 360,
+      "text": "Packaging Scala - SBT 10 scalaVersion := \"2.12.8\" val sparkVersion = \"2.4.3\" libraryDependencies += \"org.apache.spark\" %% \"spark-core\" % sparkVersion % \"provided\" libraryDependencies += \"org.apache.spark\" %% \"spark-sql\" % sparkVersion % \"provided\" build.sbt"
+    },
+    {
+      "page": 361,
+      "text": "Packaging Scala 11 sbt clean package sbt mvn clean package Maven"
+    },
+    {
+      "page": 362,
+      "text": "● Poetry crée un wheel et un .tar.gz ○ poetry build ● Spark-submit ne prend que des egg ou des zips ● On oublie Poetry Packaging Python 12"
+    },
+    {
+      "page": 363,
+      "text": "● setuptools permet de créer des eggs (entre autre) ● Il faut créer une structure stricte ○ setup.py à la racine du projet ○ __init__.py dans chaque package ● Le package est créé dans le dossier dist/ à la racine du projet Packaging Python 13 python setup.py bdist_egg"
+    },
+    {
+      "page": 364,
+      "text": "from setuptools import setup, find_packages setup( name=\"HelloWorld\", version=\"0.1\", packages=find_packages(), # Project uses reStructuredText, so ensure that the docutils get # installed or upgraded on the target machine install_requires=[\"docutils>=0.3\"], package_data={ # If any package contains *.txt or *.rst files, include them: \"\": [\"*.txt\", \"*.rst\"], # And include any *.msg files found in the \"hello\" package, too: \"hello\": [\"*.msg\"], }, # metadata to display on PyPI author=\"Me\", author_email=\"me@example.com\", description=\"This is an Example Package\", # could also include long_description, download_url, etc. ) 14 SCREEN"
+    },
+    {
+      "page": 365,
+      "text": "Comment bien choisir sa plateforme ? 15"
+    },
+    {
+      "page": 366,
+      "text": "● Local sur 1 ou plusieurs threads ● Yarn (Hadoop) avec 2 modes ○ client ○ cluster ● Mesos : mais plus personne ne fait ça ● Kubernetes avec 2 modes ○ client ○ cluster Les différents support pour Spark 16"
+    },
+    {
+      "page": 367,
+      "text": "Et le Cloud dans tout ça ? ● AWS ○ EMR (VM) ○ Glue (Serverless) ● GCP ○ Dataproc (VM ou Serverless) ● Azure ○ Databricks (VM) ● Databricks Ce sont tous des services managés Hadoop (Yarn) 17"
+    },
+    {
+      "page": 368,
+      "text": "Qu'est-ce qu'on choisit ? ● Hadoop ○ Beaucoup de services managés dans les 3 gros Cloud Provider ○ Très mature ○ Cher ○ Peut manquer de souplesse (serverless) ● Kubernetes ○ Aucun service managé Spark sur Kubernetes Cloud ○ Peu cher ○ Très compliqué ○ Approche Cloud Native ○ Service managé indépendant : Ocean Spark 18"
+    },
+    {
+      "page": 369,
+      "text": "Qu'est-ce qu'on choisit ? Le plus simple reste le service managé proposé par votre Cloud Provider en serverless si possible 19"
+    },
+    {
+      "page": 370,
+      "text": "Spark-submit 20"
+    },
+    {
+      "page": 371,
+      "text": "Spark-submit ● Binaire fourni par Spark ● Sert à demander des ressources à un resource manager ● Permet de configurer le job Spark 21"
+    },
+    {
+      "page": 372,
+      "text": "Spark-submit - Scala 22 spark-submit --master yarn --deploy-mode cluster \\ --name \"myApp\" --class MyClass MyFatJarFile.jar <args> Scala"
+    },
+    {
+      "page": 373,
+      "text": "Spark-submit - Python 23 spark-submit --master yarn --deploy-mode cluster \\ --py-files my_deps.egg \\ my_app.py first_arg second_arg Python"
+    },
+    {
+      "page": 374,
+      "text": "Spark-submit - Deployment mode 24 Command Comment --master local Local on 1 thread --master local[n] Local on n threads --master local[*] Local on all available threads --master spark://<host>:<port> Spark Standalone --master yarn --deploy-mode client Yarn Client --master yarn --deploy-mode cluster Yarn Cluster --master mesos://<host>:<port> Mesos --master k8s://<host>:<port> --deploy-mode client Kubernetes Client --master k8s://<host>:<port> --deploy-mode cluster Kubernetes Cluster"
+    },
+    {
+      "page": 375,
+      "text": "Spark-submit - Exécution 25"
+    },
+    {
+      "page": 376,
+      "text": "Deploy 26 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker Worker YARN - Cluster mode"
+    },
+    {
+      "page": 377,
+      "text": "Deploy 27 Master Edge Node Worker Worker Worker YARN - Client mode Edge Node Worker YARN - Cluster mode Master Worker Worker Container"
+    },
+    {
+      "page": 378,
+      "text": "Deploy 28 Master Edge Node Worker Worker Worker YARN - Client mode Edge Node Worker YARN - Cluster mode Master Worker Worker Container"
+    },
+    {
+      "page": 379,
+      "text": "Deploy 29 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker Worker YARN - Cluster mode Container Application Master Driver Spark Session"
+    },
+    {
+      "page": 380,
+      "text": "Deploy 30 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker Worker YARN - Cluster mode Driver Spark Session Container Application Master Driver Spark Session"
+    },
+    {
+      "page": 381,
+      "text": "Deploy 31 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker YARN - Cluster mode Driver Spark Session Container Application Master Driver Spark Session Container C. C. C. C. C."
+    },
+    {
+      "page": 382,
+      "text": "Deploy 32 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker YARN - Cluster mode Driver Spark Session Container Application Master Driver Spark Session Container C. C. C. C. C."
+    },
+    {
+      "page": 383,
+      "text": "Deploy 33 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker YARN - Cluster mode Driver Spark Session Container Application Master Driver Spark Session C. Container Container Executor Executor E. C. E. C. E. Container Executor"
+    },
+    {
+      "page": 384,
+      "text": "Deploy 34 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker YARN - Cluster mode Driver Spark Session Container Application Master Driver Spark Session Container C. C. C. C. C."
+    },
+    {
+      "page": 385,
+      "text": "Deploy 35 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker Worker YARN - Cluster mode Driver Spark Session Container Application Master Driver Spark Session"
+    },
+    {
+      "page": 386,
+      "text": "Deploy 36 Master Edge Node Worker Worker Worker YARN - Client mode Master Edge Node Worker Worker Worker YARN - Cluster mode"
+    },
+    {
+      "page": 387,
+      "text": "Configurer son job Spark 37"
+    },
+    {
+      "page": 388,
+      "text": "Configurer son job Spark 38 ● Il existe beaucoup de propriétés à configurer dans Spark ● Les propriétés pour dimensionner les ressources ○ spark.executor.memory ○ spark.executor.cores ○ … ● Les propriétés pour le fonctionnement de Spark ○ spark.sql.shuffle.partitions ○ spark.sql.autoBroadcastJoinThreshold ○ … ● Les arguments du job Spark ○ Arguments du main ○ Variables d'environnements ● 4 possibilités pour les renseigner"
+    },
+    {
+      "page": 389,
+      "text": "Configurer son job Spark - Fichier properties ● Spark en fournit un par défaut déjà entièrement complété ● On peut le surcharger avec notre propre fichier ● Attention celui fournit par Spark est alors ignoré ● Peu pratique 39 ./spark-submit --properties-file=dir/my-properties.conf"
+    },
+    {
+      "page": 390,
+      "text": "Configurer son job Spark - Spark-submit ● Beaucoup de propriétés ont des flags spéciaux ○ --master ○ --name ○ --deploy-mode ● Pour tout le reste il y a mastercard ○ Il y a --conf ● Attention à la commande à rallonge quand on définit trop de propriétés 40 ./spark-submit --conf spark.pyspark.python=/alt/path/to/python"
+    },
+    {
+      "page": 391,
+      "text": "Configurer son job Spark - Dans le code ● On peut configurer notre SparkSession dans le code ● Des fonctions dédiées existent dans le builder ● config() définit n'importe quelle propriété ● Empêche toutes autres modifications des configurations dans le code 41 import org.apache.spark.sql.{DataFrame, SparkSession} val spark: SparkSession = SparkSession.builder() .master(\"local[*]\") .appName(\"my-spark-app\") .config(\"spark.ui.port\", \"5050\") .getOrCreate()"
+    },
+    {
+      "page": 392,
+      "text": "Configurer son job Spark - Ordre de priorité 1. Dans le code 2. Dans le spark-submit 3. Dans le fichier properties personnalisé 4. Dans le fichier properties par défaut de Spark 42"
+    },
+    {
+      "page": 393,
+      "text": "Configurer son job Spark - Bonnes pratiques ● Rien de moderne (approche Cloud Native) ● Chaque service managé a son propre système ○ Infra as Code ○ Environnement ● Sur Kubernetes vous pouvez installer un SparkOperator ○ Permet de versionner sa configuration dans un yaml ○ Permet d'utiliser les environnements 43"
+    },
+    {
+      "page": 394,
+      "text": "AWS Glue 44"
+    },
+    {
+      "page": 395,
+      "text": "AWS Glue - Déployer une configuration Spark 45 ● Script de déploiement ● Code source ● Paramètres de job"
+    },
+    {
+      "page": 396,
+      "text": "AWS Glue - Script de déploiement ● Python ou scalascript ● 5 étapes à réaliser dedans : ○ Créer un SparkSession ○ Créer un GlueContext ○ Créer un job Glue ○ Récupérer les paramètres du job Spark ○ Appeler la fonction d'entrée de son code 46"
+    },
+    {
+      "page": 397,
+      "text": "AWS Glue - Script de déploiement 47 from ... if __name__ == '__main__': spark = SparkSession.builder.getOrCreate() glueContext = GlueContext(spark.sparkContext) job = Job(glueContext) args = getResolvedOptions(sys.argv, [ \"JOB_NAME\", \"PARAM_1\", \"PARAM_2\"]) job.init(args[ 'JOB_NAME'], args) main(spark, args) job.commit()"
+    },
+    {
+      "page": 398,
+      "text": "AWS Glue - code source ● Formats acceptés : ○ jar ○ egg ○ zip ○ wheel ○ tar.gz ● On privilégiera jar, wheel ou tar.gz ● Scala : ○ mvn package ● Python : ○ poetry build 48"
+    },
+    {
+      "page": 399,
+      "text": "AWS Glue - Paramètres de job ● Combien de machines ● Quelle taille ? ● Python ou Scala ? ● Dépendances ● Activation des métriques Spark ● Argument de job Spark ● … 49"
+    },
+    {
+      "page": 400,
+      "text": "AWS Glue - Paramètres de job ● Tout peut / doit se faire en Infra as Code ● L'IaC n'exécute aucun job Spark ● Elle déploie un template de job Spark à exécuter à volonté 50"
+    },
+    {
+      "page": 401,
+      "text": "51 SCREEN"
+    },
+    {
+      "page": 402,
+      "text": "Take away ● En Scala : Maven ou SBT pour construire son application ● En Python : setuptools pour spark-submit, poetry pour AWS Glue ● Les fatjars sont très pratiques pour les dépendances ● Aujourd'hui on a principalement 2 choix pour déployer un job Spark ○ Yarn (Hadoop) avec les services managés ○ Kubernetes, un peu plus manuel ● Faites attention aux configurations Spark dans le code ○ Master en local[*] et vous êtes foutus ● Déployer un job Glue n'exécute pas de job Spark 52"
+    }
+  ]
+}

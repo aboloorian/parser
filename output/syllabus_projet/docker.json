@@ -1,0 +1,76 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "2 à 4",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Libre",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "3,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Liste définie                                          \n                                                                          \n                             Choix de sujet libre                         \n    Par groupes de 3, 4                                                   \n    Choisissez une application que vous savez compiler, packager et installer.\n    Idéalement une application multi-tiers réseau que vous avez réalisée au cours de cette année.\n    Créez le docker-compose et les Dockerfiles pour déployer localement, au minimum :\n    3 containers                                                          \n    1 volume                                                              \n    2 network                                                             \n    Exemples d’applications :                                             \n    WebApp + DB (petclinic, wordpress...)                                 \n    ELK + Nginx (Récupérer les logs Nginx via Logstash et les analyser dans Kibana)\n    Rendu :                                                               \n    Créer une branche exam/prenom_nom                                     \n    Push tous vos fichiers (application, Docker, Docker-compose ...etc) afin que toute personne qui clone le\n    repo puisse lancer le projet.                                         \n    Présentation sous forme de diapositives + démo                        \n    Si besoin, me contacter sur : raab.d@sfeir.com",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "Permettre aux étudiants d'être autonomes dans la conteneurisation des applications qu'ils créent lorsqu'ils travaillent sur des projets, notamment ceux réalisés au cours de cette année (ex : Projet annuel).",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation - Date de rendu: vendredi 30/05/2025 20h00",
+      "page": 2
+    },
+    {
+      "value": "Étape 1: Rendu final - rendu de projet - Date de rendu: samedi 31/05/2025 23h59",
+      "page": 2
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "15 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "A huis clos",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint - Démonstration",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

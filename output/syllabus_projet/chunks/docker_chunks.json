@@ -1,0 +1,112 @@
+[
+  {
+    "content": "Formations: -",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Nombre d'étudiant par groupe: 2 à 4",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Règles de constitution des groupes: Libre",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail estimée par étudiant: 3,00 h",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type de sujet: Liste définie                                          \n                                                                          \n                             Choix de sujet libre                         \n    Par groupes de 3, 4                                                   \n    Choisissez une application que vous savez compiler, packager et installer.\n    Idéalement une application multi-tiers réseau que vous avez réalisée au cours de cette année.\n    Créez le docker-compose et les Dockerfiles pour déployer localement, au minimum :\n    3 containers                                                          \n    1 volume                                                              \n    2 network                                                             \n    Exemples d’applications :                                             \n    WebApp + DB (petclinic, wordpress...)                                 \n    ELK + Nginx (Récupérer les logs Nginx via Logstash et les analyser dans Kibana)\n    Rendu :                                                               \n    Créer une branche exam/prenom_nom                                     \n    Push tous vos fichiers (application, Docker, Docker-compose ...etc) afin que toute personne qui clone le\n    repo puisse lancer le projet.                                         \n    Présentation sous forme de diapositives + démo                        \n    Si besoin, me contacter sur : raab.d@sfeir.com",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "2 Sujet(s) du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...): Permettre aux étudiants d'être autonomes dans la conteneurisation des applications qu'ils créent lorsqu'ils travaillent sur des projets, notamment ceux réalisés au cours de cette année (ex : Projet annuel).",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "3 Détails du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation - Date de rendu: vendredi 30/05/2025 20h00",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "4 Livrables et étapes de suivi",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Étape 1: Rendu final - rendu de projet - Date de rendu: samedi 31/05/2025 23h59",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "4 Livrables et étapes de suivi",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée de présentation par groupe: 15 min",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Audience: A huis clos",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type de présentation: Présentation / PowerPoint - Démonstration",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

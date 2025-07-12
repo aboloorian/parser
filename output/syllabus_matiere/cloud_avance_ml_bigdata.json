@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "source_pdf": "cloud_avance_ml_bigdata.pdf",
+    "parsed_at": "2025-07-12T07:29:02.688698Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 1",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Thibault MALHERBE",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "tmalherbe1@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "20,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "4",
+      "page": 1
+    },
+    "Coef": {
+      "value": "4",
+      "page": 1
+    },
+    "Volume": {
+      "value": "24,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Cloud avancé pour le ML et le Big Data",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Examen",
+      "page": 1
+    },
+    "Durée": {
+      "value": "0,30 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Respect des consignes, contenus des documents demandés, utilisabilité des codes fournis, pertinence\ndes features utilisés, performance du model, bonne présentation du projet et des données",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Apprendre à utiliser des outils de cloud en bonne intelligence, à savoir de manière efficace et en gérant convenablement les différents couts.",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 2
+      },
+      "Thèmes": {
+        "value": "Séances Thèmes Travail à domicile Références Evaluation 1 Présentation du contenu du projet, de la démarche, des séances et des bases de données proposées 2 Qu'est que le cloud? Présentations des cloud, de Azure et des éléments de azures indispensables au projet. Dossier d’architecture technique: Qu’est ce que c’est ? Que mettre dedans ? Quelle forme donner ? 3 Découverte de databricks : Compute Workspace et repos Datas Expériments Workflows Models 4 Mlops, les étapes clées Recueillir les données Explorer les données Préparer les données Entrainer un modèle Evaluer un modèle Stocker le modèle Valider Déployer Monitorer 5 Automl et tuning Automl en général Les grandes offres Automl sur databricks Hyperparameter tuning Aller plus loin avec MLFlow 6 Serving API & kubernetes Une api c’est quoi ? Pourquoi une api en ml ? Solutions d’api Kubernetes ( rappel ) 7 Retour sur les rendus Dernières consignes pour la présentation finale Des questions sur le projet ?",
+        "page": 2
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 2
+      },
+      "Références": {
+        "value": "",
+        "page": 2
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 2
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP38587BC03 - Concevoir et piloter une infrastructure d’",
+        "page": 2
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "Faire un projet de machine learning de l'ingestion de la donnée brute, jusqu'à la mise en place d'une api permettant d'utiliser le modèle\ncréé. Le tout en prenant en compte la notion d'architecture cloud et la notion de couts.",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "",
+    "page": 1
+  },
+  "Outils informatiques": {
+    "value": "",
+    "page": 1
+  },
+  "Programme détaillé": {
+    "value": "",
+    "page": 2
+  }
+}

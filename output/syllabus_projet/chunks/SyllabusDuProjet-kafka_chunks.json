@@ -1,0 +1,132 @@
+[
+  {
+    "content": "Formations: -",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Nombre d'étudiant par groupe: 3 à 5",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Règles de constitution des groupes: Libre",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail estimée par étudiant: 12,00 h",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type de sujet: Liste définie                                          \n                                                                          \n                      Statistiques de trades sur Binance                  \n                                                                          \n                                                                          \n                   Statistiques de vues de film en temps réel            \n                                                                          \n                                                                          \n                                                                          \n         Sujet Libre validé - Vélib - récupération des données sur les velibs",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "2 Sujet(s) du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...): Développer une application effectuant des opérations avancées de traitement sur des topics Kafka avec Kafka Streams",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "3 Détails du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Descriptif détaillé: Mettre en application les notions vues en cours sur la rétention des données et Kafka Streams pour le traitement de ces données.",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "3 Détails du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Outils informatiques à installer: un IDE (IntelliJ, Eclipse, ...), Maven, Poetry, Docker",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "3 Détails du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation - Date de rendu: mercredi 25/06/2025 14h30",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "4 Livrables et étapes de suivi",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Étape 2: Rendu final - Rendu final - Projet complet API + Streams - Date de rendu: jeudi 26/06/2025 23h00",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "4 Livrables et étapes de suivi",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée de présentation par groupe: 15 min",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Audience: A huis clos",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type de présentation: Présentation / PowerPoint - Démonstration",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 2,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

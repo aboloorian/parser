@@ -1,0 +1,122 @@
+[
+  {
+    "content": "Matière liée au projet: 2025-5A-IABD-DRL",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Formations: -",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Nombre d'étudiant par groupe: 3 à 4",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Règles de constitution des groupes: Imposé",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Charge de travail estimée par étudiant: 30,00 h",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "1 Matières, formations et groupes",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type de sujet: Imposé",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "2 Sujet(s) du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Descriptif détaillé: Environnements de départ : - pour tests : Line World - pour tests : Grid World - pour tests : TicTacToe versus Random + 1 au choix parmi : - Farkle (solo ou vs Random ou Heuristique) > https://boardgamearena.com/gamepanel?game=farkle - LuckyNumbers (vs Random ou Heuristique) > https://boardgamearena.com/gamepanel?game=luckynumbers - Pond (versus Random ou Heuristique) > https://boardgamearena.com/gamepanel?game=pond Types d'agents à étudier : - Random - TabularQLearning (quand possible) - DeepQLearning - DoubleDeepQLearning - DoubleDeepQLearningWithExperienceReplay - DoubleDeepQLearningWithPrioritizedExperienceReplay - REINFORCE - REINFORCE with mean baseline - REINFORCE with Baseline Learned by a Critic - PPO A2C style - RandomRollout - Monte Carlo Tree Search (UCT) - Expert Apprentice - Alpha Zero - MuZero - MuZero stochastique Métriques à obtenir (attention métriques pour la policy obtenue, pas pour la policy en mode entrainement) : - Score moyen (pour chaque agent) au bout de 1000 parties d'entrainement - Score moyen (pour chaque agent) au bout de 10 000 parties d'entrainement - Score moyen (pour chaque agent) au bout de 100 000 parties d'entrainement - Score moyen (pour chaque agent) au bout de 1 000 000 parties d'entrainement (si possible) - Score moyen (pour chaque agent) au bout de XXX parties d'entrainement (si possible) - Temps moyen mis pour exécuter un coup Si la partie est de durée variable : - Longueur moyenne (nombre de step) d'une partie au bout de 1000 parties d'entrainement - Longueur moyenne (nombre de step) d'une partie au bout de 10 000 parties d'entrainement - Longueur moyenne (nombre de step) d'une partie au bout de 100 000 parties d'entrainement - Longueur moyenne (nombre de step) d'une partie au bout de 1 000 000 parties d'entrainement (si possible) - Longueur moyenne d'une partie au bout de XXX parties (si possible) Il sera également nécessaire de présenter une interface graphique permettant de regarder jouer chaque agent et également de mettre à disposition un agent 'humain'. Pour chaque environnement et chaque algorithme, les étudiants devront étudier les performances de l'algorithme et retranscrire leur résultats. Les étudiants devront fournir l'intégralité du code leur ayant permis d'obtenir leurs résultats ainsi que les modèles (keras/tensorflow/pytorch/jax/keras_core/burn) entraînés et sauvegardés prêts à être exécutés pour confirmer les résultats présentés. Les étudiants devront présenter ces résultats dans un rapport ainsi qu'une présentation. Dans ces derniers, les étudiants devront faire valoir leur méthodologie de choix d'hyperparamètres, et proposer leur interprétation des résultats obtenus",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 1,
+      "titre_section": "3 Détails du projet",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Étape 1: Etape intermédiaire - 1er Gameplay choisi Implémenté - Simulation de jeu avec joueur random (calculer le nombre de parties / seconde) - Jeu avec Joueur humain + GUI - Proposition de description de l'état du jeu (vecteur d'encoding) - Proposition de description d'une action du jeu (vecteur d'encoding) Rendu : (tout sur MyGES, pas simplement un lien git) > code source > démonstration rapide > documents de spécifications (encoding vectors) - Date de rendu: lundi 07/10/2024 23h59",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 3,
+      "titre_section": "4 Livrables et étapes de suivi",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Étape 3: Rendu final - Soutenance Rendu : (tout sur MyGES, pas simplement un lien git) > code source > démonstration rapide > Readme de reproduction des résulats / lancement démo > Rapport conséquent sur les expérimentations menées / résultats obtenus et observations critiques de ces résultats > documents de résultats (metrics sur les 1 gameplays avec tous les algos) > Slides de présentation utilisés pour la soutenance - Date de rendu: mardi 03/12/2024 10h00",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 3,
+      "titre_section": "4 Livrables et étapes de suivi",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Durée de présentation par groupe: 20 min",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 3,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Audience: A huis clos",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 3,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Type de présentation: Présentation / PowerPoint",
+    "metadata": {
+      "titre_document": "Syllabus projet",
+      "numero_page": 3,
+      "titre_section": "5 Soutenance",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

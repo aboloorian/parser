@@ -1,0 +1,562 @@
+[
+  {
+    "text": "Matière liée au projet : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Formations : -",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Nombre d'étudiant par groupe : 2 à 3",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Règles de constitution des groupes : Libre",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Charge de travail estimée par étudiant : 15,00 h",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de sujet : Sujet libre à valider",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Sujet(s) du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...) : Permettre à l’élève de : • Comprendre les complémentarités entre blockchain et IA • Identifier un cas d’usage pertinent et réaliste • Évaluer ses avantages, ses limites et ses implications techniques, économiques ou éthiques • S’initier à la recherche scientifique appliquée, à l’analyse critique et à la veille technologique",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Descriptif détaillé : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Ouvrages de référence (livres, articles, revues, sites web...) : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Outils informatiques à installer : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Durée de présentation par groupe : 20 min",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Audience : A huis clos",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de présentation : Présentation / PowerPoint - Démonstration",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Précisions : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Matière liée au projet : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Formations : -",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Nombre d'étudiant par groupe : 3 à 5",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Règles de constitution des groupes : Libre",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Charge de travail estimée par étudiant : 12,00 h",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de sujet : Liste définie                                          \n                                                                          \n                      Statistiques de trades sur Binance                  \n                                                                          \n                                                                          \n                   Statistiques de vues de film en temps réel            \n                                                                          \n                                                                          \n                                                                          \n         Sujet Libre validé - Vélib - récupération des données sur les velibs",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Sujet(s) du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...) : Développer une application effectuant des opérations avancées de traitement sur des topics Kafka avec Kafka Streams",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Descriptif détaillé : Mettre en application les notions vues en cours sur la rétention des données et Kafka Streams pour le traitement de ces données.",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Ouvrages de référence (livres, articles, revues, sites web...) : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Outils informatiques à installer : un IDE (IntelliJ, Eclipse, ...), Maven, Poetry, Docker",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Durée de présentation par groupe : 15 min",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Audience : A huis clos",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de présentation : Présentation / PowerPoint - Démonstration",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Précisions : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Matière liée au projet : S4 - projet annuel",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Formations : -",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Nombre d'étudiant par groupe : 3 à 4",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Règles de constitution des groupes : Libre",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Charge de travail estimée par étudiant : 120,00 h",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de sujet : Sujet libre à valider",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Sujet(s) du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...) : Réaliser un projet d'intelligence artificielle et big data, complet, depuis la conception jusqu'au livrable. Organiser une équipe projet (3 étudiants) avec un référent fonctionnel pour valider la finalité et l'usage du livrable.",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Descriptif détaillé : Le rapport de projet contient - Descriptif du projet - Veille comparative - Planning de réalisation - Répartition des tâches - Description fonctionnelle - Architecture technique - Limites et perspectives - Témoignage d'usage du référent fonctionnel - Documentation utilisateur",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Ouvrages de référence (livres, articles, revues, sites web...) : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Outils informatiques à installer : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Durée de présentation par groupe : 15 min",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Audience : Publique",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de présentation : Présentation / PowerPoint - Démonstration",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Précisions : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Matière liée au projet : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Formations : -",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Nombre d'étudiant par groupe : 2 à 4",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Règles de constitution des groupes : Libre",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Charge de travail estimée par étudiant : 3,00 h",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Matières, formations et groupes",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de sujet : Liste définie                                          \n                                                                          \n                             Choix de sujet libre                         \n    Par groupes de 3, 4                                                   \n    Choisissez une application que vous savez compiler, packager et installer.\n    Idéalement une application multi-tiers réseau que vous avez réalisée au cours de cette année.\n    Créez le docker-compose et les Dockerfiles pour déployer localement, au minimum :\n    3 containers                                                          \n    1 volume                                                              \n    2 network                                                             \n    Exemples d’applications :                                             \n    WebApp + DB (petclinic, wordpress...)                                 \n    ELK + Nginx (Récupérer les logs Nginx via Logstash et les analyser dans Kibana)\n    Rendu :                                                               \n    Créer une branche exam/prenom_nom                                     \n    Push tous vos fichiers (application, Docker, Docker-compose ...etc) afin que toute personne qui clone le\n    repo puisse lancer le projet.                                         \n    Présentation sous forme de diapositives + démo                        \n    Si besoin, me contacter sur : raab.d@sfeir.com",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Sujet(s) du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...) : Permettre aux étudiants d'être autonomes dans la conteneurisation des applications qu'ils créent lorsqu'ils travaillent sur des projets, notamment ceux réalisés au cours de cette année (ex : Projet annuel).",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Descriptif détaillé : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 1,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Ouvrages de référence (livres, articles, revues, sites web...) : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Outils informatiques à installer : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Détails du projet",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Durée de présentation par groupe : 15 min",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Audience : A huis clos",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Type de présentation : Présentation / PowerPoint - Démonstration",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "text": "Précisions : ",
+    "metadata": {
+      "type_document": "SyllabusProjet",
+      "section": "Soutenance",
+      "page": 2,
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

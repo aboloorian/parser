@@ -1,0 +1,76 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "2 à 3",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Libre",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "0,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Sujet libre à valider",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "Réaliser un objet connecté avec les composants disponibles en cours",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation",
+      "page": 1
+    },
+    {
+      "value": "Étape 1: Rendu final - Code.ino Vidéo de démo Captures d'écran du dahsboard Photo du montage électronique - Date de rendu: samedi 03/05/2025 17h15",
+      "page": 1
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "5 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "Devant la promotion",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Démonstration",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

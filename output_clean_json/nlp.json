@@ -1,0 +1,72 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "2 à 4",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Libre",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "10,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Sujet libre à valider",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "Elaborer un service reposant sur une intelligence artificielle sur le texte",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "Les étudiants doivent proposer un service d'intelligence artificielle, reposant sur l'un des outils vu en cour. Dans leur projet, ils doivent mettre en avant la démarche itérative : une fois leur 1er outil développé, qu'il soit bien testé avec de nombreux exemples. Que les forces et faiblesses soient discutées avant de proposer des amélioration. Avoir une base de tests pour évaluer le modèle d'I.A.",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation",
+      "page": 1
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "10 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "A huis clos",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "_meta": {
+    "source_pdf": "unsupervised_deep_learning.pdf",
+    "parsed_at": "2025-07-12T07:29:02.615862Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 2",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Nicolas VIDAL",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "nvidal@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "15,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "4",
+      "page": 1
+    },
+    "Coef": {
+      "value": "4",
+      "page": 1
+    },
+    "Volume": {
+      "value": "30,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "2025 - 5A - IABD - Unsupervised Deep Learning",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Projet",
+      "page": 1
+    },
+    "Durée": {
+      "value": "3,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Etudier les algorithmes classiques de réduction de dimension, comprendre leur limites pour ensuite s'ouvrir au Deep Learning Non supervisé",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 2
+      },
+      "Thèmes": {
+        "value": "Séances Thèmes Travail à domicile Références Evaluation 1 0 - Présentation du projet 1 - Rappels sur les k-means 2 Limites des techniques de clustering basé es sur la proximité spatiale dans l'espace de départ 3 Rapprochement entre le clustering et les techniques de réduction de dimension 4 Retours sur la PCA et ses variantes 5 Deep Learning Non supervisé (Autoencoders, stacked Autoencoders) 6 Techniques historiques et pourtant utiles : les cartes autoorganisatrices (Kohonen Maps ...) 7 GAN(s) et Diffusion Models 8 VAE",
+        "page": 2
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 2
+      },
+      "Références": {
+        "value": "",
+        "page": 2
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 2
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [],
+  "Méthodologie utilisée": {
+    "value": "Apprentissage par la pratique et dirigé par l’exemple",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "https://work.caltech.edu/telecourse.html\nhttp://ufldl.stanford.edu/tutorial/unsupervised/\nhttps://www.dropbox.com/s/e38nil1dnl7481q/machine_learning.pdf?dl=0\nhttps://link.springer.com/book/10.1007/978-0-387-84858-7",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "",
+    "page": 1
+  },
+  "Outils informatiques": {
+    "value": "Anaconda/Python et/ou https://colab.research.google.com/",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "0 - Présentation du projet\n1 - Rappels sur les k-means\n2 - Limites des techniques de clustering basées sur la proximité spatiale dans l'espace de départ\n3 - Rapprochement entre le clustering et les techniques de réduction de dimension\n4 - Retours sur la PCA et ses variantes\n5 - Deep Learning Non supervisé (Autoencoders, stacked Autoencoders)\n6 - Techniques historiques et pourtant utiles : les cartes autoorganisatrices (Kohonen Maps ...)\n7 - GAN(s) et Diffusion Models\n8 - VAE",
+    "page": 2
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "source_pdf": "projetannuel.pdf",
+    "parsed_at": "2025-07-12T07:29:02.748778Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "S4 - projet annuel",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 2",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Charles David WAJNBERG",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "cwajnberg@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "100,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "3",
+      "page": 1
+    },
+    "Coef": {
+      "value": "3",
+      "page": 1
+    },
+    "Volume": {
+      "value": "12,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Projet annuel 5IABD",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Projet",
+      "page": 1
+    },
+    "Durée": {
+      "value": "3,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "X",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Organisation de groupe, collaboration et répartition du travail\nQualité technique du projet (architecture, etc.)\nRésultat fonctionnel\nDocumentation complète, du processus et du résultat\nMise en applications des enseignements du Mastère IABD\n* BI, Big Data et Cloud\n* Machine learning\n* Calculs distribués\n* Management de projet et méthodologie agile",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Savoir concevoir et piloter une infrastructure d’acquisition, de stockage, de traitement et de restitution de données",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 2
+      },
+      "Thèmes": {
+        "value": "Séances Thèmes Travail à domicile Références Evaluation 1 Présentation générale du projet Proposition fonctionnelle et technique Choix du référent fonctionnel Organisation Veille technologique sur l'existant (projets similaires, etc.) 2 Spécifications fonctionnelles et techniques complètes Description des cas d’usage Maquettes (UI ou synopsis) Outils et plateformes technologiques identifiées Schémas techniques Identification des difficultés Choix techno, économiques, éthiques, etc. Questions à chaque groupe Évaluation collective de la solution proposée Évaluation de la complexité du projet Évaluation de la solution proposée 4 Présentation du prototype Présentation technique Présentation fonctionnelle du prototype Propositions d’amélioration / réorientation 5 Vérification des livrables avant soutenance Soutenance à blanc Présentation du package utilisateur Démonstration utilisateur Bilan de réalisation Améliorations possibles",
+        "page": 2
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 2
+      },
+      "Références": {
+        "value": "",
+        "page": 2
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 2
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP38587BC02 - Elaborer et mettre en production des",
+        "page": 2
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "Le cours est organisé comme un suivi de projet industriel, avec transmission de connaissances, aide à la décision et réunions\ntechniques",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "",
+    "page": 2
+  },
+  "Outils informatiques": {
+    "value": "",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "",
+    "page": 2
+  }
+}

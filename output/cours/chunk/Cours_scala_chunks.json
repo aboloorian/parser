@@ -1,0 +1,1072 @@
+[
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching , Langage Scala - Première partie Maxime Jumelle ESGI maxime@blent.ai September 24, 2023",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 1,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Ce cours ore une introduction au langage Scala. Cette première partie va s'axer principalement autour des deux paradigmes : le fonctionnel et l'orienté objet. Les pré-requis pour ce cours sont les suivants. • Savoir utiliser un langage de haut-niveau (Java, Python, C#). • Maîtriser les structures de base (listes et piles, arbres, ensembles, dictionnaires). • Avoir déjà eu une introduction à l'orienté objet. Au second semestre, nous irons plus loin sur les deux paradigmes et aborderons des aspects plus orientés production (programmation concurrente, packaging, tests unitaires).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 2,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Overview Introduction au Scala Premiers pas Collections Programmation fonctionnelle Fonctions Higher-Order Functions (HOF) Map et Reduce Fold et Scan Orienté Objet Polymorphisme de fonctions Classes abstraites et traits Surcharge Polymorphisme de types Pattern Matching Constant Pattern Wildcard Pattern Typed Pattern Constructor Pattern",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 3,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Scala tire son nom de scalable language car il a été pensé pour être utilisé à n'importe quelle échelle : de simples scripts jusqu'à de larges systèmes. Développé initialement en 2004 à l'EPFL, Scala s'intègre complètement avec Java et s'exécute en tant que plateforme Java. Aujourd'hui, le langage Scala est principalement utilisé dans les applications Big Data, car elles sont historiquement développées en Java, mais ce dernier est quelques fois trop lourd au niveau de la syntaxe et manque surtout d'un paradigme très utile pour des opérations de calculs distribués : la programmation fonctionnelle.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 4,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching On considère souvent que Scala est un langage dicile. En principe, tous les langages sont diciles : en maîtriser un signie bien plus que connaître par c÷ur la syntaxe. Dans les faits, Scala peut sembler déroutant aux premiers abords car il mélange deux paradigmes. • La programmation orienté objet, devenue un standard dans le développement et très présent en Java, C# ou C++, où l'on construit des objets et des relations entre ces derniers. • La programmation fonctionnelle, qui puise ses origines du λ-calcul, où tout est considéré comme étant des fonctions mathématiques sur des structures algébriques (popularisé à ses débuts par le langage Haskell puis par ML). Et c'est en parti à cause de ce double paradigme que les nouveaux utilisateurs de Scala peuvent avoir des dicultés.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 5,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Les développeurs Java qui, par exemple, sont très attachés à l'orienté objet et à l'impératif (boucle for), ont beaucoup de dicultés à utiliser l'approche fonctionnelle, car ce n'est pas dans leur habitudes. De plus, il y a beaucoup de sucre syntaxique dans Scala, c'est-à-dire de formatage de code plus digeste et plus abrégé, en comparaison avec Java qui est beaucoup plus verbeux. Les développeurs Python ou R (Data Scientist par exemple) ont déjà en tête l'utilisation de certains paradigmes fonctionnels (apply sous pandas ou avec dplyr), et la syntaxe de Scala leur est beaucoup plus familière. En revanche, ces deux langages n'intègrent que peu d'orienté objet et le typage est plus dynamique, ce qui perturbe également ces développeurs.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 6,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Tout comme la plupart des langages, il est fortement conseillé d'utiliser un IDE. IntelliJ IDEA (dans sa version Community) est sûrement le plus populaire pour coder en Scala, et il dispose de plugins Scala qui permettent de récupérer les sources des diérentes versions et de développer très rapidement un projet. Remarque Il est aussi possible d'utiliser des outils comme sbt (Scala Build Tool) pour développer et package des projets Scala que nous n'aborderons pas dans ce cours.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 7,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Si vous n'avez jamais codé dans un langage fonctionnel auparavant, certains concepts peuvent être diciles à appréhender. Il est donc nécessaire de passer du temps à pratiquer sur une variété de problèmes et d'exercices. Comme tout langage de programmation, seule la pratique permettra de savoir réellement manipuler le langage et comprendre la plupart de ses mécanismes.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 8,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Commençons par aborder la syntaxe de Scala. Ajoutons un premier chier Scala dans main.scala.esgi puis inscrivons-y le code suivant. 1 object PremiersPas extends App { 2 val x: Int = 54 3 var y: Int = 32 4 5 println(x, y) 6 } Nous venons de créer un objet qui hérite de l'objet App. Bien que ces notions soient encore pour l'instant étrangères, l'important réside dans le fait qu'un objet héritant de App peut être exécuté en tant que programme seul (comme un script).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 9,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Dans ce programme, nous avons crée deux variables Int que nous achons ensuite avec println (sortie console avec retour chariot). Les deux mots-clés val et var permettent respectivement de créer des constantes ou des variables classiques. En théorie, nous pourrions directement écrire la dénition d'une variable sans son type. 1 val x = 54 En réalité, le compilateur Scala va inférer sur le type d'aectation, ce qui lui permet directement d'en déduire que x est de type Int.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 10,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Typages des variables En tant que développeur Python ou R, on est face à un premier diérend : la conversion explicite. Sous Python, le code suivant ne pose aucun problème. x = 54 x += 5.2 Sur Scala, avec le code suivant, c'est l'erreur assurée. 1 var x: Int = 54 2 x += 5.2 Pourquoi ? 5.2 est de type Double, alors que x est de type Int. Il faut donc respecter les types des variables.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 11,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Sur cet exemple, ce serait encore compréhensible car un ottant doit forcément être arrondi pour devenir un entier, ce qui peut poser problème pour le compilateur sans instructions particulières. Considérons un Double et un Float. 1 var x: Double = 1.7d 2 var y: Float = 3.9f 3 x += y 4 println(x) Le compilateur ne coince pas puisqu'il y a un support natif entre le deux types : il y a une conversion implicite. Mais regardons la sortie console : 5.600000095367432 Là où on s'attendrait à avoir simplement 5.6, nous avons un résidu pas très agréable. Et pour cause : un Float est codé sur 32 bits, alors qu'un Double sur 64 bits ! Lors des calculs, le compilateur doit compléter les 32 bits absents du Float, ce qui provoque ces imprécisions ! En clair : il faut au maximum éviter de mélanger les types !",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 12,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Collections immuables Sous Scala, il existe de nombreuses implémentations de structures de collections. Elles sont bien évidemment indispensables dans la plupart des cas, et l'on retrouve les structures classiques. • Les séquences, où les éléments sont ordonnées par leur position : on retrouve par exemple les List, les Stack ou encore les Vector. • Les ensembles, dont les ListSet ou les HashSet. • Les dictionnaires, où les éléments sont représentes par des couples clés/valeurs, tels que les ListMap ou TreeMap. Ces collections sont par défaut immuables : cela signie que l'on ne peut pas modier leurs instances. Remarque Immuable veut dire que l'on ne peut pas modier le contenu. Dans une liste immuable, il n'est pas possible d'ajouter ou de modier les éléments. Il faudrait dans ce cas créer une nouvelle variable ou utiliser une liste mutable.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 13,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 14,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Listes Sous Scala, les listes List[T] représentent des listes chaînées dont les éléments sont de type T. Bien que T puisse être de type AnyVal pour accepter n'importe quel type de valeur, T est en général un type classique (nombre, string) un un objet. Essayons de créer une liste simple d'entiers. 1 val myList: List[Int] = List(1, 4, 8, 5, 2) 2 println(myList.head) 3 println(myList.tail) 4 println(myList(2)) 1 List(4, 8, 5, 2) 8 Ici, nous devons spécier le type des éléments de la liste avec les crochets. List[Int] indique que l'on aura une collection d'entiers. head (:Int) et tail (:List[Int]) sont des fonctions fréquemment utilisés dans des situations de récursivité.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 15,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Remarque En Java, les List sont mutables, alors qu'en Scala, elles ne le sont pas.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 16,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Concaténation de listes Sur les listes, on retrouve les opérations de concaténations standards. • L'opération x:+y permet de construire une liste x ⊕(y) à partir de la liste x et de l'élément y. • Les opérations x::y et x+:y permettent de construire une liste (x) ⊕y à partir de l'élément x et de la liste y. • L'opération x:::y permet de concaténer deux listes : x ⊕y. On pourrait aussi utiliser l'opérateur ++ mais moins performant car ::: est une opération associative à droite, plus rapide. De manière générale, ++ ne préserve pas le type sous-jacent des listes, donc à éviter pour les listes (essayer de faire List(1, 2, 3) ++ \"a\", on transforme en List[AnyVal]).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 17,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Remarque En général, il faut plutôt utiliser les opérateurs cons (:: et :::) car leur complexité est constante, contrairement à :+ et +: qui sont hérités de Iterable et moins adaptées pour les listes. 1 val myList: List[Int] = List(1, 4, 8, 5, 2) 2 println(5 +: myList) 3 println(myList :+ 5) 4 println(5 :: (myList.head :: Nil)) 5 println(myList ::: List(myList.head)) List(5, 1, 4, 8, 5, 2) List(1, 4, 8, 5, 2, 5) List(5, 1) List(1, 4, 8, 5, 2, 1) Remarque Nil est l'équivalent du null en Java pour les listes. Ici, il faut utiliser Nil avec :: car si on utilisait un Int, ce dernier ne disposerait pas de l'implémentation de l'opérateur ::",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 18,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching De manière générale, on utilise souvent les listes en Scala comme structure de collections d'éléments indexés par leur position. Dans certaines applications, on utilise le type Vector car il est plus adaptée dans un environnement distribué.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 19,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Itération Il est possible d'itérer sur les listes avec une boucle for, mais ce sera la seule fois où nous utiliserons une boucle dans ce cours, car dans le paradigme fonctionnel, on utilise rarement des boucles for ! 1 val myList: List[Int] = List(1, 4, 8, 5, 2) 2 for (i <- 0 to myList.length - 1) { 3 print(myList(i)) 4 } À la place, nous utilisons plutôt la fonction foreach, utilisable sur chaque type de collection en Scala. 1 val myList: List[Int] = List(1, 4, 8, 5, 2) 2 myList.foreach(print) Nous aurons l'occasion de revenir sur ces méthodes d'itérations dans la partie qui aborde la programmation fonctionnelle.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 20,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Remarque En réalité, en Scala, toutes les opérations sont des fonctions. Les deux codes suivants sont équivalents, car le type Int est un objet dont la fonction to est dénie et attends en argument un Int. 1 for (i <- 0 to 5) { print(i) } 2 for (i <- 0.to(5)) { print(i) } La notation x.f (y) peut se noter x f y en Scala. On retrouve également le même concept pour les opérateurs (additions, concaténation, etc). 1 println(5 + 3) 2 println(5.+(3))",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 21,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Tuples Les tuples possèdent les mêmes propriétés que les listes (immuables, référencement par position), à la diérence près qu'un tuple peut contenir des éléments de types diérents. 1 val myTuple = (54, \"Hello !\", true) 2 println(myTuple._1) 3 println(myTuple._2) 4 println(myTuple._3) 54 Hello ! true En Java, il faudrait créer un objet spécique pour accueillir une collection d'éléments de types diérents. Les tuples orent l'avantage de gérer plus succinctement ce genre de situations. Attention Dans un tuple, l'indexation du premier élément n'est pas à 0 mais à 1.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 22,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Sets Un Set[T] permet de dénir une séquence unique d'éléments de type T. Cette structure ne contient par de relation d'ordre et est similaire à un ensemble mathématique. 1 val mySet = Set(\"A\", \"B\", \"A\", \"C\", \"D\", \"B\") 2 println(mySet) 3 println(mySet.contains(\"B\")) 4 println(mySet.contains(\"E\")) Set(A, B, C, D) true false",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 23,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Maps Un Map[U, V] permet de dénir un dictionnaire clé/valeur où les clés sont de type U et les valeurs de type V. Cette structure est souvent utilisée pour créer des associations ou des mappages entre des variables. Pour accéder à un élément, comme pour les listes, on utilise les parenthèses autour de la clé. 1 var myMap = Map[String, Int]( 2 \"France\" -> 3, 3 \"Germany\" -> 8, 4 \"Spain\" -> 5 5 ) 6 println(myMap(\"France\")) // 3 7 println(myMap(\"Portugal\")) // Crash Pour ajouter une ou plusieurs nouvelles paires clé/valeur, on utilise l'opérateur ++ avec les paires clé/valeur à ajouter, ce qui retourne un nouveau Map[U, V] (car la structure reste immuable). 1 println(myMap(\"France\")) 2 myMap = myMap ++ List(\"Portugal\" -> 4)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 24,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Pour éviter les exceptions lorsque l'on tente d'accéder à la valeur d'une clé qui n'existe pas, on peut utiliser la fonction getOrElse. 1 println(myMap.getOrElse(\"France\", 0)) 2 println(myMap.getOrElse(\"Portugal\", 0))",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 25,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching TreeSet et TreeMap Dans certains cas, on souhaiterait ajouter une relation d'ordre sur les Sets ou les Maps et qu'elle soit automatiquement appliquée sans avoir besoin de construire soi-même un tri à chaque appel d'une méthode. Le type TreeSet[T] permet de créer un ensemble d'éléments de type T qui vont être automatiquement triés (l'appellation de Tree vient du fait que la structure sous-jacente est un arbre). 1 val myTreeSet = TreeSet(5, 3, 7, 6) 2 println(myTreeSet) 3 println(myTreeSet ++ TreeSet(2)) TreeSet (3, 5, 6, 7) TreeSet (2, 3, 5, 6, 7)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 26,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Pour le type TreeMap[U, V], on retrouve les mêmes fonctionnalités que le type Map[U, V] mais avec le tri automatique. 1 val myTreeMap = TreeMap( 2 \"C\" -> 5, 3 \"D\" -> 4, 4 \"B\" -> 10 5 ) 6 println(myTreeMap) 7 println(myTreeMap ++ List(\"A\" -> 7)) TreeMap(B -> 10, C -> 5, D -> 4) TreeMap(A -> 7, B -> 10, C -> 5, D -> 4)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 27,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching HashSet TreeSet ListSet HashMap TreeMap ListMap Vector NumericRange String Range List Stack Stream Queue Traversable Iterable Set Seq Map SortedSet IndexedSeq LinearSeq SortedMap BitSet",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 28,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Objets mutables Il est fréquence d'utiliser des objets immuables en Scala. Le principal avantage de cette représentation est de s'assurer que l'exécution des méthodes de cet objet seront idempotentes (même résultat). Par exemple, pour une liste donnée, la fonction head renverra toujours la même valeur, quel que soit le nombre d'appel de la fonction. Il faudrait alors changer complètement l'objet pour obtenir un résultat diérent. Mais il n'est pas non plus interdit de construire des objets mutables, car des situations courantes peuvent mener certains objets à gérer un état interne, ce qui est plus délicat pour un objet immuable car il faudrait gérer cet état indépendamment de l'objet.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 29,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching ListBuer Un exemple de collection mutable utilisée est ListBuffer : son comportement est identique à celui d'une liste, à la seule diérence que l'on peut ajouter ou supprimer des éléments d'un ListBuffer sans changer l'objet. 1 val myList = ListBuffer[Int](4, 6, 1) 2 println(myList) 3 myList += 5 4 println(myList) 5 3 +=: myList 6 println(myList) ListBuffer (4, 6, 1) ListBuffer (4, 6, 1, 5) ListBuffer (3, 4, 6, 1, 5)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 30,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Les situations où un ListBuffer est préféré par rapport à une List concernent les ajouts d'éléments en n de liste. L'ajout d'un élément en n de liste immuable n'est pas aussi rapide qu'en tête de liste. En conservant l'utilisation d'une liste immuable, on pourrait construire la liste en sens inverse (du dernier élément au premier élément) puis utiliser la fonction reverse. Avec un ListBuffer, l'opération est plus simple car cet objet supporte naturellement l'ajoute d'éléments en n de liste avec l'opérateur += (alias de append).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 31,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching HashSet ImmutableSetAdaptor LinkedHashSet HashMap OpenHashMap WeakHashMap LinkedHashMap ListMap TreeMap ImmutableMapAdaptor ArraySeq ArrayBuer StringBuilder ListBuer Stack SynchronizedStack ArrayStack PriorityQueue SynchronizedPriorityQueue SynchronizedQueue MutableList Queue LinkedList DoubleLinkedList Traversable Iterable Map Seq Set ObservableMap SynchronizedMap MultiMap LinearSeq IndexedSeq Buer ObservableSet SynchronizedSet SortedSet BitSet ObservableBuer SynchronizedBuer",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 32,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Programmation fonctionnelle La programmation fonctionnelle est un des piliers du langage Scala. C'est sa principale diérence avec le Java et bien qu'il permette de faire du fonctionnel, cela nécessite beaucoup plus de code avec une syntaxe pas toujours adaptée. De plus en plus de frameworks tendent vers cette approche fonctionnelle, car elle possède de nombreux avantages. • Elle permet de dénir un cadre rigoureux en supprimant les eets de bords. • Elle est adaptée dans les situations de calculs distribués. • Elle ore de nombreuses possibilités pour le sucre syntaxique. Certains frameworks comme Spark, Akka ou encore Flink utilisent beaucoup cette approche fonctionnelle (tout en n'oubliant pas le paradigme orienté objet), où les fonctions en forment la composante principale.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 33,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonctions Les fonctions permettent de structurer un programme en plusieurs tâches. En Scala, une fonction est un objet de type FunctionN[A1, A2, .., R] où A1, A2,... sont les types des arguments et R est le type de retour. Le code suivant permet par exemple de créer une fonction acceptant un argument de type Double et retournant un type Double. 1 def myFunction: Function1[Double, Double] = (x: Double) => { 2 x * 2 3 } 4 println(myFunction(10)) Pour dénir des fonctions, le mot-clé val est aussi possible, bien que def soit préféré. Remarque Le type de fonction acceptant le plus d'arguments est Function22.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 34,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonctions Le problème de l'écriture précédente est qu'elle est lourde au niveau de la syntaxe. Au même titre que dans les langages objets, on souhaiterait pouvoir dénir à la fois le prototype et le corps de la fonction sans avoir besoin de spécier FunctionN à chaque fois. 1 def myFunction(x: Double): Double = { x * 2 } 2 println(myFunction(10)) Le compilateur a toutes les informations nécessaires : le prototype de la fonction (arguments), son type retourné et le corps de la fonction. Cette écriture sera notamment intéressante pour la suite avec les fonctions anonymes.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 35,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Higher-Order Functions (HOF) Les Higher-Order Functions (HOF) sont très importantes en programmation fonctionnelle. En eet, ce sont elles qui permettent d'implémenter du λ-calcul programmable. Une HOF est une fonction F qui prend en arguments au moins une fonction et retourne une fonction comme résultat. Prenons par exemple la fonction compose qui, pour une fonction f , retourne la composée de f par elle-même f ◦f . 1 def comp(f: Double => Double): Double => Double = { f compose f } 2 def func(x: Double): Double = { 2 * x + 1 } 3 println(comp(func)) // Est une fonction 4 println(comp(func)(1)) // Est un Double scala. Function1$$Lambda$5 /754666084 @63d4e2ba 7.0",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 36,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Tout comme nous avions vu qu'il était possible de réduire la syntaxe pour la dénition d'une fonction avec le symbole =>, nous pouvons également l'utiliser pour créer des fonctions anonymes. 1 def comp(f: Double => Double): Double => Double = { f compose f } 2 println(comp(x => 2 * x + 1)(1)) // Est un Double Le résultat est identique : x => 2 * x + 1 se lit comme la fonction qui, à tout x, associe 2x + 1. Ce qui est intéressant ici, c'est que le les types sont inférés grâce à la dénition de comp : le compilateur sait que comp s'attend à avoir une fonction f de types Double, ce qui permet automatiquement de considérer le x de la fonction anonyme comme un Double.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 37,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Exercice Soit f : R →R une fonction contractante : ∃k ∈[0, 1[/, ∀(x, y) ∈R2, |f (x) −f (y)| ≤k|x −y| D'après le théorème du point xe, il existe un unique x ∈R tel que f (x) = x. D'un point de vue numérique, on se xe un ε > 0 et l'on considère que x est un point xe dès lors que |x −f (x)| < ε. 1. Coder la fonction isFixed:(Double, Double) => Double qui calcule la proposition |x −y| < ε. 2. Coder la fonction computeFixed:(f:Double => Double)(x0:Double) qui retourne le point xe de f . On déterminera le point xe de la fonction x 7→√x + 1.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 38,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonction map Tous les objets dérivées de Iterable implémentent plusieurs HOF très utiles en Scala. La fonction foreach que nous avons déjà abordé n'est pas toujours utile si l'on souhaite par exemple retourner des valeurs dans une nouvelle collection, mais le principe reste plus ou moins identique. La fonction map sur une collection [x1, . . . , xn] applique une fonction f sur chaque élément de la collection et retourne le même type de collection [f (x1), . . . , f (xn)]. map(f )([x1, . . . , xn]) = [f (x1), . . . , f (xn)] Remarque La fonction map étant membre d'un objet de type Iterable, pour une liste l:Iterable= [x1, . . . , xn], l.map(f) est équivalent à l'écriture ci-dessus.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 39,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 40,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Prenons f:Double => (Int, Double) une fonction sur une liste et appliquons un map à l'aide de cette fonction. 1 val rnd = new scala.util.Random 2 val myList: List[Double] = List.fill(10)(rnd.nextDouble()) 3 val mapList = myList.map(x => { 4 if (x <= 0.5) (0, x) 5 else (1, x) 6 }) 7 println(mapList.map(_._1)) List(0, 1, 1, 0, 0, 0, 0, 0, 1, 0)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 41,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonction flatMap La fonction flatMap a un rôle très proche de map, à la seule diérence que flatMap va concaténer les f (xi) car il est supposé que f produit une collection d'éléments. La fonction flatMap sur une collection [x1, . . . , xn] applique une fonction f sur chaque élément de la collection et concatène chaque image de f par xi : f (x1) ⊕. . . ⊕f (xn). flatMap(f )([x1, . . . , xn]) = f (x1) ⊕. . . ⊕f (xn) La fonction flatMap est intéressante lorsqu'une fonction f produit un résultat qui n'est pas de même dimension que l'entrée mais dont on souhaite tout de même préserver la dimension sur la collection d'origine.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 42,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 43,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Reprenons plus ou moins l'exemple précédent avec f:Double => (Double, Double) une fonction sur une liste et appliquons un flatMap à l'aide de cette fonction. 1 val flatMapList = myList.flatMap(x => { List(x, x * 2) }) 2 println(flatMapList) List (0.6227725836249425 , 1.245545167249885 , ...)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 44,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonction reduce La fonction reduce eectue une agrégation sur l'ensemble des éléments de la collection. On utilise une fonction f à deux paramètres x et y et on calcule de manière récursive f (x, y) avec x étant le résultat de l'agrégation précédente et y un élément de la collection. La fonction reduce sur une collection [x1, . . . , xn] applique une fonction f récursivement sur chaque élément de la collection tout en préservant la dimension. reduceLeft(f )([x1, . . . , xn]) = f (. . . f (f (x1, x2), x3), . . .), xn) Remarque Il faut éviter de modier la structure des objets lors d'un reduce, car l'enchaînement récursif peut aboutir à des erreurs. Par exemple, ajouter une dimension à chaque étape d'un reduce générera une erreur de récursivité.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 45,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 46,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching reduceLeft et reduceRight En réalité, la fonction que nous venons de décrire concerne plutôt reduceLeft : l'opération s'eectue de gauche à droite. À l'inverse, la fonction reduceRight va commencer à partir de la n de la liste et composer de manière successive avec les éléments jusqu'au début de la liste. reduceLeft(f )([x1, . . . , xn]) = f (. . . f (f (x1, x2), x3), . . .), xn) reduceRight(f )([x1, . . . , xn]) = f (x1, f (x2, . . . , f (xn−1, xn))) Le sens a une importance car les compositions successives par f n'ont aucune raison d'être symétriques. Remarque La fonction reduce ne garantie par l'ordre des compositions car cette dernière va construire une structure d'arbre pour appliquer les compositions. L'existence de cette fonction permet de supporter des situations de parallélisation, ce qui n'est pas possible avec reduceLeft et reduceRight.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 47,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Même si les fonctions reduce et reduceLeft semblent avoir des comportements similaires, leur signature dière néanmoins. 1 def reduce[B >: A](op: (B, B) => B): B 2 def reduceLeft[B >: A](op: (B, A) => B): B La principale diérence est que la fonction f dans reduce doit être associative : f (a, f (b, c)) = f (f (a, b), c) Dans reduceLeft, le premier argument est le type de sortie B, alors que le second argument est obligatoirement un élément de la liste : la fonction f n'a donc plus besoin d'être associative.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 48,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Exercice On dispose d'une collection de mots w1, . . . , wN tirés depuis un corpus. On souhaiterait dénombrer le nombre d'occurrences de chaque mot dans le corpus. 1 val uniqueWords: List[String] = List(\"dog\", \"cat\", \"owl\", \"horse\") 2 val words = List 3 .fill(1000)(Random.nextInt(uniqueWords.length)) 4 .map(uniqueWords(_)) 1. Sans utiliser les fonctions map et reduce, dénombrer le nombre d'occurrences de chaque mot. 2. En utilisant les fonctions map et reduce, dénombrer le nombre d'occurrences de chaque mot. Indice : on pourra utiliser la HOF groupBy.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 49,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Exercice Dans cet exercice, nous allons redénir les opérations HOF que l'on rencontre sur les listes en Scala. On ne suppose ici que des séquences à une dimension dont les éléments sont des Double. 1. Coder la fonction map qui prend en argument une liste List[Double] [x1, . . . , xn] et une fonction f : Double => Double pour retourner la liste [f (x1), . . . , f (xn)]. 2. Coder la fonction flatMap qui prend en argument une liste List[Double] [x1, . . . , xn] et une fonction f : Double => List[Double] pour retourner la liste f (x1) ⊕. . . ⊕f (xn). 3. Coder la fonction reduce qui prend en argument une liste List[Double] [x1, . . . , xn] et une fonction f : (Double, Double) => Double pour retourner le nombre f (. . . f (f (x1, x2), x3), . . .), xn).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 50,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching for-comprehension Nous avons déjà évoqué la boucle for classique, et pourquoi en pratique on l'utilisait relativement peu en comparaison avec les opérations HOF telles que map ou reduce. En revanche, les for-comprehension sont souvent d'une grande aide car elle vont nous permettre d'itérer sur certaines structures avec un sucre syntaxique. 1 val myForList = for (x <- List(1, 2)) yield x List(1, 2)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 51,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching À noter que lorsque l'on utilise plusieurs paramètres d'itération, cela revient à créer le produit cartésien des ensembles d'itération (équivalent à plusieurs boucles for). 1 val myForList = for (x <- List(1, 2); y <- List(\"a\", \"b\")) yield (x, y) List ((1,a), (1,b), (2,a), (2,b))",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 52,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Un des principales utilisations des for-comprehension réside dans la possibilité d'ajouter des conditions (guards) lors de l'itération sur une liste. 1 val myForList = List(\"ab\", \"abbab\", \"aab\", \"abbabab\", \"abb\") 2 val lenList = for (x <- myForList if x.length < 4) yield x.length 3 println(lenList) List(2, 3, 3) Ici, x itère sur tous les éléments de myForList qui vérient la condition x.length < 4. Le résultat est identique au suivant où l'on utilise des HOF. 1 val lenList = myForList.filter(_.length < 4).map(_.length) Mais ici, nous avons une complexité en O(2n), car nous parcourons deux fois myForList, là où la for-comprehension ne produit qu'une complexité en O(n).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 53,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonction fold La fonction fold a un rôle similaire à reduce, mais sa principale diérente vient du fait qu'elle va ajouter un accumulateur z (une valeur xe) à chaque fold(z)(f )([x1, . . . , xn]) = z collection vide f (. . . f (f (z, x1), x2), . . .), xn) collection non vide Remarque La fonction fold est un exemple de currycation : la fonction fold retourne une fonction g, donc fold(z)(f )(x) = g(f )(x) où g est la méthode construite à partir de la fonction fold et de l'argument z.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 54,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Un des avantages de la fonction fold est de pouvoir gérer des situations où la collection est vide. 1 List[Int]().reduce((x, y) => x + y) // Provoque une erreur 2 List[Int]().fold(0)((x, y) => x + y) // Retourne 0 La méthode fold ce n'est donc pas juste un reduce plus un accumulateur : sa présence permet aussi de gérer ce cas particulier de collection vide. Remarque Tout comme pour reduce, la fonction fold ne garantie par l'ordre et existe pour le support de la parallélisation. Avec foldLeft : l'accumulation est réalisé à partir du début de la liste. La fonction équivalente accumulant à partir de la n de la liste est foldRight.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 55,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 56,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Fonction scan La fonction scan eectue un fold sur chaque sous-collection unique qui peut être formé à partir du premier élément (head). Elle nécessite un opérateur binaire f et préserve la dimension et la taille de la collection. La fonction scan sur une collection [x1, . . . , xn] applique un fold avec un opérateur binaire f sur chaque sous-collection unique depuis le premier élément de la collection. scan(z)(f )([x1, . . . , xn]) =   fold(z)([]) fold(z)([x1]) fold(z)([x1, x2]) ... fold(z)([x1, . . . , xn])   Remarque Les fonctions scanLeft et scanRight permettent d'eectuer les itérations sur des sous-collections formés à partir du début ou à partir de la n en préservant l'ordre.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 57,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 58,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Orienté Objet L'orienté objet est un paradigme de programmation où l'on déni et instancie des objets. Ces objets peuvent être de diérentes natures, comme les classes, les interfaces ou les modules. Le langage Scala requiert l'utilisation de l'orienté objet en coordination avec le paradigme fonctionnel : cela nécessite l'utilisation de certaines notions déjà présentes en Java comme les types génériques, mais on retrouve également de nouveaux concepts comme les cases classes, les objets compagnons ou les contraintes de types.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 59,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Classes Les classes constituent la base de l'orienté objet. Une classe est un objet qui contient plusieurs champs/propriétés (variables, méthodes, constructeur) et qui peut être instancié en tant que variable. Contrairement au Python, on utilise beaucoup d'objets et de classes dans les projets et les scripts. Il est donc courant de créer des classes de petites tailles pour des besoins précis ou d'hériter depuis des classes de frameworks existants pour adapter son code à son projet.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 60,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 class Computer(private var os: String, private val brand: String) { 2 private var isOn: Boolean = false 3 4 def installSystem(name: String): Unit = this.os = name 5 def getStatus(): Unit = { 6 if (this.isOn) println(\"I'm on.\") else println(\"I'm off.\") 7 } 8 def start(): Unit = this.isOn = true 9 def stop(): Unit = this.isOn = false 10 } Remarque Un constructeur par défaut est associé à chaque classe et requiert tous les paramètres d'instance de la classe (ici, os et brand).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 61,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching On retrouve ainsi le concept d'héritage de classes. 1 class Laptop(os: String, brand: String) extends Computer(os, brand) { 2 def close(): Unit = println(\"Closing.\") 3 def open(): Unit = println(\"Opening.\") 4 } 5 6 object Classes extends App { 7 var pcTower = new Computer(\"Debian\", \"HP\") 8 var laptop = new Laptop(\"Windows\", \"Dell\") 9 pcTower.start() 10 laptop.start() 11 pcTower.getStatus() 12 laptop.open() 13 } Bien qu'il soit possible d'eectuer de l'héritage multiple sous Scala, cela reste rare dans des situations de développement logiciel.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 62,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Polymorphisme de fonctions Tout comme la plupart des langages objets, Scala supporte le polymorphisme de méthodes. Il est donc possible de dénir plusieurs signatures d'une même fonction. 1 class Computer(private var os: String, private val brand: String) { 2 def this(os: String) = this(os, \"unknown\") 3 4 def start(): Unit = println(s\"Hello $os on $brand !\") 5 def stop(): Unit = println(\"Stopping computer...\") 6 def stop(timer: Int): Unit = println(s\"Stopping computer in $timer seconds...\") 7 } Il y a deux dénitions pour la fonction stop : une sans argument et une avec un argument timer de type Int.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 63,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching En pratique, le polymorphisme de constructeur est assez peu utilisé : il est possible de dénir des valeurs par défaut dans les arguments du constructeur d'une classes. 1 class Computer(private var os: String, private val brand: String = \"unknown\") { 2 def start(): Unit = println(s\"Hello $os on $brand !\") 3 def stop(): Unit = println(\"Stopping computer...\") 4 def stop(timer: Int): Unit = println(s\"Stopping computer in $timer seconds...\") 5 } À noter que lors de l'instanciation d'un objet, les noms des arguments peuvent être utilisés, car dans certaines situations cela est plus lisible et la compréhension du code peut être améliorée. 1 val computer = new Computer(os=\"Debian\", brand=\"HP\")",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 64,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Objets compagnons Lorsque l'on déni une classe Computer, il est possible de créer un object qui porte le même nom, dont la déclaration est située dans le même chier : on parle alors d'objet compagnon. Reprenons la dénition de la classe Computer. Nous allons dénir un objet compagnon qui porte le même nom. 1 object Computer { 2 def apply(os: String): Computer = new Computer(os) 3 } Nous pouvons ensuite utiliser cet objet compagnon pour créer une instance de la classe Computer. 1 val computer = Computer(\"Debian\") 2 computer.start()",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 65,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Il y a plusieurs points à noter. • Nous n'avons pas utilisé Computer.apply mais directement Computer : sous Scala, la fonction apply est une sorte de fonction statique permettant d'invoquer le constructeur via la fonction apply, qui est elle-même automatiquement invoquer automatiquement. • Nous pouvons également surcharger la fonction apply, permettant de créer plusieurs constructeurs pour la classe Computer. Cette utilisation des objets compagnons permet d'écrire plus rapidement du code lorsque l'on doit souvent instancier une classe. Remarque Les collections List, Map, etc que nous avons rencontré jusqu'ici étaient instanciées via des objets compagnons.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 66,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching On utilise également la fonction unapply dans les objets compagnons pour déconstruire l'objet associé. 1 class Computer(private var os: String, private val brand: String = \"unknown\") { 2 def start(): Unit = println(s\"Hello $os on $brand !\") 3 def stop(): Unit = println(\"Stopping computer...\") 4 def stop(timer: Int): Unit = println(s\"Stopping computer in $timer seconds...\") 5 } 6 7 object Computer { 8 def apply(os: String): Computer = new Computer(os) 9 def unapply(c: Computer): String = s\"${c.system} going to sleep...\" 10 } 11 12 object Polymorphism extends App { 13 val computer = Computer(\"Debian\") 14 println(unapply(computer)) 15 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 67,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Classes abstraites Les classes abstraites peuvent être dénies avec le mot-clé abstract et elles empêchent de créer des instances d'objet. L'objectif des classes abstraites et de pouvoir servir de parent pour d'autres objets sans avoir besoin de surcharger",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 68,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 abstract class Animal { 2 def breath(): Unit = println(\"Breathing\") 3 } 4 5 class Dog extends Animal { 6 def run(): Unit = println(\"Dog running\") 7 } 8 9 class Bird extends Animal { 10 def fly(): Unit = println(\"Bird flying\") 11 } 12 13 object App extends App { 14 val dog = new Dog() 15 val bird = new Bird() 16 dog.run() 17 bird.fly() 18 bird.breath() 19 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 69,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching À l'inverse, il est également possible d'empêcher une classe d'être héritée avec le mot-clé final. 1 abstract class Animal { 2 def breath(): Unit = println(\"Breathing\") 3 } 4 5 final class Dog extends Animal { 6 def run(): Unit = println(\"Dog running\") 7 } 8 9 class LittleDog extends Dog { 10 // Illegal inheritance 11 } final s'applique également au niveau des méthodes pour empêcher une surcharge au niveau des objets enfants.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 70,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Traits Les traits ont un fonctionnement similaire aux classes abstraites : elles ne peuvent pas être instanciées directement et elles servent de modèle pour les objets enfants qui en héritent. La principale diérence avec la classe abstraite est que le trait oblige l'implémentation des méthodes qui le compose. Si une classe abstraite dispose d'une dénition de la méthode handle, cette dernière n'a pas obligatoirement d'être dénie dans l'objet enfant. Pour un trait, handle devra être surchargé. Remarque Le principe d'un trait est similaire à celui des interfaces en Java ou en C#.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 71,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching On représente des utilisateurs sous forme de classes. • La classe Admin représente un utilisateur aux pleins pouvoirs. • La classe User représente un utilisateur quelconque. Pour tout utilisateur, il est nécessaire d'obtenir au moins le nom associé (getName) et de pouvoir vérier si ce dernier dispose des habilitations pour une action demandée (enforce). Nous pouvons dénir le trait Persona suivant qui oblige l'implémentation des deux fonctions pour tous les objets qui vont hériter de Persona.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 72,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 trait Persona { 2 def getName(): String 3 def enforce(action: String): Boolean 4 } 5 6 class Admin extends Persona { 7 // An admin has all priviledges 8 override def getName(): String = \"Administrateur\" 9 override def enforce(action: String): Boolean = true 10 } 11 12 class User extends Persona { 13 // A user has limited privileges 14 override def getName(): String = \"Utilisateur\" 15 override def enforce(action: String): Boolean = if (action == \"read\") true else false 16 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 73,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching À noter que si un des membres du trait n'est pas surchargé dans l'objet enfant, alors une erreur de compilation se présentera. 1 trait Persona { 2 def getName(): String 3 def enforce(action: String): Boolean 4 } 5 6 class User extends Persona { 7 // An admin has all privileges 8 override def getName(): String = \"Administrateur\" 9 // Error : enforce is not defined 10 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 74,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching L'utilisation des traits n'est pas toujours évidente. Néanmoins, il faut bien penser qu'il s'agit d'objets plus légers que les classes, car ils permettent uniquement d'obliger une implémentation de champs dans l'objet enfant, mais les traits ne peuvent pas être instanciés directement en tant qu'objets. Les traits doivent être utilisés lorsque l'on souhaite forcer l'implémentation de certains champs pour des objets qui en héritent sans pouvoir instancier le trait lui-même.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 75,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching TP On souhaite implémenter en Scala le design pattern de comportement Factory. L'objectif de ce design pattern est de permettre à un objet abstrait Creator d'être une base commune à de nombreux créateurs ConcreteCreatorA, ConcreteCreatorB, ... de créer des objets concrets ProductA, ProductB, ... Les diérents objets qui interviennent sont les suivants : • Un Creator qui représente un créateur d'objets abstrait. • Un Product qui représente un objet abstrait crée par le créateur d'objets abstrait. • Un ConcreteCreatorA qui représente un créateur d'objet concret. • Un ConcreteProductA qui représente un objet concret. On représente un diagramme UML associé à ce design pattern.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 76,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 77,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Pour ce TP, nous supposons que l'on manipule une librairie de processing de données (Apache Spark, Pandas) et qu'il est possible d'enregistrer du contenu brut (chaînes de caractères) aux format CSV, SQL ou Parquet. L'objectif du TP consiste à implémenter cette fonctionnalité d'enregistrement au bon format en utilisant le design pattern Factory. Pour cela, tous les formats de données devront hériter de l'élément DataFormat, et tous les objets Factory devront hériter de l'élément Serializer, où chacun doivent implémenter la méthode serialize(content: String): DataFormat.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 78,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1. Représenter sous forme de diagramme UML l'application du design pattern Factory adapté à cette situation. 2. Dans un chier à part, dénir les diérents formats de données. 3. Implémenter les objets Factory dans le chier Serializers.scala. 4. Dans un chier App.scala, essayer plusieurs comportements.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 79,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Cases Classes Les case classes sont des classes Scala qui possèdent plusieurs implémentations déjà présentes : elles fournissent des méthodes clés en main pour certaines situations et sont adaptées pour les situations où les données sont immuables. Dans les case classes, la méthode apply est nativement intégrée et ré-utilise les arguments du constructeur. 1 case class Computer(os: String, brand: String) { 2 def start(): Unit = println(s\"$os starting on $brand ...\") 3 } 4 5 object CaseClasses extends App { 6 val comp = Computer(\"Windows\", \"Dell\") 7 comp.start() 8 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 80,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Les case classes nous permettent d'écrire rapidement des classes sans pour autant construire des objets compagnons directement lorsque les classes ne sont pas d'une grande complexité. Contrairement aux classes où la comparaison est réalisée au niveau de la référence mémoire, la comparaison des cases classes s'eectue au niveau structurel (propriétés). 1 val comp1 = Computer(\"Windows\", \"Dell\") 2 val comp2 = Computer(\"Windows\", \"Dell\") 3 print(comp1 == comp2) // Affiche true La fonction copy fait également partie des cases classes et permet de créer une nouvelle copie d'une instance de la classe avec une nouvelle référence en mémoire mais avec la même structure. 1 val comp1 = Computer(\"Windows\", \"Dell\") 2 val comp2 = comp1.copy() 3 print(comp2)",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 81,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Surcharge d'opérateurs Les surcharges d'opérateurs permettent soit d'appliquer un polymorphisme sur des opérations unaires ou binaires déjà présents, soit de construire des opérateurs pour des objets. Admettons que l'on souhaite implémenter l'objet Time qui permette de gérer des variables de temps (secondes, heures et jours). Automatiquement, on souhaiterait pouvoir bénécier, en tant qu'utilisateur, des opérations mathématiques d'additions et soustractions temporelles. Avec les surcharges d'opérateurs, nous pouvons redénir les opérations +, -, ::, etc au niveau des objets. Remarque La fonction apply est équivalente à une surcharge d'opérateur operator() en C++.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 82,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 import math.floorDiv 2 3 case class Time(day: Int = 0, hour: Int = 0, minute: Int = 0) { 4 val minutes: Int = minute \\% 60 5 val hours: Int = hour \\% 24 + floorDiv(minute, 60) 6 val days: Int = day + floorDiv(hour, 24) 7 override def toString: String = {f\"${days}j ${hours}h ${minutes}m\"} 8 def +(other: Time): Time = {Time(days + other.days, hours + other.hours, minutes + other.minutes)} 9 def -(other: Time): Time = {Time(days - other.days, hours - other.hours, minutes - other.minutes)} 10 } 11 12 object OperatorsOverloading extends App { 13 var time = Time(0, 18, 34) 14 println(time) 15 println(time + Time(0, 9, 45)) 16 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 83,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Exercice On souhaite créer l'objet IntSet sur Scala qui permet de créer des ensembles d'entiers uniques. L'objet hérite de Iterable[Int] pour pouvoir bénécier des opérations d'itération. On pourra utiliser un ListBuffer pour construire l'objet IntSet. 1. Implémenter le constructeur de IntSet dans la variable privée elem. 2. Dénir la fonction append qui permet d'ajouter un entier à l'ensemble. 3. Dénir les opérations d'union (+) et d'intersection (&) pour l'objet IntSet.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 84,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 class IntSet(var l: Int*) extends Iterable[Int] { 2 var elem: Iterable[Int] = { 3 4 } 5 6 override def iterator: Iterator[Int] = elem.iterator 7 override def toString: String = { 8 f\"IntSet(${elem.mkString(\",\")})\" 9 } 10 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 85,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Polymorphisme de types Un type générique peut être utilisé sur des classes ou des fonctions pour permettre à l'utilisateur d'utiliser un type particulier dans la classe ou la méthode. Un des principaux avantages des types génériques est que l'on manipule les objets avec leurs classes initiales et non des types plus élevées. Par exemple, les types Int ou String héritent tous les deux du type AnyVal. Si l'on souhaite créer une structure de collection, on serait tenté d'utiliser List[AnyVal] pour stocker ces éléments, mais cela ne serait pas une bonne pratique.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 86,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Supposons que l'on souhaite créer une liste chaînée LinkedList[T] dont tous les éléments sont de même type T. Pour cela, nous dénissons deux champs. • content de type T. • next de type LinkedList[T]. En utilisant les crochets [T], on indique alors à Scala que l'objet LinkedList doit être déni en amont avec un type T que l'on spécie et qui ne pourra pas évoluer une fois l'objet instancié. Au moment de la création de l'objet, T accepte n'importe quel type, mais il est également possible de contraindre les types par des Lower et Upper Bounds (que l'on abordera au semestre 2).",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 87,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 class LinkedList[T](value: T, nextList: Option[LinkedList[T]] = None) { 2 var content: T = value 3 var next: Option[LinkedList[T]] = nextList 4 def foreach[U](f: T => U): Unit = { 5 f(value) 6 if (next.isDefined) next.get.foreach(f) 7 } 8 } 9 object LinkedList { 10 def apply[T](elems: T*): LinkedList[T] = { 11 val list = new LinkedList[T](elems.head) 12 var next = list 13 elems.tail.foreach(x => { 14 next.next = Some(new LinkedList[T](x)) 15 next = next.next.get 16 }) 17 list 18 } 19 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 88,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Remarque L'étoile sur T* est un paramètre répété, ce qui permet de dénir plusieurs arguments de type T comme pour les collections. 1 object Generics extends App { 2 val list = LinkedList[Int](5, 4, 5) 3 list.foreach(println(_)) // f : Int -> Unit 4 list.foreach(x => println(x * 2)) // f : Int -> Int 5 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 89,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching La fonction foreach dispose d'un nouveau type générique U, car la fonction f peut retourner un type U qui n'est pas forcément de type T ou de type Unit. Sous Scala, l'objet Option[T] permet de dénir une variable dont la valeur est soit de type T, soit nulle. Pour instancier cette variable, on utilise soit null, soit Some[T](...). Remarque On pourrait utiliser next != null avec next:LinkedList[T], mais cette écriture existe simplement par soucis d'inter-opérabilité avec Java, et les bonnes pratiques considèrent d'utiliser Option et Some à la place.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 90,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching TP Implémenter la classe BinaryTree[T] avec T un type générique qui représente un arbre binaire. Les paramètres sont : • nodeValue:T : la valeur du n÷ud de l'arbre. • nodeLeft:Option[BinaryTree[T]] : le n÷ud enfant gauche de l'arbre. • nodeRight:Option[BinaryTree[T]] : le n÷ud enfant droite de l'arbre. À noter que les enfants de l'arbre peuvent être nuls, d'où l'utilisation d'Option.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 91,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1. Dans l'application, créer la fonction generateTree(depth: Int): BinaryTree[Int] qui génère un arbre binaire équilibré de profondeur depth. Chaque valeur des n÷uds sera initialisée à 0. 2. Coder la fonction depth qui calcule la profondeur d'un arbre BinaryTree[T]. 3. Coder la fonction depthForeach qui applique une fonction f : T => Any sur un parcours en profondeur d'un arbre BinaryTree[T]. 4. Coder la fonction breadthForeach qui applique une fonction f : T => Any sur un parcours en largeur. Indice : commencer par construire une pile des n÷uds pour ensuite itérer dessus.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 92,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 case class BinaryTree[T]( 2 var nodeValue: T, 3 var nodeLeft: Option[BinaryTree[T]] = None, 4 var nodeRight: Option[BinaryTree[T]] = None 5 ) { 6 var left: Option[BinaryTree[T]] = nodeLeft 7 var right: Option[BinaryTree[T]] = nodeRight 8 var _value: T = nodeValue 9 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 93,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Pattern Matching Le pattern matching est une fonctionnalité puissante de Scala. Il vient étendre le switch de Java et propose de nouvelles manières de créer des conditions d'égalité robustes sur des variables ou des objets. Sa particularité est de ne pas uniquement eectuer des égalités strictes, mais permet de prendre en compte des situations plus larges comme l'égalité de types ou l'utilisation du wildcard _ au comportement similaire à * des expressions régulières.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 94,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Il existe plusieurs types de pattern qui permettent de gérer ecacement un grand nombre de possibilités. • Constant Pattern avec une valeur xe. • Typed Pattern pour vérier le type. • Constructor Pattern pour l'égalité avec les case classes. • Wildcard et Variable Pattern lorsqu'aucun des tests n'a été concluant. Le pattern matching est donc intéressant dans le sens où il va nous faire économiser beaucoup de lignes de code, tout en ayant une large panoplie de conditions d'égalités.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 95,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Constant Pattern Le Constant Pattern permet de reproduire le comportement classique du switch Java. Pour chaque constante proposée, on étudie la condition d'égalité avec la variable matchée. En tant que tel, le Constant Pattern permet d'écrire une successions de if ... else d'une manière plus concise. 1 val myInt: Int = 6 2 myInt match { 3 case 6 => println(\"Match 6\") 4 case 3 => println(\"Match 3\") 5 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 96,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Wildcard Pattern L'utilisation de l'underscore _ a deux signications. • Si l'underscore est utilisé tout seul, il s'agit du Wildcard Pattern et représente le cas général, toujours vérié. • Si l'underscore est utilisé dans un autre pattern (Tuple, Sequence) alors il s'agit d'un wildcard de caractère qui peut représenter n'importe quelle valeur. 1 val myTuple = Tuple2(false, 2) 2 myTuple match { 3 case (false, 3) => println(\"Constant Pattern\") 4 case (_, 3) => println(\"Regex Pattern\") 5 case _ => println(\"Wildcard Pattern\") 6 } Regex Pattern",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 97,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Le Wildcard Pattern ne doit pas être placé au-dessus d'une condition, car puisqu'il est toujours vérié, les conditions inférieures ne seront jamais atteintes. 1 val myTuple = Tuple2(false, 2) 2 myTuple match { 3 case _ => println(\"Wildcard Pattern\") 4 case (false, 3) => println(\"Constant Pattern\") 5 case (_, 3) => println(\"Regex Pattern\") 6 } Wildcard Pattern",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 98,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Remarque Le Wildcard Pattern existe car toutes les situations doivent être gérées lors d'un pattern matching. Si aucun case ne matche, alors une erreur sera provoquée, comme dans l'exemple suivant. 1 val myTuple = Tuple2(false, 2) 2 myTuple match { 3 case (false, 3) => println(\"Constant Pattern\") 4 case (true, _) => println(\"Regex Pattern\") 5 } De manière générale, la bonne habitude est de toujours insérer un Wildcard Pattern en n de pattern matching.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 99,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Variable Pattern Le Variable Pattern va matcher dans tous les cas : il est donc très proche du Wildcard Pattern, mais à la diérence de ce dernier, le Variable Pattern permet de référencer la variable lors de son utilisation dans 1 val myInt: Int = 7 2 myInt match { 3 case 6 => println(\"Match 6\") 4 case 3 => println(\"Match 3\") 5 case something => println(f\"$something fas found.\") 6 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 100,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Typed Pattern Le Typed Pattern est utile pour tester l'égalité avec un type. Cela est intéressant par exemple si l'on accepte plusieurs types diérents ou que l'on souhaite entreprendre des actions spéciques pour un type enfant/dérivé. Reprenons l'exemple des messages en temps réel sur une le d'attente. 1 trait State { 2 def consume(): Unit 3 } 4 5 class ReadyState extends State { 6 override def consume(): Unit = {println(\"Start consuming.\")} 7 } 8 9 class BusyState extends State { 10 override def consume(): Unit = {println(\"Message is busy.\")} 11 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 101,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching 1 case class Actor(name: String) { 2 var state: State = new ReadyState() 3 def consume(): Unit = state.consume() 4 def toggle(): Unit = state match { 5 case _: ReadyState => state = new BusyState() 6 case _: BusyState => state = new ReadyState() 7 case _ => throw new Exception(\"Unknown state.\") 8 } 9 override def toString: String = name 10 } Créons ensuite une instance de Actor. 1 val actor = Actor(\"Producer\") 2 actor.consume() 3 actor.toggle() 4 actor.consume() Start consuming. Message is busy.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 102,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Son utilisation est également pertinente lorsque l'on souhaite accéder à des propriétés/champs spéciques d'un type sans réaliser de conversion explicite sur la variable matchée. 1 def getSize(l: Iterable[_]): Int = l match { 2 case s: Seq[_] => s.length 3 case m: Map[_, _] => m.keys.toList.length 4 case s: Set[_] => s.toList.length 5 case _ => -1 6 } 7 8 println { getSize(Seq(1, 2, 3, 4)) }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 103,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Constructor Pattern Revenons à la dénition de la case classe Actor. L'argument name: String est nécessaire pour pouvoir instancier cet objet. Supposons maintenant que nous souhaitions vérier qu'une variable x est non seulement de type Actor, mais qu'elle a également été initialisée avec un certain argument pour name ? Nous ne pourrions pas utiliser un Constant Pattern, car cela irait créer une nouvelle variable en mémoire. Le Constructor Pattern va alors bénécier de la comparaison des cases classes au niveau de la structure (et non au niveau de la mémoire). 1 actor match { 2 case Actor(\"Consumer\") => println(\"Is consumer.\") 3 case Actor(\"Producer\") => println(\"Is producer.\") 4 case _ => println(\"Is something else\") 5 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 104,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Sequence Pattern Le Sequence Pattern est très proche du Constructor Pattern où l'on utilise des wildcards _. Cela est notamment utile pour les situations où l'on cherche à vérier l'égalité d'un ou plusieurs membres d'une collection. 1 val myList = List(1, 2, 3, 4) 2 myList match { 3 case List(_, 2, _) => println(\"Second is 2 and length is 3\") 4 case List(_, 2, _*) => println(\"Second is 2 and length is any\") 5 case _ => println(\"Other\") 6 }",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 105,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Conclusion Nous venons de voir les fondements du langage Scala. Avec les deux approches fonctionnelle et orienté objet, nous pouvons construire des programmes adaptés au Big Data. Dans le deuxième partie, nos aborderons de nouvelles notions dans l'approche fonctionnelle et de l'orienté objet. Nous verrons également l'utilisation de Scala pour la programmation concurrente, ainsi que le packaging de projets Scala (packaging avec sbt), similaire à certains outils comme Maven pour Java.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 106,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  },
+  {
+    "content": "Introduction au Scala Programmation fonctionnelle Orienté Objet Pattern Matching Martin Odersky, Lex Spoon, and Bill Venners. Programming in Scala: Updated for Scala 2.12. Artima Incorporation, Sunnyvale, CA, USA, 3rd edition, 2016.",
+    "metadata": {
+      "titre_document": "Cours",
+      "numero_page": 107,
+      "titre_section": "",
+      "matiere": "",
+      "document_path": ""
+    }
+  }
+]

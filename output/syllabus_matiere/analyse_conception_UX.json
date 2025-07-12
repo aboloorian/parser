@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "source_pdf": "analyse_conception_UX.pdf",
+    "parsed_at": "2025-07-12T07:29:02.956708Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 2",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Férial BELLEHCHILI",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "fbellehchili@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "0,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "2",
+      "page": 1
+    },
+    "Coef": {
+      "value": "2",
+      "page": 1
+    },
+    "Volume": {
+      "value": "18,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Analyse et conception (UX/UI) produit IA",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Dossier",
+      "page": 1
+    },
+    "Durée": {
+      "value": "2,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Participation active, Livrable “Dossier de conception”, Pitch final",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "À la fin du cours, l’étudiant est capable de : Identifier les besoins métiers et les traduire en cas d’usage. Structurer une conception fonctionnelle adaptée aux spécificités d’un produit IA. Élaborer une story map, définir un MVP, estimer des fonctionnalités. Collaborer avec une équipe produit pour transformer le besoin en solution. Produire des livrables clairs et opérationnels pour la phase de développement. Présenter et défendre un produit IA devant un public mixte (tech + métier).",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "en profondeur et le traduire en besoin fonctionnel.\nLes étudiants apprennent à construire des personas, à\nanalyser les problèmes réels vécus par les utilisateurs, et à\nformaliser un besoin ainsi qu’une solution adaptée. Ils\ntraduisent ensuite ces éléments en cas d’usage concrets,\nbase de toute conception fonctionnelle.",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 3
+      }
+    },
+    {
+      "Séances": {
+        "value": "3",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "Séance 3 : Idéation, story mapping & MVP\nObjectif : Structurer les fonctionnalités du produit autour\ndes besoins identifiés.\nÀ partir des cas d’usage, les étudiants construisent une\nstory map et définissent les premières fonctionnalités clés.\nIls abordent la notion de MVP (Minimum Viable Product).",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "Projet",
+        "page": 3
+      }
+    },
+    {
+      "Séances": {
+        "value": "4",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "Séance 4 : Estimation, roadmap & user stories\nObjectif : Prioriser, planifier et documenter le\nfonctionnement du produit.\nCette sé ance permet d’approfondir la vision produit :\nestimation des fonctionnalités, ajout des cartes techniques\nà la story map, rédaction des premières user stories avec\ncritères d’acceptation, et é laboration d’une première\nroadmap. C’est une étape de consolidation.",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "Projet",
+        "page": 3
+      }
+    },
+    {
+      "Séances": {
+        "value": "5",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "Séance 5 : Soutenance finale\nObjectif : Présenter et défendre une solution fonctionnelle\nclaire et réaliste.\nChaque équipe présente son produit, en mettant l’accent\nsur la compréhension du besoin utilisateur, la cohérence\nde la solution IA proposée, la qualité de la documentation\nfonctionnelle et la capacité à communiquer clairement le\nprojet.",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "Projet",
+        "page": 3
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP38587 - Expert en Intelligence Artificielle et Big Data",
+        "page": 3
+      },
+      "Compétence": {
+        "value": "RNCP38587BC04 - Piloter un projet d’intelligence artificielle",
+        "page": 3
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "Apprentissage par projet (project-based learning) : les étudiants travaillent par groupe sur un cas fil rouge.\nCours + atelier sur le fil rouge à chaque séance : 50% d’apports méthodologiques, 50% de mise en pratique.\nApproche inspirée du Design Thinking, de l’Agilité et des méthodes de product management centrées utilisateur.\nTravail collaboratif, discussions avec feedback régulier",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 2
+  },
+  "Ouvrages de référence": {
+    "value": "Marty Cagan – Inspired: How to Create Tech Products Customers Love\nTeresa Torres – Continuous Discovery Habits\nYves Pigneur & Alexander Osterwalder – Value Proposition Design",
+    "page": 2
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 2
+  },
+  "Autres références": {
+    "value": "",
+    "page": 2
+  },
+  "Outils informatiques": {
+    "value": "Miro: story mapping,\nTrello: backlog et user stories\nGoogle Slides / Canva : pitch de présentation",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "Le cours est découpé en 5 séances de 3 à 4h30 heures, combinant apports théoriques et ateliers pratiques.\nChaque séance traite d’un axe de la conception fonctionnelle d’un produit IA ou Big Data, et permet aux étudiants de progresser sur un\nprojet fil rouge mené en équipe.\nSéance 1 : Introduction & rôle de la conception fonctionnelle\nObjectif : Comprendre ce qu’est la conception fonctionnelle.\nSéance 2 : Cadrage du besoin & cas d’usage\nObjectif : Identifier un problème utilisateur, le comprendre en profondeur et le traduire en besoin fonctionnel.\nSéance 3 : Idéation, story mapping & MVP\nObjectif : Structurer les fonctionnalités du produit autour des besoins identifiés.\nSéance 4 : Estimation, roadmap & user stories\nObjectif : Prioriser, planifier et documenter le fonctionnement du produit.\nSéance 5 : Soutenance finale\nObjectif : Présenter et défendre une solution fonctionnelle claire et réaliste.",
+    "page": 2
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "1 Matières, formations et groupes": {
+    "Matière liée au projet": {
+      "value": "",
+      "page": 1
+    },
+    "Formations": {
+      "value": "-",
+      "page": 1
+    },
+    "Nombre d'étudiant par groupe": {
+      "value": "2 à 3",
+      "page": 1
+    },
+    "Règles de constitution des groupes": {
+      "value": "Libre",
+      "page": 1
+    },
+    "Charge de travail estimée par étudiant": {
+      "value": "15,00 h",
+      "page": 1
+    }
+  },
+  "2 Sujet(s) du projet": {
+    "Type de sujet": {
+      "value": "Sujet libre à valider",
+      "page": 1
+    }
+  },
+  "3 Détails du projet": {
+    "Objectif du projet (à la fin du projet les étudiants sauront réaliser un...)": {
+      "value": "Permettre à l’élève de : • Comprendre les complémentarités entre blockchain et IA • Identifier un cas d’usage pertinent et réaliste • Évaluer ses avantages, ses limites et ses implications techniques, économiques ou éthiques • S’initier à la recherche scientifique appliquée, à l’analyse critique et à la veille technologique",
+      "page": 1
+    },
+    "Descriptif détaillé": {
+      "value": "",
+      "page": 1
+    },
+    "Ouvrages de référence (livres, articles, revues, sites web...)": {
+      "value": "",
+      "page": 1
+    },
+    "Outils informatiques à installer": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "4 Livrables et étapes de suivi": [
+    {
+      "value": "Étape 0: Définition du sujet - Choix du sujet. Soumis à validation - Date de rendu: vendredi 11/04/2025 23h59",
+      "page": 1
+    },
+    {
+      "value": "Étape 1: Rendu final - Rendu - Document - PPT - Code (lien github + code en dur) - Date de rendu: dimanche 25/05/2025 0h00",
+      "page": 1
+    }
+  ],
+  "5 Soutenance": {
+    "Durée de présentation par groupe": {
+      "value": "20 min",
+      "page": 2
+    },
+    "Audience": {
+      "value": "A huis clos",
+      "page": 2
+    },
+    "Type de présentation": {
+      "value": "Présentation / PowerPoint - Démonstration",
+      "page": 2
+    },
+    "Précisions": {
+      "value": "",
+      "page": 2
+    }
+  }
+}

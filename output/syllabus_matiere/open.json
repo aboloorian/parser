@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "source_pdf": "open.pdf",
+    "parsed_at": "2025-07-12T07:29:03.217249Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 1",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Constance SIGALA",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "csigala1@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "0,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "1",
+      "page": 1
+    },
+    "Coef": {
+      "value": "1",
+      "page": 1
+    },
+    "Volume": {
+      "value": "15,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Programme OPEN",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Dossier Individuel",
+      "page": 1
+    },
+    "Durée": {
+      "value": "12,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "Note sur 20 par semestre\nElle est décomposée en 2 parties :\n16 points en quantitatif (les actions)\n4 points en qualitatif (la synthèse)",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Permettre aux étudiants de s'ouvrir sur de nouveaux sujets, de nouvelles activités, de s'ouvrir sur l'extérieur (multiplier ses contacts avec des professionnels de l'informatique, avec d'autres étudiants d'autres écoles), prendre de nouvelles initiatives (sérieuses ou ludiques) et développer l'esprit de solidarité (citoyenneté).",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 2
+      },
+      "Thèmes": {
+        "value": "Séances Thèmes Travail à domicile Références Evaluation 1 Lancement du projet OPEN - passage dans les classes 2 Début de la vie associative des étudiants 3 Rendu des synthèses Dossier Individuel",
+        "page": 2
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 2
+      },
+      "Références": {
+        "value": "",
+        "page": 2
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 2
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [
+    {
+      "Titre": {
+        "value": "RNCP34568 - Chef de projet logiciel et réseau",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP34568BC02 - Concevoir le système informatique",
+        "page": 2
+      }
+    },
+    {
+      "Titre": {
+        "value": "RNCP36296 - Expert en architectures systèmes-réseaux et",
+        "page": 2
+      },
+      "Compétence": {
+        "value": "RNCP36296BC01 - Analyser et concevoir les infrastructures",
+        "page": 2
+      }
+    }
+  ],
+  "Méthodologie utilisée": {
+    "value": "",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "",
+    "page": 1
+  },
+  "Outils informatiques": {
+    "value": "",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "Les étudiants sont amenés à développer des compétences à travers les 4 axes du programme\n- Entreprise (développer d'étroites relations grâce à l'alternance, aux périodes de stage)\n- Esprit d'équipe (convivialité, solidarité, respect de l'autre, travailler en équipe)\n- Challenge (développer le goût de la compétition, du challenge, fixer des objectifs ambitieux)\n- Communication (développer son goût pour le relationnel, la confiance en soi)",
+    "page": 2
+  }
+}

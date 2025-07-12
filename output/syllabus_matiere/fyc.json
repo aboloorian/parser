@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "source_pdf": "fyc.pdf",
+    "parsed_at": "2025-07-12T07:29:03.119648Z"
+  },
+  "Détails du syllabus": {
+    "Matière": {
+      "value": "B1 - fyc",
+      "page": 1
+    },
+    "Code": {
+      "value": "N.C",
+      "page": 1
+    },
+    "Cursus": {
+      "value": "ESGI",
+      "page": 1
+    },
+    "Semestre": {
+      "value": "Semestre 1",
+      "page": 1
+    },
+    "Responsable du cours": {
+      "value": "Philippe TISSOT",
+      "page": 1
+    },
+    "Mail du responsable du cours": {
+      "value": "ptissot@myges.fr",
+      "page": 1
+    },
+    "Responsable pédagogique": {
+      "value": "",
+      "page": 1
+    },
+    "Professeur associé": {
+      "value": "",
+      "page": 1
+    },
+    "Charge de travail de l'étudiant": {
+      "value": "25,00 h",
+      "page": 1
+    },
+    "Ects": {
+      "value": "3",
+      "page": 1
+    },
+    "Coef": {
+      "value": "3",
+      "page": 1
+    },
+    "Volume": {
+      "value": "15,00 h",
+      "page": 1
+    },
+    "Contrôle de connaissances": {
+      "value": {
+        "Cas Pratique": false,
+        "Contrôle Continu": false,
+        "Dossier": false,
+        "Dossier Individuel": false,
+        "Examen": false,
+        "Projet": false,
+        "QCM": false
+      },
+      "page": 1
+    },
+    "Intitulé": {
+      "value": "Projet FYC - Groupe 21",
+      "page": 1
+    }
+  },
+  "Evaluation finale": {
+    "Type d'examen": {
+      "value": "Projet",
+      "page": 1
+    },
+    "Durée": {
+      "value": "1,00 h",
+      "page": 1
+    },
+    "Documents autorisés": {
+      "value": "",
+      "page": 1
+    },
+    "Critères d'évaluation": {
+      "value": "3 axes :\n- 40%, réunions de suivi (4 séances)\n- 20%, soutenance\n- 40%, support de recherche (Moodle)",
+      "page": 1
+    },
+    "Pré-requis": {
+      "value": "",
+      "page": 1
+    }
+  },
+  "Objectifs pédagogiques": {
+    "value": "Réaliser le travail d'un mémoire de recherche sous forme d'un cours : Assurer une recherche sur une thématique libre informatique, à présenter sous la forme d’un support pédagogique 100% digitalisé, sur Moodle. Développer les capacités de veille technologique. Donner une visibilité professionnelle et développer le réseau personnel.",
+    "page": 1
+  },
+  "Contenu détaillé des séances": [
+    {
+      "Séances": {
+        "value": "",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "- 1 QCM par chapitre de cours\n- Vidéo de correction du cas pratique\n- Vidéos d'explication de 2 sujets complexes dans le cours\n- Vidéo de conclusion et ouverture : \"Pour aller plus loin\"",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "",
+        "page": 3
+      }
+    },
+    {
+      "Séances": {
+        "value": "5",
+        "page": 3
+      },
+      "Thèmes": {
+        "value": "Soutenance publique :\n- Avec jury constitué du Mentor et éventuellement d'autres\nenseignants, professionnels et tuteurs\n- 30 minutes de présentation du cours avec démonstration\ndu cas pratique\n- 30 minutes d'échange (questions et réponses)",
+        "page": 3
+      },
+      "Travail à domicile": {
+        "value": "",
+        "page": 3
+      },
+      "Références": {
+        "value": "",
+        "page": 3
+      },
+      "Evaluation": {
+        "value": "Projet",
+        "page": 3
+      }
+    }
+  ],
+  "Compétences professionnelles à développer ou à acquérir": [],
+  "Méthodologie utilisée": {
+    "value": "Validation des sujets par la direction pédagogique.\nEncadrement et suivi de la démarche et des travaux par un Mentor.\nTravail de recherche (extraction d'informations, synthèse, production de contenus).",
+    "page": 1
+  },
+  "Références Crossknowledge": {
+    "value": "",
+    "page": 1
+  },
+  "Ouvrages de référence": {
+    "value": "",
+    "page": 1
+  },
+  "Références Cyberlibris": {
+    "value": "",
+    "page": 1
+  },
+  "Autres références": {
+    "value": "",
+    "page": 2
+  },
+  "Outils informatiques": {
+    "value": "Moodle",
+    "page": 2
+  },
+  "Programme détaillé": {
+    "value": "Réaliser le travail d'un travail de recherche type mémoire de recherche en groupe sous forme d'un cours à construire sur Moodle.\n4 séances de suivi :\n- 11 Juillet 2024\n- 09 Octobre 2024\n- 04 Décembre 2024\n- 08 Janvier 2025\nRendu final le 20 Janvier 2025.\nSoutenance le 11 Février 2025.",
+    "page": 2
+  }
+}
